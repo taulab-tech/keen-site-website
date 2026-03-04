@@ -56,7 +56,7 @@
       <div class="contact-grid">
         <div>
           <h2 class="form-title">Request a demo</h2>
-          <form name="demo-request" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+          <form name="demo-request" action="https://api.web3forms.com/submit" method="POST">
             <div class="form-row">
               <div class="form-group">
                 <label for="name">Full Name</label>
@@ -90,6 +90,7 @@
                 placeholder="Tell us about your current field reporting challenges..." required></textarea>
             </div>
             <div data-netlify-recaptcha="true"></div>
+            <input type="hidden" name="access_key" value="bdea0255-acc1-46b6-ab2a-db16c7fdbbe0">
             <button type="submit" class="btn btn-orange">
               Send Message
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="none"
