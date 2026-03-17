@@ -86,15 +86,30 @@ ul {
   }
 }
 
+/* Logo Fixes */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0; 
+}
+
 .navbar-logo img {
   height: 2.5rem;
   width: auto;
+  object-fit: contain;
 }
+
 
 @media (min-width: 1024px) {
   .navbar-logo img {
     height: 3rem;
   }
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem; 
 }
 
 .navbar-links {
@@ -123,13 +138,26 @@ ul {
   color: var(--indigo);
 }
 
+/* Actions (Hamburger + Login Button) */
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem; 
+}
+
 .mobile-toggle {
-  display: block;
+  display: flex; 
+  align-items: center;
   background: none;
   border: none;
   padding: 0.5rem;
   color: var(--gray-600);
   cursor: pointer;
+}
+
+.mobile-toggle svg {
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 @media (min-width: 768px) {
@@ -138,16 +166,17 @@ ul {
   }
 }
 
-.mobile-toggle svg {
-  width: 1.5rem;
-  height: 1.5rem;
-}
-
+/* Mobile Dropdown Menu */
 .mobile-menu {
   display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
   background: var(--white);
   border-top: 1px solid var(--gray-100);
   padding: 1rem 1.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
 .mobile-menu.open {
@@ -173,6 +202,35 @@ ul {
 .mobile-menu a.active {
   color: var(--indigo);
   background: var(--gray-50);
+}
+
+/* ── NAVBAR BUTTON ── */
+.nav-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1.25rem;
+  font-size: 0.875rem;   
+  font-weight: 600;
+  border-radius: 0.5rem;   
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.1s;
+  text-decoration: none;  
+}
+
+.nav-btn:hover {
+  opacity: 0.9;
+}
+
+.nav-btn:active {
+  transform: scale(0.98);
+}
+
+.nav-btn-orange {
+  background: var(--orange);
+  color: var(--white);
+  border-color: var(--orange);
 }
 
 /* ── BUTTONS ── */
