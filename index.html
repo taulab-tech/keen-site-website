@@ -31,6 +31,7 @@
 </script>
 
 <body>
+  <script>document.documentElement.classList.add('js');</script>
 
   <!-- NAVBAR -->
   <nav class="navbar">
@@ -40,9 +41,10 @@
       </a>
 
       <div class="navbar-right">
-        
+
         <div class="navbar-links">
           <a href="/">Home</a>
+          <a href="/products/">Products</a>
           <a href="/story/">Our Story</a>
           <a href="/team/">Team</a>
           <a href="/contact/" class="active">Contact</a>
@@ -50,6 +52,7 @@
 
         <div id="mobileMenu" class="mobile-menu">
           <a href="/">Home</a>
+          <a href="/products/">Products</a>
           <a href="/story/">Our Story</a>
           <a href="/team/">Team</a>
           <a href="/contact/" class="active">Contact</a>
@@ -75,11 +78,14 @@
 
   <!-- HERO -->
   <section class="hero">
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="/images/keensitehero.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
     <div class="container hero-content">
-      <h1>Accuracy, without <em>effort.</em></h1>
+      <h1>Accurate Reports without <em>Effort.</em></h1>
       <p><strong>Field reports and timecards shouldn't depend on memory.</strong></p>
-      <p>KeenSite automatically verifies work and equipment movement using GPS, Bluetooth, and IoT so everything that
-        happens on site becomes clean, reliable records.</p>
+      <p>KeenSite connects your people, equipment, and jobs so every hour is verified before anyone asks.</p>
       <div class="hero-tagline">
         <span>No Chasing</span>
         <span class="dot"></span>
@@ -99,375 +105,452 @@
   </section>
 
   <!-- PROBLEM -->
-  <section class="section section-white">
+  <!-- Opening statement -->
+  <section class="section section-white" style="padding-bottom:4rem; border-bottom: 1px solid var(--gray-100);"></section>
     <div class="container">
-      <div style="max-width:40rem;">
-        <p class="section-label">The Problem</p>
-        <h2>The gap between work and billing is where money disappears.</h2>
-      </div>
-      <div class="problem-grid">
-        <div class="problem-card">
-          <div class="problem-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="10" />
-              <polyline points="12 6 12 12 16 14" />
-            </svg>
-          </div>
-          <p>Timecards filled out late or inaccurately</p>
-        </div>
-        <div class="problem-card">
-          <div class="problem-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path
-                d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
-            </svg>
-          </div>
-          <p>Equipment hours forgotten</p>
-        </div>
-        <div class="problem-card">
-          <div class="problem-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-              <polyline points="14 2 14 8 20 8" />
-              <line x1="9" y1="15" x2="15" y2="15" />
-            </svg>
-          </div>
-          <p>Field reports missing key details</p>
-        </div>
-        <div class="problem-card">
-          <div class="problem-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="11" cy="11" r="8" />
-              <line x1="21" y1="21" x2="16.65" y2="16.65" />
-            </svg>
-          </div>
-          <p>Lost or misplaced tools and trailers</p>
-        </div>
-        <div class="problem-card">
-          <div class="problem-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
-              <line x1="12" y1="9" x2="12" y2="13" />
-              <line x1="12" y1="17" x2="12.01" y2="17" />
-            </svg>
-          </div>
-          <p>Reconstructing reports from memory</p>
-        </div>
-        <div class="problem-card">
-          <div class="problem-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="12" y1="1" x2="12" y2="23" />
-              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-            </svg>
-          </div>
-          <p>Billing delays and disputes</p>
-        </div>
-      </div>
+      <p class="section-label">The Problem</p>
+      <p class="prob-closer-text">The gap between work and billing<br>is where money disappears.</p>
     </div>
   </section>
+
+  <section class="section section-white" style="padding-top:0; padding-bottom:0;">
+    <div class="container">
+      <div class="prob-grid">
+        <!-- Block 1 -->
+        <div class="prob-block">
+          <div class="prob-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="none"
+              stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 7H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z" />
+              <path d="M16 3H8a1 1 0 0 0-1 1v3h10V4a1 1 0 0 0-1-1z" />
+              <line x1="8" y1="13" x2="16" y2="13" />
+              <line x1="8" y1="17" x2="12" y2="17" />
+            </svg>
+          </div>
+          <h2 class="prob-headline">Crews prioritize the job, not the paperwork.</h2>
+          <p class="prob-body">Timecards get filled out at the end of the day, from memory. Hours get rounded. Equipment goes unlogged. Nobody means for it to happen — it just does.</p>
+        </div>
+
+        <!-- Block 2 -->
+        <div class="prob-block">
+          <div class="prob-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="none"
+              stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+              <polyline points="14 2 14 8 20 8" />
+              <line x1="9" y1="13" x2="15" y2="13" />
+              <line x1="9" y1="17" x2="13" y2="17" />
+            </svg>
+          </div>
+          <h2 class="prob-headline">By the time the office catches up, money is already gone.</h2>
+          <p class="prob-body">Managers piece together tickets, texts, and spreadsheets trying to reconstruct the week. Billing disputes, missed hours, and equipment nobody tracked until it broke.</p>
+        </div>
+      </div>
+
+      <div class="prob-divider"></div>
+    </div>
+  </section>
+
+  <style>
+    .prob-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 3rem;
+      align-items: stretch;
+    }
+    .prob-block {
+      padding: 4.5rem 2.5rem;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .prob-icon {
+      color: var(--orange);
+      margin-bottom: 1.25rem;
+    }
+    .prob-headline {
+      font-size: clamp(1.625rem, 3vw, 2.25rem);
+      font-weight: 800;
+      color: var(--indigo);
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+      margin: 0 0 1.25rem;
+    }
+    .prob-body {
+      font-size: 1.125rem;
+      color: var(--gray-600);
+      line-height: 1.8;
+      margin: 0;
+      max-width: 38rem;
+    }
+    .prob-divider {
+      border: none;
+      border-top: 1px solid var(--gray-100);
+    }
+    .prob-closer {
+      background: var(--indigo);
+      padding: 7rem 0;
+    }
+    .prob-closer-text {
+      font-size: var(--headline-display-size);
+      font-weight: 800;
+      color: var(--indigo);
+      letter-spacing: -0.03em;
+      line-height: 1.05;
+      margin: 0;
+    }
+    @media (max-width: 900px) {
+      .prob-grid {
+        grid-template-columns: 1fr;
+      }
+      .prob-block {
+        padding: 3rem 0;
+      }
+    }
+  </style>
 
   <!-- SOLUTION -->
-  <section class="section section-indigo">
+  <section class="sol2">
     <div class="container">
-      <div class="solution-grid">
-        <div>
-          <h2>A digital baseline of what actually happened.</h2>
-          <p>KeenSite creates a continuous, verified digital thread from schedule to work to report to invoice. Every
-            hour, every piece of equipment, every task is automatically captured and connected — ensuring accurate
-            billing, real accountability, and complete operational clarity without the paperwork.</p>
+      <div class="sol2-headline">
+        <p class="section-label" style="color:rgba(255,255,255,0.45);margin-bottom:1.5rem;">The Solution</p>
+        <h2 class="sol2-h">Every hour.<br>Every machine.<br><span style="color:var(--orange);font-style:normal;">Verified.</span></h2>
+        <p class="sol2-sub">KeenSite automatically captures everything that happens on site and connects it from schedule to invoice. No chasing, no guessing.</p>
+      </div>
+      <div class="sol2-compare">
+        <!-- LEFT: paper ticket -->
+        <div class="sol2-col">
+          <div class="sol2-label sol2-label-before">Before</div>
+          <div class="sol2-card paper-card">
+            <div class="pt-co">DAILY FIELD TICKET</div>
+            <div class="pt-meta"><span class="pt-key">Worker:</span> Colton Breitkreuz &nbsp;&nbsp; <span class="pt-key">Date:</span> Feb 6, 2026</div>
+            <div class="pt-meta"><span class="pt-key">Job:</span> Preston Blvd</div>
+            <div class="pt-sec">Hours</div>
+            <table class="pt-table">
+              <thead><tr><th>Time</th><th>Description</th></tr></thead>
+              <tbody>
+                <tr><td class="pt-hw">10:10–10:30</td><td class="pt-hw">Arrived, inspect equipment</td></tr>
+                <tr><td class="pt-hw">10:30–11:30</td><td class="pt-hw">Wait for paperwork &amp; site orientation</td></tr>
+                <tr><td class="pt-hw">11:30–12:00</td><td class="pt-hw">Lunch</td></tr>
+                <tr><td class="pt-hw">12:00–5:00</td><td class="pt-hw">Install pile drills</td></tr>
+                <tr><td class="pt-hw">5:00–5:30</td><td class="pt-hw">Back to shop, paperwork</td></tr>
+              </tbody>
+            </table>
+            <div class="pt-sec" style="margin-top:1rem;">Equipment Used</div>
+            <div class="pt-blank"><span class="pt-blank-hint">-- not filled out --</span></div>
+            <div class="pt-sigs">
+              <div class="pt-sig"><div class="pt-sig-line"></div><span>Worker Signature</span></div>
+              <div class="pt-sig"><div class="pt-sig-line"></div><span>Supervisor</span></div>
+            </div>
+          </div>
         </div>
-        <div class="solution-image">
-          <img src="/images/construction-site.jpg" alt="Construction site with heavy equipment">
+        <!-- RIGHT: KeenSite card -->
+        <div class="sol2-col">
+          <div class="sol2-label sol2-label-ks">KeenSite</div>
+          <div class="sol2-card ks-card2">
+            <div class="ks2-body">
+              <div class="ks2-time-block">
+                <!-- Timecard row -->
+                <div class="ks2-row-head">
+                  <div class="ks2-av">CB</div>
+                  <div class="ks2-who">
+                    <span class="ks2-name">Colton Breitkreuz</span>
+                    <span class="ks2-sub">Preston Crossing Blvd · Job 25-268 · Feb 6, 2026</span>
+                  </div>
+                  <span class="kpill green">Verified</span>
+                </div>
+                <div class="ks2-divider ks2-divider-strong" aria-hidden="true"></div>
+                <div class="ks2-entries ks2-entries-time">
+                  <div class="ks2-entry"><span class="ks2-t">10:10 – 10:30 AM</span><span class="ks2-d">Arrived, inspected equipment</span><span class="kpill green">Verified</span></div>
+                  <div class="ks2-entry"><span class="ks2-t">10:30 – 11:30 AM</span><span class="ks2-d">Wait. paperwork &amp; orientation</span><span class="kpill grey">Logged</span></div>
+                  <div class="ks2-entry"><span class="ks2-t">11:30 AM – 12:00 PM</span><span class="ks2-d">Lunch</span><span class="kpill grey">Logged</span></div>
+                  <div class="ks2-entry hi"><span class="ks2-t">12:00 – 5:00 PM</span><span class="ks2-d">Install pile drills</span><span class="kpill green">Verified</span></div>
+                  <div class="ks2-entry"><span class="ks2-t">5:00 – 5:30 PM</span><span class="ks2-d">Back to shop, paperwork</span><span class="kpill grey">Logged</span></div>
+                </div>
+                <div class="ks2-ts ks2-ts-before-eq">
+                  <span class="ks2-sub">Total Hours: 7.5 hrs <span class="kpill green" style="margin-left:4px;">Verified</span></span>
+                </div>
+              </div>
+
+              <div class="ks2-eq-block">
+                <div class="ks2-eq-label">Equipment</div>
+                <div class="ks2-divider ks2-divider-strong ks2-divider-under-eq-label" aria-hidden="true"></div>
+
+                <!-- Vehicle row -->
+                <div class="ks2-entries eq-entries">
+                  <div class="ks2-entry-eq-head"><span class="ks2-eq-name">Ford F-250</span></div>
+                  <div class="ks2-entry">
+                    <span class="ks2-t">10:00 AM</span><span class="ks2-d">Arrived on site</span>
+                    <span class="ks2-verify-hw"><svg class="ks2-hw-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" /></svg><span class="kpill green">Verified</span></span>
+                  </div>
+                  <div class="ks2-entry"><span class="ks2-t">5:05 PM</span><span class="ks2-d">Departed site</span><span class="kpill green">Verified</span></div>
+                </div>
+                <!-- Excavator row -->
+                <div class="ks2-entries eq-entries eq-entries-follow">
+                  <div class="ks2-entry-eq-head"><span class="ks2-eq-name">Hitachi 250 Excavator</span></div>
+                  <div class="ks2-entry">
+                    <span class="ks2-t">12:00 PM</span><span class="ks2-d">Engine started</span>
+                    <span class="ks2-verify-hw"><svg class="ks2-hw-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="14" r="8" /><path d="M12 14l3.5-3" /></svg><span class="kpill green">Verified</span></span>
+                  </div>
+                  <div class="ks2-entry"><span class="ks2-t">4:50 PM</span><span class="ks2-d">Engine off</span><span class="kpill green">Verified</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
+
+  <style>
+    .sol2 { background: var(--indigo); padding: 6rem 0; }
+    .sol2-headline { margin-bottom: 3.5rem; }
+    .sol2-h { font-size: var(--headline-display-size); font-weight: 800; color: #fff; letter-spacing: -0.03em; line-height: 1.05; margin: 0 0 1.5rem; }
+    .sol2-sub { font-size: 1.0625rem; color: rgba(255,255,255,0.65); line-height: 1.75; max-width: 36rem; margin: 0; }
+    .sol2-compare { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: stretch; }
+    .sol2-col { display: flex; flex-direction: column; gap: 0.625rem; min-height: 0; align-self: stretch; }
+    .sol2-label { font-size: 0.9rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; }
+    .sol2-label-before { color: rgba(255,255,255,0.4); }
+    .sol2-label-ks { color: var(--orange); }
+    .sol2-card { border-radius: 0.75rem; overflow: hidden; flex: 1 1 auto; min-height: 0; display: flex; flex-direction: column; }
+    /* Paper card */
+    .paper-card { background: #fffef5; border: 1px solid #e0d9c0; padding: 1.25rem; box-shadow: 0 2px 12px rgba(0,0,0,0.15); display: flex; flex-direction: column; min-height: 0; overflow: hidden; flex: 1 1 auto; }
+    .ks-card2 { background: #fff; box-shadow: 0 8px 40px rgba(0,0,0,0.3); display: flex; flex-direction: column; flex: 1 1 auto; min-height: 0; }
+    .ks2-body { padding: 0.65rem 0.85rem 0.75rem; overflow: visible; flex: 1 1 auto; min-height: 0; display: flex; flex-direction: column; justify-content: flex-start; }
+    .ks2-name { font-size: 0.75rem; font-weight: 700; color: var(--indigo); }
+    .ks2-sub { font-size: 0.65rem; font-weight: 700; color: var(--indigo); opacity: 0.85; margin-top: 0.1rem; }
+    .ks2-t { color: var(--indigo); white-space: nowrap; flex-shrink: 0; font-weight: 600; min-width: 7.75rem; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+    .ks2-d { color: var(--indigo); flex: 1; line-height: 1.45; min-width: 0; }
+    /* Equipment de-emphasis */
+    .eq-section { opacity: 0.75; }
+    .eq-name { font-size: 0.67rem !important; }
+    .eq-sub { font-size: 0.58rem !important; }
+    .eq-entries .ks2-entry { background: var(--gray-50); font-size: 0.58rem; }
+    .eq-entries .ks2-t { font-size: 0.58rem; min-width: 4.5rem; }
+    .eq-entries .ks2-d { font-size: 0.58rem; }
+    /* Equipment warning on paper ticket */
+    .pt-blank { border: 1px solid #fca5a5; border-radius: 0.25rem; padding: 0.75rem; flex: 1; min-height: 5rem; display: flex; align-items: flex-start; background: #fff5f5; }
+    .pt-blank-hint { font-size: 0.68rem; font-weight: 600; color: #dc2626; font-style: italic; }
+    .pt-sigs { display: flex; gap: 1.5rem; margin-top: auto; padding-top: 1.25rem; }
+    .pt-sig { flex: 1; display: flex; flex-direction: column; gap: 0.25rem; }
+    .pt-sig span { font-size: 0.58rem; color: #999; text-transform: uppercase; letter-spacing: 0.06em; }
+    .pt-sig-line { border-bottom: 1px solid #bbb; height: 1.25rem; }
+    .pt-co { font-size: 0.65rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: #555; border-bottom: 2px solid #ccc; padding-bottom: 0.4rem; margin-bottom: 0.625rem; }
+    .pt-meta { font-size: 0.7rem; color: #444; margin-bottom: 0.2rem; }
+    .pt-key { font-weight: 700; color: #222; }
+    .pt-sec { font-size: 0.6rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #888; margin: 0.75rem 0 0.375rem; }
+    .pt-table { width: 100%; border-collapse: collapse; }
+    .pt-table th { font-size: 0.58rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #999; text-align: left; padding: 0.2rem 0.375rem; border-bottom: 1px solid #ddd; }
+    .pt-table td { padding: 0.4rem 0.375rem; border-bottom: 1px solid #eee; vertical-align: top; }
+    .pt-hw { font-family: 'Georgia', serif; font-size: 0.68rem; color: #2a2a2a; line-height: 1.4; }
+    .ks2-row-head { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0; }
+    .ks2-av { width: 26px; height: 26px; border-radius: 50%; background: var(--indigo); color: #fff; font-size: 0.55rem; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .ks2-av.eq { background: var(--orange); }
+    .ks2-who { display: flex; flex-direction: column; flex: 1; }
+    .ks2-time-block { background: var(--gray-50); border-radius: 0.5rem; padding: 0.45rem 0.45rem 0.5rem; margin-bottom: 0.35rem; border: 1px solid var(--gray-100); }
+    .ks2-entries { display: flex; flex-direction: column; gap: 0.12rem; margin-bottom: 0.35rem; }
+    .ks2-entries-time { gap: 0.42rem; margin-bottom: 0.45rem; }
+    .ks2-entry { display: flex; align-items: center; gap: 0.4rem; padding: 0.32rem 0.4rem; border-radius: 0.25rem; font-size: 0.62rem; line-height: 1.45; }
+    .ks2-entry.hi { background: #f0fdf4; }
+    .ks2-ts { display: flex; flex-direction: column; gap: 0.2rem; padding: 0.28rem 0 0.2rem; border-top: 1px solid var(--gray-100); margin-bottom: 0.15rem; }
+    .ks2-ts-before-eq { margin-bottom: 0; padding-bottom: 0.35rem; padding-top: 0.35rem; }
+    .ks2-tschip { display: flex; align-items: center; font-size: 0.62rem; color: var(--gray-500); font-weight: 600; }
+    .ks2-divider { border: none; border-top: 1px solid var(--gray-200, #e5e7eb); margin: 0.35rem 0; min-height: 1px; }
+    /* border-top on empty rows is more reliable than border-bottom on flex rows; stronger color for hierarchy */
+    .ks2-divider-strong { border-top-color: var(--gray-300, #d1d5db); margin-top: 0.35rem; margin-bottom: 0.35rem; }
+    .ks2-eq-block {
+      margin-top: 1.15rem;
+      padding: 1.1rem 0.45rem 0.4rem;
+      border: 1px solid rgba(27, 44, 80, 0.08);
+      border-top: 2px solid var(--gray-300, #d1d5db);
+      background: rgba(27, 44, 80, 0.03);
+      border-radius: 0.5rem;
+    }
+    .ks2-eq-label { font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; color: var(--indigo); opacity: 0.9; margin: 0 0 0.5rem; }
+    .ks2-divider-under-eq-label { margin-top: 0; margin-bottom: 0.55rem; border-top-width: 2px; border-top-color: var(--gray-300, #d1d5db); }
+    .ks2-entry-eq-head { padding: 0.05rem 0.35rem 0.1rem; }
+    .ks2-entries.eq-entries { gap: 0.18rem; margin-bottom: 0.35rem; }
+    .ks2-verify-hw { display: inline-flex; align-items: center; gap: 0.3rem; flex-shrink: 0; margin-left: auto; }
+    .ks2-hw-svg { color: var(--orange); flex-shrink: 0; }
+    .ks2-entries.eq-entries-follow { margin-top: 0.28rem; }
+    .eq-entries .ks2-entry-eq-head + .ks2-entry { margin-top: 0.05rem; }
+    .ks2-eq-name { font-size: 0.65rem; font-weight: 800; color: var(--indigo); letter-spacing: -0.02em; }
+    .ks2-stat { font-size: 0.65rem; font-weight: 700; color: var(--indigo); padding-bottom: 0.25rem; }
+    .kpill { font-size: 0.6rem; font-weight: 700; padding: 0.15rem 0.5rem; border-radius: 2rem; flex-shrink: 0; white-space: nowrap; }
+    .kpill.green { background: #dcfce7; color: #15803d; }
+    .kpill.grey { background: var(--gray-100); color: var(--gray-500); }
+    @keyframes popIn {
+      0%   { opacity: 0; transform: scale(0.7); }
+      70%  { transform: scale(1.1); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+    @media (prefers-reduced-motion: no-preference) {
+      html.js .ks-card2 .kpill.green.anim-badge { opacity: 0; }
+      html.js .ks-card2 .kpill.green.anim-badge.visible { animation: popIn 0.35s ease forwards; }
+    }
+    @media (max-width: 768px) { .sol2-compare { grid-template-columns: 1fr; } }
+  </style>
 
   <!-- HOW IT WORKS -->
-  <section class="section section-white">
+  <section class="section section-gray hiw2-section" aria-labelledby="hiw2-heading">
     <div class="container">
-      <div class="section-center">
-        <p class="section-label">How It Works</p>
-        <h2>Four steps. Fully automatic.</h2>
+      <div class="hiw2-header">
+        <p class="hiw2-label">How it works</p>
+        <h2 id="hiw2-heading">Four inputs. One verified record.</h2>
       </div>
-      <div class="steps-grid">
-        <div class="step">
-          <div class="step-icon blue">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
-              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
-              <line x1="16" y1="2" x2="16" y2="6" />
-              <line x1="8" y1="2" x2="8" y2="6" />
-              <line x1="3" y1="10" x2="21" y2="10" />
-            </svg>
+
+      <div class="hiw2-flow">
+        <div class="hiw2-inputs-grid">
+          <div class="hiw2-in-col">
+            <article class="hiw2-in-card">
+              <div class="hiw2-in-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                  <line x1="16" y1="2" x2="16" y2="6" />
+                  <line x1="8" y1="2" x2="8" y2="6" />
+                  <line x1="3" y1="10" x2="21" y2="10" />
+                </svg>
+              </div>
+              <h3 class="hiw2-in-title">Schedule</h3>
+              <p class="hiw2-in-desc">Who should be where, and when. Planned jobs, assigned crews, expected equipment.</p>
+            </article>
+            <div class="hiw2-drop-wrap" aria-hidden="true"><span class="hiw2-drop-line"></span></div>
           </div>
-          <h3>Schedule</h3>
-          <p>Crews and equipment are assigned to jobs. The system knows what's planned and where everyone should be.</p>
+          <div class="hiw2-in-col">
+            <article class="hiw2-in-card">
+              <div class="hiw2-in-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+                  <rect x="8" y="2" width="8" height="4" rx="1" ry="1" />
+                  <line x1="8" y1="12" x2="16" y2="12" />
+                  <line x1="8" y1="16" x2="16" y2="16" />
+                  <line x1="8" y1="20" x2="12" y2="20" />
+                </svg>
+              </div>
+              <h3 class="hiw2-in-title">Timecard</h3>
+              <p class="hiw2-in-desc">What your crew said happened. Hours logged, tasks completed, equipment used.</p>
+            </article>
+            <div class="hiw2-drop-wrap" aria-hidden="true"><span class="hiw2-drop-line"></span></div>
+          </div>
+          <div class="hiw2-in-col">
+            <article class="hiw2-in-card">
+              <div class="hiw2-in-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </div>
+              <h3 class="hiw2-in-title">GPS</h3>
+              <p class="hiw2-in-desc">Where they actually were. Arrival, departure, and time on site verified by hardware.</p>
+            </article>
+            <div class="hiw2-drop-wrap" aria-hidden="true"><span class="hiw2-drop-line"></span></div>
+          </div>
+          <div class="hiw2-in-col">
+            <article class="hiw2-in-card">
+              <div class="hiw2-in-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="14" r="8" />
+                  <path d="M12 14l3.5-3" />
+                </svg>
+              </div>
+              <h3 class="hiw2-in-title">Engine Hours</h3>
+              <p class="hiw2-in-desc">What actually ran. Equipment start and stop times captured automatically.</p>
+            </article>
+            <div class="hiw2-drop-wrap" aria-hidden="true"><span class="hiw2-drop-line"></span></div>
+          </div>
+
+          <div class="hiw2-merge-row" aria-hidden="true">
+            <div class="hiw2-merge-bus"></div>
+            <div class="hiw2-merge-stem"><span class="hiw2-merge-stem-line"></span></div>
+            <div class="hiw2-merge-dot"></div>
+          </div>
         </div>
-        <div class="step">
-          <div class="step-icon green">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
-              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-              <circle cx="12" cy="10" r="3" />
-            </svg>
+
+        <div class="hiw2-output-wrap">
+          <div class="hiw2-output-card">
+            <div class="hiw2-output-badge" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" fill="none"
+                stroke="currentColor" stroke-width="3.25" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 12 11 17 19 6" />
+              </svg>
+            </div>
+            <h3 class="hiw2-out-title">Verified <span class="hiw2-out-accent">Record</span></h3>
+            <p class="hiw2-out-desc">KeenSite cross-references all four automatically. Everything that lines up gets
+              verified. Everything that doesn’t gets flagged.</p>
           </div>
-          <h3>Field</h3>
-          <p>GPS and engine hour data automatically capture who arrived, when they arrived, what equipment was used, and
-            how long they worked.</p>
-        </div>
-        <div class="step">
-          <div class="step-icon violet">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
-              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-              <polyline points="14 2 14 8 20 8" />
-              <line x1="16" y1="13" x2="8" y2="13" />
-              <line x1="16" y1="17" x2="8" y2="17" />
-              <polyline points="10 9 9 9 8 9" />
-            </svg>
-          </div>
-          <h3>Report</h3>
-          <p>Verified GPS and engine data is used to cross-check manually entered timecards, auto-filling key fields and
-            flagging discrepancies.</p>
-        </div>
-        <div class="step">
-          <div class="step-icon amber">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
-              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1-2-1z" />
-              <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8" />
-              <path d="M12 17V7" />
-            </svg>
-          </div>
-          <h3>Invoice</h3>
-          <p>Accurate, verified records flow directly into billing. No disputes, no delays, no reconstructing from
-            memory.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ASSET TRACKING -->
-  <section class="section section-gray">
+  <section class="section section-indigo why2-section">
     <div class="container">
-      <div class="section-center">
-        <p class="section-label">Asset Tracking</p>
-        <h2>Keep track of <span style="color:var(--orange)">ALL</span> your equipment.</h2>
-        <p style="margin-top:1.5rem; font-size:1.125rem; color:var(--gray-600); line-height:1.7;">KeenSite uses a
-          dual-device tracking system designed specifically for construction environments.</p>
-      </div>
-      <div class="tracking-grid">
-        <div class="tracking-card">
-          <div class="tracking-card-header">
-            <div class="tracking-card-icon blue">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="2" />
-                <path
-                  d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14" />
-              </svg>
-            </div>
-            <div>
-              <h3>GPS Trackers</h3>
-              <span class="subtitle">Vehicles & Large Equipment</span>
-            </div>
-          </div>
-          <ul>
-            <li>
-              <svg class="blue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"
-                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-                <polyline points="22 4 12 14.01 9 11.01" />
-              </svg>
-              <span>Installed on trucks, trailers, and heavy machinery</span>
-            </li>
-            <li>
-              <svg class="blue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"
-                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-                <polyline points="22 4 12 14.01 9 11.01" />
-              </svg>
-              <span>Provides real-time GPS tracking</span>
-            </li>
-            <li>
-              <svg class="blue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"
-                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-                <polyline points="22 4 12 14.01 9 11.01" />
-              </svg>
-              <span>Acts as a Bluetooth hub on site</span>
-            </li>
-            <li>
-              <svg class="blue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"
-                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-                <polyline points="22 4 12 14.01 9 11.01" />
-              </svg>
-              <span>Captures movement, usage, and jobsite presence</span>
-            </li>
-          </ul>
+      <div class="why2-grid">
+        <div class="why2-left">
+          <p class="section-label why2-label">WHY KEENSITE</p>
+          <h2 class="why2-h">We know what it costs when the paperwork doesn't add up.</h2>
+          <p class="why2-p">We built KeenSite from real jobsite experience. Missed hours, equipment no one logged,
+            billing disputes that could have been avoided. So we built the tool we wished we had.</p>
         </div>
-        <div class="tracking-card">
-          <div class="tracking-card-header">
-            <div class="tracking-card-icon green">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="2" />
-                <path d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49" />
-              </svg>
-            </div>
-            <div>
-              <h3>Bluetooth Beacons</h3>
-              <span class="subtitle">Small Assets & Tools</span>
-            </div>
-          </div>
-          <ul>
-            <li>
-              <svg class="green" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"
-                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-                <polyline points="22 4 12 14.01 9 11.01" />
-              </svg>
-              <span>Compact beacons attached to buckets, light posts, trailers, plates, generators, and tools</span>
-            </li>
-            <li>
-              <svg class="green" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"
-                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-                <polyline points="22 4 12 14.01 9 11.01" />
-              </svg>
-              <span>Detected automatically by nearby GPS trackers</span>
-            </li>
-            <li>
-              <svg class="green" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"
-                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-                <polyline points="22 4 12 14.01 9 11.01" />
-              </svg>
-              <span>Tracks asset movement without cellular data</span>
-            </li>
-            <li>
-              <svg class="green" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"
-                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-                <polyline points="22 4 12 14.01 9 11.01" />
-              </svg>
-              <span>Eliminates lost equipment, theft, and jobsite searching</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <p class="tracking-closing">Together, these devices create a complete picture of everything moving across your job
-        sites — from trucks to the smallest tools.</p>
-    </div>
-  </section>
 
-  <section class="section section-white">
-    <div class="container">
-      <div class="section-center">
-        <p class="section-label">Why KeenSite</p>
-        <h2>Built for billing and operations, not just dots on a map.</h2>
-      </div>
-      <div class="diff-grid">
-        <div class="diff-card diff-card-typical">
-          <div class="diff-card-header">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="1" y="3" width="15" height="13" rx="2" ry="2" />
-              <polygon points="16 8 20 8 23 11 23 16 16 16 16 8" />
-              <circle cx="5.5" cy="18.5" r="2.5" />
-              <circle cx="18.5" cy="18.5" r="2.5" />
-            </svg>
-            <h3>Typical GPS Platforms</h3>
+        <div class="why2-right">
+          <div class="why2-card">
+            <div class="why2-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="7" y="2" width="10" height="20" rx="2" ry="2" />
+                <line x1="11" y1="19" x2="13" y2="19" />
+              </svg>
+            </div>
+            <div class="why2-card-body">
+              <div class="why2-card-title">Timecards that take 60 seconds</div>
+              <div class="why2-card-desc">The KeenSite app walks your crew through a simple daily timecard. GPS and
+                engine hours pre-fill the details so there's nothing to remember and nothing to chase down later.</div>
+            </div>
           </div>
-          <ul>
-            <li>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none"
+
+          <div class="why2-card">
+            <div class="why2-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="10" />
-                <line x1="15" y1="9" x2="9" y2="15" />
-                <line x1="9" y1="9" x2="15" y2="15" />
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                <polyline points="14 2 14 8 20 8" />
+                <path d="M12 18v-8" />
+                <path d="M15 12a3 3 0 0 0-6 0c0 1.66 1.34 2 3 2s3 .34 3 2a3 3 0 0 1-6 0" />
               </svg>
-              <span>Show locations</span>
-            </li>
-            <li>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="10" />
-                <line x1="15" y1="9" x2="9" y2="15" />
-                <line x1="9" y1="9" x2="15" y2="15" />
-              </svg>
-              <span>Create raw data</span>
-            </li>
-            <li>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="10" />
-                <line x1="15" y1="9" x2="9" y2="15" />
-                <line x1="9" y1="9" x2="15" y2="15" />
-              </svg>
-              <span>Require manual interpretation</span>
-            </li>
-            <li>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="10" />
-                <line x1="15" y1="9" x2="9" y2="15" />
-                <line x1="9" y1="9" x2="15" y2="15" />
-              </svg>
-              <span>Built for logistics fleets</span>
-            </li>
-          </ul>
-        </div>
-        <div class="diff-card diff-card-keensite">
-          <div class="diff-card-header">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-            </svg>
-            <h3>KeenSite</h3>
+            </div>
+            <div class="why2-card-body">
+              <div class="why2-card-title">Every hour backed by data</div>
+              <div class="why2-card-desc">When a client questions a ticket, you have hardware-verified records to back it
+                up. No disputes, no delays.</div>
+            </div>
           </div>
-          <ul>
-            <li>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none"
+
+          <div class="why2-card">
+            <div class="why2-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-                <polyline points="22 4 12 14.01 9 11.01" />
+                <line x1="4" y1="21" x2="4" y2="14" />
+                <line x1="4" y1="10" x2="4" y2="3" />
+                <line x1="12" y1="21" x2="12" y2="12" />
+                <line x1="12" y1="8" x2="12" y2="3" />
+                <line x1="20" y1="21" x2="20" y2="16" />
+                <line x1="20" y1="12" x2="20" y2="3" />
+                <line x1="2" y1="14" x2="6" y2="14" />
+                <line x1="10" y1="8" x2="14" y2="8" />
+                <line x1="18" y1="16" x2="22" y2="16" />
               </svg>
-              <span>Verifies real work</span>
-            </li>
-            <li>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-                <polyline points="22 4 12 14.01 9 11.01" />
-              </svg>
-              <span>Automates reporting</span>
-            </li>
-            <li>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-                <polyline points="22 4 12 14.01 9 11.01" />
-              </svg>
-              <span>Connects activity to billing</span>
-            </li>
-            <li>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-                <polyline points="22 4 12 14.01 9 11.01" />
-              </svg>
-              <span>Built for construction workflows</span>
-            </li>
-          </ul>
+            </div>
+            <div class="why2-card-body">
+              <div class="why2-card-title">Works the way your crew works</div>
+              <div class="why2-card-desc">KeenSite comes ready out of the box, but your forms and workflows are yours to
+                customize. Adjust fields, add details, and build reports that match how your company actually operates.</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -477,7 +560,7 @@
     <div class="container">
       <div class="section-center">
         <p class="section-label">Who It's For</p>
-        <h2>Built for the crews that build everything else.</h2>
+        <h2 class="headline-display">Built for the crews that build everything else.</h2>
       </div>
       <div class="industry-grid">
         <div class="industry-card">
@@ -562,6 +645,57 @@
       </div>
     </div>
   </footer>
+  <script>
+    (function () {
+      var card = document.querySelector('.ks-card2');
+      if (!card) return;
+      var badges = card.querySelectorAll('.kpill.green');
+      if (!badges.length) return;
+      var staggerMs = 150;
+      var mq = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+      function reveal() {
+        if (card.classList.contains('sol2-vp-revealed')) return;
+        if (!mq.matches) {
+          badges.forEach(function (el, i) {
+            el.style.animationDelay = i * staggerMs + 'ms';
+            el.classList.add('visible');
+          });
+        }
+        card.classList.add('sol2-vp-revealed');
+      }
+
+      if (!mq.matches) {
+        badges.forEach(function (el) { el.classList.add('anim-badge'); });
+      }
+
+      if (mq.matches) {
+        reveal();
+        return;
+      }
+
+      if (!('IntersectionObserver' in window)) {
+        reveal();
+        return;
+      }
+
+      /* Observe the card, not the whole section — a tall section keeps
+         intersectionRatio tiny until most of it is on screen, so threshold
+         may never be met while scrolling. Products page observes .mockup the same way. */
+      var obs = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              reveal();
+              obs.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.25 }
+      );
+      obs.observe(card);
+    })();
+  </script>
 </body>
 
 </html>
