@@ -142,6 +142,7 @@
       font-size: 1.0625rem;
       line-height: 1.75;
       margin: 0 0 0.75rem;
+      text-shadow: none;
     }
     .hero-text p strong {
       color: var(--indigo);
@@ -181,20 +182,23 @@
 
   <!-- PROBLEM -->
   <!-- Opening statement -->
-  <section class="section section-white" style="padding-bottom:3rem; border-bottom: 1px solid var(--gray-100);"></section>
+  <section class="section section-white" style="padding-bottom:1.5rem; border-bottom: 1px solid var(--gray-100);"></section>
     <div class="container">
       <p class="section-label">The Problem</p>
-      <p class="prob-closer-text">Your LEMs say 20 hours.<br>But what actually ran?</p>
+      <p class="prob-closer-text">Your LEMS say 20 hours.<br>But what actually ran?</p>
     </div>
   </section>
 
-  <section class="section section-white" style="padding-top:5rem; padding-bottom:5rem;">
+  <section class="section section-white" style="padding-top:3rem; padding-bottom:5rem;">
     <div class="container">
       <div class="prob-grid">
         <!-- Block 1 -->
         <div class="prob-block">
           <h2 class="prob-headline">Your operators are focused on the job, not the paperwork.</h2>
-          <p class="prob-body">Filled out at the end of a long shift, from memory. A few sections skipped, hours rounded to the nearest half. Nothing malicious — just the reality of paperwork after a 10-hour day.</p>
+          <ul class="prob-bullets">
+            <li>Timecards filled out from memory at the end of a long shift</li>
+            <li>Hours rounded to the nearest half, sections left blank</li>
+          </ul>
         </div>
 
         <!-- Block 2 -->
@@ -212,25 +216,23 @@
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 3rem;
-      align-items: center;
+      align-items: start;
     }
     .prob-block {
-      padding: 2.5rem;
-      height: 100%;
+      padding: 2rem 2.5rem;
       display: flex;
       flex-direction: column;
-      justify-content: center;
     }
     .prob-icon {
       color: var(--orange);
       margin-bottom: 1.25rem;
     }
     .prob-headline {
-      font-size: clamp(1.625rem, 3vw, 2.25rem);
-      font-weight: 800;
+      font-size: clamp(1.25rem, 2.25vw, 1.625rem);
+      font-weight: 700;
       color: var(--indigo);
-      letter-spacing: -0.02em;
-      line-height: 1.15;
+      letter-spacing: -0.01em;
+      line-height: 1.25;
       margin: 0 0 1.25rem;
     }
     .prob-body {
@@ -240,12 +242,36 @@
       margin: 0;
       max-width: 38rem;
     }
+    .prob-bullets {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+    .prob-bullets li {
+      font-size: 1.0625rem;
+      color: var(--gray-600);
+      line-height: 1.6;
+      padding-left: 1.25rem;
+      position: relative;
+    }
+    .prob-bullets li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.55em;
+      width: 0.4rem;
+      height: 0.4rem;
+      border-radius: 50%;
+      background: var(--orange);
+    }
     .prob-block-image {
       padding: 0;
       overflow: hidden;
       border-radius: 0.75rem;
-      min-height: 380px;
-      height: 100%;
+      align-self: stretch;
     }
     .prob-image {
       width: 100%;
