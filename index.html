@@ -77,73 +77,129 @@
   </nav>
 
   <!-- HERO -->
-  <section class="hero">
-    <video class="hero-video" autoplay muted loop playsinline>
-      <source src="/images/keensitehero.mp4" type="video/mp4">
-    </video>
-    <div class="hero-overlay"></div>
-    <div class="container hero-content">
-      <h1>Accurate Reports without <em>Effort.</em></h1>
-      <p><strong>Field reports and timecards shouldn't depend on memory.</strong></p>
-      <p>KeenSite connects your people, equipment, and jobs so every hour is verified before anyone asks.</p>
-      <div class="hero-tagline">
-        <span>No Chasing</span>
-        <span class="dot"></span>
-        <span>No Guessing</span>
-        <span class="dot"></span>
-        <span>No Headaches</span>
+  <section class="hero hero-split">
+    <div class="container hero-split-inner">
+      <div class="hero-text">
+        <h1 class="hero-split-headline">Your T&amp;M<br><span class="hero-verified">Verified</span></h1>
+        <p><strong>Field reports and timecards shouldn't depend on memory.</strong></p>
+        <p>KeenSite connects your people, equipment, and jobs so every hour is verified before anyone asks.</p>
+        <div class="hero-tagline">
+          <span>No Chasing</span>
+          <span class="dot"></span>
+          <span>No Guessing</span>
+          <span class="dot"></span>
+          <span>No Headaches</span>
+        </div>
+        <a href="/contact/" class="btn btn-orange">
+          Book a 20-minute call.
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <polyline points="12 5 19 12 12 19" />
+          </svg>
+        </a>
       </div>
-      <a href="/contact/" class="btn btn-orange">
-        Contact Us
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="none"
-          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <line x1="5" y1="12" x2="19" y2="12" />
-          <polyline points="12 5 19 12 12 19" />
-        </svg>
-      </a>
+      <div class="hero-video-wrap">
+        <video class="hero-video-right" autoplay muted loop playsinline>
+          <source src="/images/keen_hero_2.mp4" type="video/mp4">
+        </video>
+      </div>
     </div>
   </section>
+
+  <style>
+    .hero-split {
+      background: #ffffff;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding: 7rem 0 5rem;
+    }
+    .hero-split-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+    .hero-text {
+      color: var(--indigo);
+    }
+    .hero-split-headline {
+      font-size: clamp(3rem, 6vw, 5rem);
+      font-weight: 800;
+      color: var(--indigo) !important;
+      letter-spacing: -0.03em;
+      line-height: 1.05;
+      margin: 0 0 1.5rem;
+      text-shadow: none !important;
+    }
+    .hero-verified {
+      color: var(--orange);
+      display: block;
+    }
+    .hero-text p {
+      color: var(--gray-600);
+      font-size: 1.0625rem;
+      line-height: 1.75;
+      margin: 0 0 0.75rem;
+    }
+    .hero-text p strong {
+      color: var(--indigo);
+    }
+    .hero-text .hero-tagline {
+      margin: 1.5rem 0 2rem;
+      color: var(--gray-500);
+      justify-content: flex-start;
+    }
+    .hero-video-wrap {
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: 0 16px 48px rgba(0, 0, 0, 0.12);
+      width: 100%;
+      background: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .hero-video-right {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: contain;
+    }
+    @media (max-width: 900px) {
+      .hero-split-inner {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+      .hero-split {
+        padding: 6rem 0 4rem;
+        min-height: auto;
+      }
+    }
+  </style>
 
   <!-- PROBLEM -->
   <!-- Opening statement -->
-  <section class="section section-white" style="padding-bottom:4rem; border-bottom: 1px solid var(--gray-100);"></section>
+  <section class="section section-white" style="padding-bottom:3rem; border-bottom: 1px solid var(--gray-100);"></section>
     <div class="container">
       <p class="section-label">The Problem</p>
-      <p class="prob-closer-text">The gap between work and billing<br>is where money disappears.</p>
+      <p class="prob-closer-text">Your LEMs say 20 hours.<br>But what actually ran?</p>
     </div>
   </section>
 
-  <section class="section section-white" style="padding-top:0; padding-bottom:0;">
+  <section class="section section-white" style="padding-top:5rem; padding-bottom:5rem;">
     <div class="container">
       <div class="prob-grid">
         <!-- Block 1 -->
         <div class="prob-block">
-          <div class="prob-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="none"
-              stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M20 7H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z" />
-              <path d="M16 3H8a1 1 0 0 0-1 1v3h10V4a1 1 0 0 0-1-1z" />
-              <line x1="8" y1="13" x2="16" y2="13" />
-              <line x1="8" y1="17" x2="12" y2="17" />
-            </svg>
-          </div>
-          <h2 class="prob-headline">Crews prioritize the job, not the paperwork.</h2>
-          <p class="prob-body">Timecards get filled out at the end of the day, from memory. Hours get rounded. Equipment goes unlogged. Nobody means for it to happen — it just does.</p>
+          <h2 class="prob-headline">Your operators are focused on the job, not the paperwork.</h2>
+          <p class="prob-body">Filled out at the end of a long shift, from memory. A few sections skipped, hours rounded to the nearest half. Nothing malicious — just the reality of paperwork after a 10-hour day.</p>
         </div>
 
         <!-- Block 2 -->
-        <div class="prob-block">
-          <div class="prob-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="none"
-              stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-              <polyline points="14 2 14 8 20 8" />
-              <line x1="9" y1="13" x2="15" y2="13" />
-              <line x1="9" y1="17" x2="13" y2="17" />
-            </svg>
-          </div>
-          <h2 class="prob-headline">By the time the office catches up, money is already gone.</h2>
-          <p class="prob-body">Managers piece together tickets, texts, and spreadsheets trying to reconstruct the week. Billing disputes, missed hours, and equipment nobody tracked until it broke.</p>
+        <div class="prob-block prob-block-image">
+          <img src="/images/reports.jpg" alt="Field reports" class="prob-image">
         </div>
       </div>
 
@@ -156,13 +212,14 @@
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 3rem;
-      align-items: stretch;
+      align-items: center;
     }
     .prob-block {
-      padding: 4.5rem 2.5rem;
+      padding: 2.5rem;
       height: 100%;
       display: flex;
       flex-direction: column;
+      justify-content: center;
     }
     .prob-icon {
       color: var(--orange);
@@ -182,6 +239,20 @@
       line-height: 1.8;
       margin: 0;
       max-width: 38rem;
+    }
+    .prob-block-image {
+      padding: 0;
+      overflow: hidden;
+      border-radius: 0.75rem;
+      min-height: 380px;
+      height: 100%;
+    }
+    .prob-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      border-radius: 0.75rem;
     }
     .prob-divider {
       border: none;
@@ -396,7 +467,7 @@
     <div class="container">
       <div class="hiw2-header">
         <p class="hiw2-label">How it works</p>
-        <h2 id="hiw2-heading">Four inputs. One verified record.</h2>
+        <h2 id="hiw2-heading">Five steps. Zero manual entry.</h2>
       </div>
 
       <div class="hiw2-flow">
@@ -560,41 +631,26 @@
     <div class="container">
       <div class="section-center">
         <p class="section-label">Who It's For</p>
-        <h2 class="headline-display">Built for the crews that build everything else.</h2>
+        <h2 class="headline-display">Built for specialty trades owners who quote by the hour.</h2>
       </div>
-      <div class="industry-grid">
-        <div class="industry-card">
-          <div class="industry-card-img">
-            <img src="/images/civil-earthworks.jpg" alt="Civil & Earthworks">
-          </div>
-          <div class="industry-card-body">
-            <h3>Civil & Earthworks</h3>
-            <p>Excavation, grading, utilities, and site preparation crews working across multiple job sites.</p>
-          </div>
-        </div>
-        <div class="industry-card">
-          <div class="industry-card-img">
-            <img src="/images/subcontractors.jpg" alt="Subcontractors">
-          </div>
-          <div class="industry-card-body">
-            <h3>Subcontractors</h3>
-            <p>Specialty trade contractors managing crews, tools, and equipment across projects for general contractors.
-            </p>
-          </div>
-        </div>
-        <div class="industry-card">
-          <div class="industry-card-img">
-            <img src="/images/general-contractors.jpg" alt="General Contractors">
-          </div>
-          <div class="industry-card-body">
-            <h3>General Contractors</h3>
-            <p>Project managers overseeing multiple trades, tracking progress, and ensuring accurate reporting and
-              billing.</p>
-          </div>
-        </div>
+      <div class="wif-body">
+        <p>If you're running piling, drilling, excavation, or civil crews on time-and-material contracts — and your billing accuracy depends on what operators write down at the end of the day — KeenSite was built for you. You bill by the hour. Every hour has to be right.</p>
       </div>
     </div>
   </section>
+
+  <style>
+    .wif-body {
+      max-width: 42rem;
+      margin: 2.5rem auto 0;
+      text-align: center;
+    }
+    .wif-body p {
+      font-size: 1.125rem;
+      color: var(--gray-600);
+      line-height: 1.8;
+    }
+  </style>
 
   <!-- CTA -->
   <section class="section section-indigo cta-section">
@@ -602,7 +658,7 @@
       <h2>Make reporting and billing automatic.</h2>
       <p>See how KeenSite can eliminate the gap between field work and accurate billing for your team.</p>
       <a href="/contact/" class="btn btn-orange">
-        Contact Us
+        Book a 20-minute call.
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="none"
           stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <line x1="5" y1="12" x2="19" y2="12" />
