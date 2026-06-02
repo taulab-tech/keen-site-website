@@ -4,12 +4,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KeenSite - Accuracy, without effort.</title>
-  <meta name="description"
-    content="KeenSite provides accurate, effortless field reporting and asset tracking for construction companies. Automatically verify timecards, work logs, and equipment usage using GPS, Bluetooth, and IoT.">
-  <meta property="og:title" content="KeenSite - Accuracy, without effort.">
-  <meta property="og:description"
-    content="Field reports and timecards that don't depend on memory. Verified records for construction.">
+  <title>KeenSite | T&M Verified. GPS Tracking & Field Reports for Construction.</title>
+  <meta name="description" content="KeenSite automatically tracks equipment hours, crew activity, and jobsite data — and turns it into verified T&M records, LEM sheets, and field reports. Built for excavation, piling, and civil contractors.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="KeenSite">
+  <link rel="canonical" href="https://www.keensite.ca/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.keensite.ca/">
+  <meta property="og:title" content="KeenSite | T&M Verified. GPS Tracking & Field Reports for Construction.">
+  <meta property="og:description" content="KeenSite automatically tracks equipment hours, crew activity, and jobsite data — and turns it into verified T&M records, LEM sheets, and field reports.">
+  <meta property="og:image" content="https://www.keensite.ca/images/logo.png">
+  <meta property="og:site_name" content="KeenSite">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="KeenSite | T&M Verified. GPS Tracking & Field Reports for Construction.">
+  <meta name="twitter:description" content="KeenSite automatically tracks equipment hours, crew activity, and jobsite data — and turns it into verified T&M records, LEM sheets, and field reports.">
+  <meta name="twitter:image" content="https://www.keensite.ca/images/logo.png">
   <link rel="icon" href="/images/logo.png">
   <link rel="stylesheet" href="/styles.css">
   <script type="text/javascript">
@@ -81,8 +90,8 @@
     <div class="container hero-split-inner">
       <div class="hero-text">
         <h1 class="hero-split-headline">Your T&amp;M<br><span class="hero-verified">Verified</span></h1>
-        <p><strong>Field reports and timecards shouldn't depend on memory.</strong></p>
-        <p>KeenSite connects your people, equipment, and jobs so every hour is verified before anyone asks.</p>
+        <p><strong>KeenSite tracks your equipment and crews automatically, and turns that data into verified field reports, and T&amp;M records.</strong></p>
+        <p>GPS + engine hours + crew check-in → verified LEM, ready to send.</p>
         <div class="hero-tagline">
           <span>No Chasing</span>
           <span class="dot"></span>
@@ -101,7 +110,7 @@
       </div>
       <div class="hero-video-wrap">
         <video class="hero-video-right" autoplay muted loop playsinline>
-          <source src="/images/keen_hero_2.mp4" type="video/mp4">
+          <source src="images/keen_hero_3.mp4" type="video/mp4">
         </video>
       </div>
     </div>
@@ -117,8 +126,8 @@
     }
     .hero-split-inner {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4rem;
+      grid-template-columns: 1fr 480px;  /* fixed width for video side */
+      gap: 3rem;
       align-items: center;
     }
     .hero-text {
@@ -149,24 +158,27 @@
     }
     .hero-text .hero-tagline {
       margin: 1.5rem 0 2rem;
-      color: var(--gray-500);
+      color: var(--indigo);
       justify-content: flex-start;
+      font-weight: 800;
+      flex-wrap: nowrap;
+      font-size: 0.875rem;
+      letter-spacing: 0.08em;
     }
     .hero-video-wrap {
       border-radius: 1rem;
       overflow: hidden;
       box-shadow: 0 16px 48px rgba(0, 0, 0, 0.12);
       width: 100%;
+      max-width: 480px;
+      aspect-ratio: 1 / 1;
       background: #000;
-      display: flex;
-      align-items: center;
-      justify-content: center;
     }
     .hero-video-right {
       width: 100%;
-      height: auto;
+      height: 100%;
       display: block;
-      object-fit: contain;
+      object-fit: cover;
     }
     @media (max-width: 900px) {
       .hero-split-inner {
@@ -192,22 +204,47 @@
   <section class="section section-white" style="padding-top:3rem; padding-bottom:5rem;">
     <div class="container">
       <div class="prob-grid">
-        <!-- Block 1 -->
+
+        <!-- Block 1: text + cards -->
         <div class="prob-block">
-          <h2 class="prob-headline">Your operators are focused on the job, not the paperwork.</h2>
-          <ul class="prob-bullets">
-            <li>Timecards filled out from memory at the end of a long shift</li>
-            <li>Hours rounded to the nearest half, sections left blank</li>
-          </ul>
+          <p class="prob-sub">On T&amp;M jobs, billing depends on records no one has time to get right.</p>
+          <div class="prob-cards">
+            <div class="prob-card">
+              <div class="prob-card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              </div>
+              <div>
+                <p class="prob-card-title">Operators aren't bookkeepers</p>
+                <p class="prob-card-body">Timecards from memory at shift end; hours rounded, sections blank.</p>
+              </div>
+            </div>
+            <div class="prob-card">
+              <div class="prob-card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
+              </div>
+              <div>
+                <p class="prob-card-title">Machines don't match the ticket</p>
+                <p class="prob-card-body">LEM hours don't match engine runtime; equipment lines left empty.</p>
+              </div>
+            </div>
+            <div class="prob-card">
+              <div class="prob-card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="13" x2="15" y2="13"/></svg>
+              </div>
+              <div>
+                <p class="prob-card-title">You find out at invoice time</p>
+                <p class="prob-card-body">Admin chases crews; disputes with no proof; billable hours slip.</p>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <!-- Block 2 -->
+        <!-- Block 2: image -->
         <div class="prob-block prob-block-image">
           <img src="/images/reports.jpg" alt="Field reports" class="prob-image">
         </div>
-      </div>
 
-      <div class="prob-divider"></div>
+      </div>
     </div>
   </section>
 
@@ -223,49 +260,51 @@
       display: flex;
       flex-direction: column;
     }
-    .prob-icon {
-      color: var(--orange);
-      margin-bottom: 1.25rem;
-    }
-    .prob-headline {
-      font-size: clamp(1.25rem, 2.25vw, 1.625rem);
-      font-weight: 700;
-      color: var(--indigo);
-      letter-spacing: -0.01em;
-      line-height: 1.25;
-      margin: 0 0 1.25rem;
-    }
-    .prob-body {
-      font-size: 1.125rem;
+    .prob-sub {
+      font-size: 1rem;
       color: var(--gray-600);
-      line-height: 1.8;
-      margin: 0;
-      max-width: 38rem;
+      line-height: 1.7;
+      margin: 0 0 2rem;
     }
-    .prob-bullets {
-      list-style: none;
-      padding: 0;
-      margin: 0;
+    .prob-cards {
       display: flex;
       flex-direction: column;
-      gap: 1.25rem;
+      gap: 0.75rem;
     }
-    .prob-bullets li {
-      font-size: 1.0625rem;
+    .prob-card {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.875rem;
+      background: var(--gray-50);
+      border: 1px solid var(--gray-100);
+      border-radius: 0.625rem;
+      padding: 1rem 1.25rem;
+    }
+    .prob-card-icon {
+      color: var(--orange);
+      flex-shrink: 0;
+      margin-top: 0.1rem;
+    }
+    .prob-card-title {
+      font-size: 0.9375rem;
+      font-weight: 700;
+      color: var(--indigo);
+      margin: 0 0 0.25rem;
+      letter-spacing: -0.01em;
+    }
+    .prob-card-body {
+      font-size: 0.875rem;
       color: var(--gray-600);
-      line-height: 1.6;
-      padding-left: 1.25rem;
-      position: relative;
+      line-height: 1.5;
+      margin: 0;
     }
-    .prob-bullets li::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0.55em;
-      width: 0.4rem;
-      height: 0.4rem;
-      border-radius: 50%;
-      background: var(--orange);
+    .prob-closer-text {
+      font-size: var(--headline-display-size);
+      font-weight: 800;
+      color: var(--indigo);
+      letter-spacing: -0.03em;
+      line-height: 1.05;
+      margin: 0;
     }
     .prob-block-image {
       padding: 0;
@@ -280,29 +319,9 @@
       display: block;
       border-radius: 0.75rem;
     }
-    .prob-divider {
-      border: none;
-      border-top: 1px solid var(--gray-100);
-    }
-    .prob-closer {
-      background: var(--indigo);
-      padding: 7rem 0;
-    }
-    .prob-closer-text {
-      font-size: var(--headline-display-size);
-      font-weight: 800;
-      color: var(--indigo);
-      letter-spacing: -0.03em;
-      line-height: 1.05;
-      margin: 0;
-    }
     @media (max-width: 900px) {
-      .prob-grid {
-        grid-template-columns: 1fr;
-      }
-      .prob-block {
-        padding: 3rem 0;
-      }
+      .prob-grid { grid-template-columns: 1fr; }
+      .prob-block { padding: 1.5rem 0; }
     }
   </style>
 
@@ -496,94 +515,87 @@
         <h2 id="hiw2-heading">Five steps. Zero manual entry.</h2>
       </div>
 
-      <div class="hiw2-flow">
-        <div class="hiw2-inputs-grid">
-          <div class="hiw2-in-col">
-            <article class="hiw2-in-card">
-              <div class="hiw2-in-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
-                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
-                  <line x1="16" y1="2" x2="16" y2="6" />
-                  <line x1="8" y1="2" x2="8" y2="6" />
-                  <line x1="3" y1="10" x2="21" y2="10" />
-                </svg>
-              </div>
-              <h3 class="hiw2-in-title">Schedule</h3>
-              <p class="hiw2-in-desc">Who should be where, and when. Planned jobs, assigned crews, expected equipment.</p>
-            </article>
-            <div class="hiw2-drop-wrap" aria-hidden="true"><span class="hiw2-drop-line"></span></div>
-          </div>
-          <div class="hiw2-in-col">
-            <article class="hiw2-in-card">
-              <div class="hiw2-in-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
-                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
-                  <rect x="8" y="2" width="8" height="4" rx="1" ry="1" />
-                  <line x1="8" y1="12" x2="16" y2="12" />
-                  <line x1="8" y1="16" x2="16" y2="16" />
-                  <line x1="8" y1="20" x2="12" y2="20" />
-                </svg>
-              </div>
-              <h3 class="hiw2-in-title">Timecard</h3>
-              <p class="hiw2-in-desc">What your crew said happened. Hours logged, tasks completed, equipment used.</p>
-            </article>
-            <div class="hiw2-drop-wrap" aria-hidden="true"><span class="hiw2-drop-line"></span></div>
-          </div>
-          <div class="hiw2-in-col">
-            <article class="hiw2-in-card">
-              <div class="hiw2-in-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
-                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                  <circle cx="12" cy="10" r="3" />
-                </svg>
-              </div>
-              <h3 class="hiw2-in-title">GPS</h3>
-              <p class="hiw2-in-desc">Where they actually were. Arrival, departure, and time on site verified by hardware.</p>
-            </article>
-            <div class="hiw2-drop-wrap" aria-hidden="true"><span class="hiw2-drop-line"></span></div>
-          </div>
-          <div class="hiw2-in-col">
-            <article class="hiw2-in-card">
-              <div class="hiw2-in-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
-                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <circle cx="12" cy="14" r="8" />
-                  <path d="M12 14l3.5-3" />
-                </svg>
-              </div>
-              <h3 class="hiw2-in-title">Engine Hours</h3>
-              <p class="hiw2-in-desc">What actually ran. Equipment start and stop times captured automatically.</p>
-            </article>
-            <div class="hiw2-drop-wrap" aria-hidden="true"><span class="hiw2-drop-line"></span></div>
-          </div>
+      <div class="hiw2-steps">
 
-          <div class="hiw2-merge-row" aria-hidden="true">
-            <div class="hiw2-merge-bus"></div>
-            <div class="hiw2-merge-stem"><span class="hiw2-merge-stem-line"></span></div>
-            <div class="hiw2-merge-dot"></div>
+        <div class="hiw2-step">
+          <div class="hiw2-step-num">1</div>
+          <div class="hiw2-step-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
           </div>
+          <h3 class="hiw2-step-title">Geofence</h3>
+          <p class="hiw2-step-desc">Draw a boundary around your job site. Takes two minutes.</p>
         </div>
 
-        <div class="hiw2-output-wrap">
-          <div class="hiw2-output-card">
-            <div class="hiw2-output-badge" aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" fill="none"
-                stroke="currentColor" stroke-width="3.25" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="6 12 11 17 19 6" />
-              </svg>
-            </div>
-            <h3 class="hiw2-out-title">Verified <span class="hiw2-out-accent">Record</span></h3>
-            <p class="hiw2-out-desc">KeenSite cross-references all four automatically. Everything that lines up gets
-              verified. Everything that doesn’t gets flagged.</p>
-          </div>
+        <div class="hiw2-step-arrow" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="10" x2="19" y2="10"/><polyline points="13 4 19 10 13 16"/></svg>
         </div>
+
+        <div class="hiw2-step">
+          <div class="hiw2-step-num">2</div>
+          <div class="hiw2-step-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="14" r="8"/><path d="M12 14l3.5-3"/></svg>
+          </div>
+          <h3 class="hiw2-step-title">Engine On</h3>
+          <p class="hiw2-step-desc">Machine starts on site. KeenSite logs it automatically. No app, no input.</p>
+        </div>
+
+        <div class="hiw2-step-arrow" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="10" x2="19" y2="10"/><polyline points="13 4 19 10 13 16"/></svg>
+        </div>
+
+        <div class="hiw2-step">
+          <div class="hiw2-step-num">3</div>
+          <div class="hiw2-step-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h3 class="hiw2-step-title">Live Tracking</h3>
+          <p class="hiw2-step-desc">Runtime, idle, and travel populate against your estimate in real time.</p>
+        </div>
+
+        <div class="hiw2-step-arrow" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="10" x2="19" y2="10"/><polyline points="13 4 19 10 13 16"/></svg>
+        </div>
+
+        <div class="hiw2-step">
+          <div class="hiw2-step-num">4</div>
+          <div class="hiw2-step-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
+          </div>
+          <h3 class="hiw2-step-title">Over Budget</h3>
+          <p class="hiw2-step-desc">The moment hours exceed your estimate, you know. Not at invoice time. Right now.</p>
+        </div>
+
+        <div class="hiw2-step-arrow" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="10" x2="19" y2="10"/><polyline points="13 4 19 10 13 16"/></svg>
+        </div>
+
+        <div class="hiw2-step">
+          <div class="hiw2-step-num">5</div>
+          <div class="hiw2-step-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3 class="hiw2-step-title">Ready to Bill</h3>
+          <p class="hiw2-step-desc">LEM sheets, equipment logs, and crew hours all built automatically. Export and send.</p>
+        </div>
+
       </div>
     </div>
   </section>
 
+  <style>
+    .hiw2-steps { display: flex; align-items: stretch; gap: 0.5rem; }
+    .hiw2-step { flex: 1; display: flex; flex-direction: column; align-items: center; text-align: center; padding: 2rem 1.25rem; background: #fff; border-radius: 0.75rem; border: 1px solid var(--gray-100); position: relative; }
+    .hiw2-step-num { position: absolute; top: -0.75rem; left: 50%; transform: translateX(-50%); width: 1.5rem; height: 1.5rem; background: var(--orange); color: #fff; font-size: 0.7rem; font-weight: 800; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+    .hiw2-step-icon { color: var(--orange); margin-bottom: 1rem; margin-top: 0.5rem; flex-shrink: 0; }
+    .hiw2-step-title { font-size: 1rem; font-weight: 700; color: var(--indigo); margin: 0 0 0.5rem; letter-spacing: -0.01em; flex-shrink: 0; }
+    .hiw2-step-desc { font-size: 0.9rem; color: var(--gray-600); line-height: 1.6; margin: 0; flex-grow: 1; }
+    .hiw2-step-arrow { flex-shrink: 0; color: var(--gray-300); display: flex; align-items: center; align-self: center; padding: 0 0.25rem; }
+    @media (max-width: 900px) {
+      .hiw2-steps { flex-direction: column; gap: 1rem; }
+      .hiw2-step { width: 100%; }
+      .hiw2-step-arrow { transform: rotate(90deg); margin: 0 auto; padding: 0; }
+    }
+  </style>
   <section class="section section-indigo why2-section">
     <div class="container">
       <div class="why2-grid">
@@ -604,9 +616,8 @@
               </svg>
             </div>
             <div class="why2-card-body">
-              <div class="why2-card-title">Timecards that take 60 seconds</div>
-              <div class="why2-card-desc">The KeenSite app walks your crew through a simple daily timecard. GPS and
-                engine hours pre-fill the details so there's nothing to remember and nothing to chase down later.</div>
+              <div class="why2-card-title">Your crew doesn't change how they work</div>
+              <div class="why2-card-desc">GPS and engine hours log automatically. The timecard takes 60 seconds at end of shift. Most of it is already filled in.</div>
             </div>
           </div>
 
@@ -621,9 +632,8 @@
               </svg>
             </div>
             <div class="why2-card-body">
-              <div class="why2-card-title">Every hour backed by data</div>
-              <div class="why2-card-desc">When a client questions a ticket, you have hardware-verified records to back it
-                up. No disputes, no delays.</div>
+              <div class="why2-card-title">Dispute a ticket? You have proof.</div>
+              <div class="why2-card-desc">Every hour is backed by GPS arrival, engine start/stop, and crew check-in. When a client pushes back, you send the record.</div>
             </div>
           </div>
 
@@ -643,9 +653,8 @@
               </svg>
             </div>
             <div class="why2-card-body">
-              <div class="why2-card-title">Works the way your crew works</div>
-              <div class="why2-card-desc">KeenSite comes ready out of the box, but your forms and workflows are yours to
-                customize. Adjust fields, add details, and build reports that match how your company actually operates.</div>
+              <div class="why2-card-title">Your office stops chasing the field</div>
+              <div class="why2-card-desc">Reports are built as the day happens. By the time your admin opens their laptop, the data is already there.</div>
             </div>
           </div>
         </div>
@@ -660,16 +669,49 @@
         <h2 class="headline-display">Built for specialty trades owners who quote by the hour.</h2>
       </div>
       <div class="wif-body">
-        <p>If you're running piling, drilling, excavation, or civil crews on time-and-material contracts — and your billing accuracy depends on what operators write down at the end of the day — KeenSite was built for you. You bill by the hour. Every hour has to be right.</p>
+        <p class="wif-statement">Built for T&amp;M contractors who can't afford to guess.</p>
+        <div class="wif-pills">
+          <span class="wif-pill">Excavation</span>
+          <span class="wif-pill">Piling</span>
+          <span class="wif-pill">Earthworks</span>
+          <span class="wif-pill">Line Painting</span>
+          <span class="wif-pill">Civil</span>
+        </div>
+        <p>If you're running piling, drilling, excavation, or civil crews on time-and-material contracts and your billing accuracy depends on what operators write down at the end of the day, KeenSite was built for you. You bill by the hour. Every hour has to be right.</p>
       </div>
     </div>
   </section>
 
   <style>
     .wif-body {
-      max-width: 42rem;
+      max-width: 48rem;
       margin: 2.5rem auto 0;
       text-align: center;
+    }
+    .wif-statement {
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      font-weight: 800;
+      color: var(--indigo);
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin: 0 0 1.5rem;
+    }
+    .wif-pills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-bottom: 2rem;
+    }
+    .wif-pill {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--indigo);
+      background: #fff;
+      border: 1.5px solid var(--gray-300);
+      border-radius: 2rem;
+      padding: 0.35rem 0.9rem;
+      letter-spacing: 0.01em;
     }
     .wif-body p {
       font-size: 1.125rem;
