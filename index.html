@@ -794,7 +794,7 @@
   </style>
 
   <style>
-    .sol-new { background: var(--indigo); padding: 6rem 0; }
+    .sol-new { background: var(--indigo); padding: 6rem 0; overflow: hidden; }
     .sol-new-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 4rem; align-items: center; margin-bottom: 5rem; }
     .sol-new-text { color: #fff; }
     .sol-new-h { font-size: var(--headline-display-size); font-weight: 800; color: #fff; letter-spacing: -0.03em; line-height: 1.05; margin: 0 0 1.5rem; }
@@ -865,6 +865,8 @@
       .sol-new-grid { grid-template-columns: 1fr; gap: 2.5rem; }
       .sol-new-hardware { grid-template-columns: 1fr; gap: 2rem; }
       .sol-hw-gallery { grid-template-columns: 1fr 1fr; }
+      .sol-mockup { max-width: 100%; overflow-x: auto; }
+      .sol-new-img { max-width: 100%; overflow: hidden; }
     }
     /* Tab interaction */
     .sol-mockup-nav span { cursor: pointer; transition: color 0.15s; }
