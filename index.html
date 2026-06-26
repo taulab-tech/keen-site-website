@@ -92,9 +92,9 @@
   <section class="hero hero-split">
     <div class="container hero-split-inner">
       <div class="hero-text">
-        <h1 class="hero-split-headline">Your T&amp;M<br><span class="hero-verified">Verified</span></h1>
-        <p><strong>KeenSite tracks your equipment and crews automatically, and turns that data into verified field reports, and T&amp;M records.</strong></p>
-        <p>GPS + engine hours + crew check-in → verified LEM, ready to send.</p>
+        <h1 class="hero-split-headline">What Actually Happened<br><span class="hero-verified">On Site?</span></h1>
+        <p><strong>Not what someone remembered at 5 PM.</strong></p>
+        <p>KeenSite automatically verifies labour, equipment, and job activity to generate accurate daily reports.</p>
         <div class="hero-tagline">
           <span>No Chasing</span>
           <span class="dot"></span>
@@ -342,91 +342,365 @@
   </style>
 
   <!-- SOLUTION -->
-  <section class="sol2">
+  <section class="sol-new">
     <div class="container">
-      <div class="sol2-headline">
-        <p class="section-label" style="color:rgba(255,255,255,0.45);margin-bottom:1.5rem;">The Solution</p>
-        <h2 class="sol2-h">Every hour.<br>Every machine.<br><span style="color:var(--orange);font-style:normal;">Verified.</span></h2>
-        <p class="sol2-sub">KeenSite automatically captures everything that happens on site and connects it from schedule to invoice. No chasing, no guessing.</p>
-      </div>
-      <div class="sol2-compare">
-        <!-- LEFT: paper ticket -->
-        <div class="sol2-col">
-          <div class="sol2-label sol2-label-before">Before</div>
-          <div class="sol2-card paper-card">
-            <div class="pt-co">DAILY FIELD TICKET</div>
-            <div class="pt-meta"><span class="pt-key">Worker:</span> Colton Breitkreuz &nbsp;&nbsp; <span class="pt-key">Date:</span> Feb 6, 2026</div>
-            <div class="pt-meta"><span class="pt-key">Job:</span> Preston Blvd</div>
-            <div class="pt-sec">Hours</div>
-            <table class="pt-table">
-              <thead><tr><th>Time</th><th>Description</th></tr></thead>
-              <tbody>
-                <tr><td class="pt-hw">10:10–10:30</td><td class="pt-hw">Arrived, inspect equipment</td></tr>
-                <tr><td class="pt-hw">10:30–11:30</td><td class="pt-hw">Wait for paperwork &amp; site orientation</td></tr>
-                <tr><td class="pt-hw">11:30–12:00</td><td class="pt-hw">Lunch</td></tr>
-                <tr><td class="pt-hw">12:00–5:00</td><td class="pt-hw">Install pile drills</td></tr>
-                <tr><td class="pt-hw">5:00–5:30</td><td class="pt-hw">Back to shop, paperwork</td></tr>
-              </tbody>
-            </table>
-            <div class="pt-sec" style="margin-top:1rem;">Equipment Used</div>
-            <div class="pt-blank"><span class="pt-blank-hint">-- not filled out --</span></div>
-            <div class="pt-sigs">
-              <div class="pt-sig"><div class="pt-sig-line"></div><span>Worker Signature</span></div>
-              <div class="pt-sig"><div class="pt-sig-line"></div><span>Supervisor</span></div>
+      <div class="sol-new-grid">
+        <div class="sol-new-text">
+          <p class="section-label" style="color:rgba(255,255,255,0.45);margin-bottom:1rem;">The Solution</p>
+          <h2 class="sol-new-h">Every hour verified.<br>Every machine accounted for.</h2>
+          <p class="sol-new-sub">KeenSite cross-references GPS, engine hours, and crew activity against your schedule. By end of shift, the record is built and verified. No chasing, no paperwork.</p>
+          <div class="sol-new-features">
+            <div class="sol-new-feat">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Labour hours verified by GPS arrival and departure</span>
+            </div>
+            <div class="sol-new-feat">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Equipment runtime logged automatically from engine data</span>
+            </div>
+            <div class="sol-new-feat">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Daily reports and LEMs ready to send by morning</span>
             </div>
           </div>
         </div>
-        <!-- RIGHT: KeenSite card -->
-        <div class="sol2-col">
-          <div class="sol2-label sol2-label-ks">KeenSite</div>
-          <div class="sol2-card ks-card2">
-            <div class="ks2-body">
-              <div class="ks2-time-block">
-                <!-- Timecard row -->
-                <div class="ks2-row-head">
-                  <div class="ks2-av">CB</div>
-                  <div class="ks2-who">
-                    <span class="ks2-name">Colton Breitkreuz</span>
-                    <span class="ks2-sub">Preston Crossing Blvd · Job 25-268 · Feb 6, 2026</span>
+        <div class="sol-new-img">
+          <div class="sol-mockup">
+            <div class="sol-mockup-bar">
+              <div class="sol-mockup-bar-dot"></div>
+              <span>26-1 University of Saskatchewan</span>
+              <span class="sol-mockup-badge-active">Active</span>
+            </div>
+            <div class="sol-mockup-nav" id="sol-tabs">
+              <span data-tab="overview" onclick="solTab('overview')">Overview</span>
+              <span data-tab="activity" class="sol-mockup-nav-active" onclick="solTab('activity')">Activity</span>
+              <span data-tab="tickets" onclick="solTab('tickets')">Daily Tickets</span>
+              <span data-tab="documents" onclick="solTab('documents')">Documents</span>
+            </div>
+
+            <!-- OVERVIEW TAB -->
+            <div class="sol-mockup-body sol-tab-panel" id="sol-panel-overview" style="display:none;">
+              <div class="sol-overview-grid">
+                <div class="sol-overview-left">
+                  <div class="sol-ov-section">
+                    <div class="sol-ov-section-head"><span class="sol-ov-section-title">Planned Equipment</span><span class="sol-ov-section-meta">1 unit &middot; 28h estimated</span></div>
+                    <div class="sol-ov-row"><span class="sol-ov-row-name">2018 T650 Bobcat</span><span class="sol-ov-row-val">28h</span></div>
                   </div>
-                  <span class="kpill green">Verified</span>
+                  <div class="sol-ov-section">
+                    <div class="sol-ov-section-head"><span class="sol-ov-section-title">Labour</span><span class="sol-ov-section-meta">2 crew &middot; 56h estimated</span></div>
+                    <div class="sol-ov-row"><span class="sol-ov-row-name">Operator (Colton)</span><span class="sol-ov-row-val">28h</span></div>
+                    <div class="sol-ov-row"><span class="sol-ov-row-name">Swamper (Dylan)</span><span class="sol-ov-row-val">28h</span></div>
+                  </div>
+                  <div class="sol-ov-section">
+                    <div class="sol-ov-section-head"><span class="sol-ov-section-title">Materials</span></div>
+                    <div class="sol-ov-row"><span class="sol-ov-row-name">Gravel</span><span class="sol-ov-row-val">50 ton</span></div>
+                  </div>
                 </div>
-                <div class="ks2-divider ks2-divider-strong" aria-hidden="true"></div>
-                <div class="ks2-entries ks2-entries-time">
-                  <div class="ks2-entry"><span class="ks2-t">10:10 – 10:30 AM</span><span class="ks2-d">Arrived, inspected equipment</span><span class="kpill green">Verified</span></div>
-                  <div class="ks2-entry"><span class="ks2-t">10:30 – 11:30 AM</span><span class="ks2-d">Wait. paperwork &amp; orientation</span><span class="kpill grey">Logged</span></div>
-                  <div class="ks2-entry"><span class="ks2-t">11:30 AM – 12:00 PM</span><span class="ks2-d">Lunch</span><span class="kpill grey">Logged</span></div>
-                  <div class="ks2-entry hi"><span class="ks2-t">12:00 – 5:00 PM</span><span class="ks2-d">Install pile drills</span><span class="kpill green">Verified</span></div>
-                  <div class="ks2-entry"><span class="ks2-t">5:00 – 5:30 PM</span><span class="ks2-d">Back to shop, paperwork</span><span class="kpill grey">Logged</span></div>
+                <div class="sol-overview-right">
+                  <div class="sol-overview-stats">
+                    <div class="sol-stat-box"><span class="sol-stat-label">Estimated</span><span class="sol-stat-val">28 <span class="sol-stat-unit">hrs</span></span></div>
+                    <div class="sol-stat-box"><span class="sol-stat-label">Actual</span><span class="sol-stat-val sol-stat-green">8.9 <span class="sol-stat-unit">hrs</span></span></div>
+                  </div>
+                  <div class="sol-overview-map"><img src="images/eng_map.png" alt="Geofence map" style="width:100%;height:auto;border-radius:0.5rem;border:1px solid var(--gray-100);"></div>
+                  <div class="sol-overview-status" style="margin-top:0.75rem;"><span class="sol-leg-dot green" style="width:8px;height:8px;"></span><span style="font-size:0.72rem;font-weight:600;color:var(--indigo);">Currently On Site</span></div>
+                  <div style="font-size:0.65rem;color:var(--gray-400);margin-top:0.25rem;padding-left:1.1rem;">No equipment on site right now</div>
                 </div>
-                <div class="ks2-ts ks2-ts-before-eq">
-                  <span class="ks2-sub">Total Hours: 7.5 hrs <span class="kpill green" style="margin-left:4px;">Verified</span></span>
+              </div>
+            </div>
+
+            <!-- ACTIVITY TAB -->
+            <div class="sol-mockup-body sol-tab-panel" id="sol-panel-activity">
+              <div class="sol-mockup-label">Equipment Activity</div>
+
+              <!-- Equipment 1 -->
+              <div class="sol-eq-card">
+                <div class="sol-eq-header">
+                  <span class="sol-eq-name">2017 Ford F350</span>
+                  <span class="sol-eq-hours">4.6h<br><span class="sol-eq-sub">0.1h travel</span></span>
+                </div>
+                <div class="sol-eq-bar-wrap">
+                  <div class="sol-eq-bar sol-eq-bar-grey" style="width: 65%;"></div>
                 </div>
               </div>
 
-              <div class="ks2-eq-block">
-                <div class="ks2-eq-label">Equipment</div>
-                <div class="ks2-divider ks2-divider-strong ks2-divider-under-eq-label" aria-hidden="true"></div>
-
-                <!-- Vehicle row -->
-                <div class="ks2-entries eq-entries">
-                  <div class="ks2-entry-eq-head"><span class="ks2-eq-name">Ford F-250</span></div>
-                  <div class="ks2-entry">
-                    <span class="ks2-t">10:00 AM</span><span class="ks2-d">Arrived on site</span>
-                    <span class="ks2-verify-hw"><svg class="ks2-hw-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" /></svg><span class="kpill green">Verified</span></span>
-                  </div>
-                  <div class="ks2-entry"><span class="ks2-t">5:05 PM</span><span class="ks2-d">Departed site</span><span class="kpill green">Verified</span></div>
+              <!-- Equipment 2 -->
+              <div class="sol-eq-card">
+                <div class="sol-eq-header">
+                  <span class="sol-eq-name">2018 T650 Bobcat</span>
+                  <span class="sol-eq-hours sol-eq-hours-green">8.9h <span class="sol-eq-est">/ 28h est</span><br><span class="sol-eq-sub">0.5h travel</span></span>
                 </div>
-                <!-- Excavator row -->
-                <div class="ks2-entries eq-entries eq-entries-follow">
-                  <div class="ks2-entry-eq-head"><span class="ks2-eq-name">Hitachi 250 Excavator</span></div>
-                  <div class="ks2-entry">
-                    <span class="ks2-t">12:00 PM</span><span class="ks2-d">Engine started</span>
-                    <span class="ks2-verify-hw"><svg class="ks2-hw-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="14" r="8" /><path d="M12 14l3.5-3" /></svg><span class="kpill green">Verified</span></span>
+                <div class="sol-eq-bar-wrap">
+                  <div class="sol-eq-bar sol-eq-bar-green anim-bar" data-width="32"></div>
+                </div>
+
+                <!-- Day breakdown -->
+                <div class="sol-day">
+                  <div class="sol-day-header">
+                    <span class="sol-day-date">Tue, Jun 16</span>
+                    <div class="sol-day-legend">
+                      <span><span class="sol-leg-dot green"></span>5h 19m running</span>
+                      <span><span class="sol-leg-dot grey"></span>15h 34m on site</span>
+                      <span><span class="sol-leg-dot orange"></span>15m travel</span>
+                    </div>
+                    <span class="sol-day-time">12:00 a.m. - 3:33 p.m.</span>
                   </div>
-                  <div class="ks2-entry"><span class="ks2-t">4:50 PM</span><span class="ks2-d">Engine off</span><span class="kpill green">Verified</span></div>
+                  <div class="sol-timeline">
+                    <div class="sol-tl-seg lightblue" style="width:43%"></div>
+                    <div class="sol-tl-seg green" style="width:18%"></div>
+                    <div class="sol-tl-seg lightblue" style="width:5%"></div>
+                    <div class="sol-tl-seg green" style="width:10%"></div>
+                    <div class="sol-tl-seg lightblue" style="width:4%"></div>
+                    <div class="sol-tl-seg green" style="width:10%"></div>
+                    <div class="sol-tl-seg green" style="width:8%"></div>
+                  </div>
+                  <div class="sol-day-event">
+                    <span class="sol-event-icon orange-icon">&#x1F69A;</span>
+                    <span class="sol-event-label">To Shop</span>
+                    <span class="sol-event-time">15m &nbsp; 3:33 p.m. - 3:48 p.m.</span>
+                  </div>
+                </div>
+
+                <div class="sol-day">
+                  <div class="sol-day-header">
+                    <span class="sol-day-date">Mon, Jun 15</span>
+                    <div class="sol-day-legend">
+                      <span><span class="sol-leg-dot green"></span>3h 37m running</span>
+                      <span><span class="sol-leg-dot grey"></span>14h 1m on site</span>
+                      <span><span class="sol-leg-dot orange"></span>15m travel</span>
+                    </div>
+                    <span class="sol-day-time">9:59 a.m. - 12:00 a.m.</span>
+                  </div>
+                  <div class="sol-timeline">
+                    <div class="sol-tl-seg orange" style="width:3%"></div>
+                    <div class="sol-tl-seg green" style="width:30%"></div>
+                    <div class="sol-tl-seg lightblue" style="width:4%"></div>
+                    <div class="sol-tl-seg green" style="width:4%"></div>
+                    <div class="sol-tl-seg lightblue" style="width:57%"></div>
+                  </div>
+                  <div class="sol-day-event">
+                    <span class="sol-event-icon orange-icon">&#x1F69A;</span>
+                    <span class="sol-event-label">Travel to site</span>
+                    <span class="sol-event-time">15m &nbsp; 9:43 a.m. - 9:59 a.m.</span>
+                  </div>
                 </div>
               </div>
+            </div>
+
+            <!-- DAILY TICKETS TAB -->
+            <div class="sol-mockup-body sol-tab-panel" id="sol-panel-tickets" style="display:none;">
+              <div class="sol-tickets-cal">
+                <div class="sol-cal-header">
+                  <span class="sol-cal-title">June 2026</span>
+                  <span class="sol-cal-sub">2 tickets</span>
+                </div>
+                <div class="sol-cal-grid">
+                  <span class="sol-cal-day-head">Mo</span><span class="sol-cal-day-head">Tu</span><span class="sol-cal-day-head">We</span><span class="sol-cal-day-head">Th</span><span class="sol-cal-day-head">Fr</span><span class="sol-cal-day-head">Sa</span><span class="sol-cal-day-head">Su</span>
+                  <span class="sol-cal-day">1</span><span class="sol-cal-day">2</span><span class="sol-cal-day">3</span><span class="sol-cal-day">4</span><span class="sol-cal-day">5</span><span class="sol-cal-day">6</span><span class="sol-cal-day">7</span>
+                  <span class="sol-cal-day">8</span><span class="sol-cal-day">9</span><span class="sol-cal-day">10</span><span class="sol-cal-day">11</span><span class="sol-cal-day">12</span><span class="sol-cal-day">13</span><span class="sol-cal-day">14</span>
+                  <span class="sol-cal-day sol-cal-ticket" onclick="solOpenTicket('15')">15</span><span class="sol-cal-day sol-cal-ticket" onclick="solOpenTicket('16')">16</span><span class="sol-cal-day">17</span><span class="sol-cal-day">18</span><span class="sol-cal-day">19</span><span class="sol-cal-day">20</span><span class="sol-cal-day">21</span>
+                  <span class="sol-cal-day">22</span><span class="sol-cal-day">23</span><span class="sol-cal-day">24</span><span class="sol-cal-day">25</span><span class="sol-cal-day">26</span><span class="sol-cal-day">27</span><span class="sol-cal-day">28</span>
+                  <span class="sol-cal-day">29</span><span class="sol-cal-day">30</span>
+                </div>
+              </div>
+
+              <!-- Ticket detail (hidden until clicked) -->
+              <div class="sol-ticket-detail" id="sol-ticket-detail-16" style="display:none;">
+                <div class="sol-ticket-header">
+                  <span class="sol-ticket-title">Daily Ticket - Tue, Jun 16 - Colton B.</span>
+                  <span class="sol-ticket-status">Approved</span>
+                  <button class="sol-ticket-close" onclick="solCloseTicket()">&times;</button>
+                </div>
+                <div class="sol-ticket-section">
+                  <span class="sol-ticket-sec-label">Time Entries</span>
+                  <div class="sol-ticket-row">
+                    <span class="sol-ticket-time">7:00 - 7:15</span>
+                    <span class="sol-ticket-desc">Load tools</span>
+                    <span class="sol-ticket-hrs">0.25h</span>
+                  </div>
+                  <div class="sol-ticket-row">
+                    <span class="sol-ticket-time">7:15 - 7:45</span>
+                    <span class="sol-ticket-desc">Travel to site</span>
+                    <span class="sol-ticket-hrs">0.5h</span>
+                    <span class="sol-ticket-check">&#x2705;</span>
+                  </div>
+                  <div class="sol-ticket-row">
+                    <span class="sol-ticket-time">8:00 - 12:00</span>
+                    <span class="sol-ticket-desc">Haul and spread gravel (25 ton)</span>
+                    <span class="sol-ticket-hrs">4.0h</span>
+                  </div>
+                  <div class="sol-ticket-row">
+                    <span class="sol-ticket-time">12:30 - 3:15</span>
+                    <span class="sol-ticket-desc">Haul and spread gravel (25 ton)</span>
+                    <span class="sol-ticket-hrs">2.75h</span>
+                  </div>
+                  <div class="sol-ticket-row">
+                    <span class="sol-ticket-time">3:15 - 3:45</span>
+                    <span class="sol-ticket-desc">Travel to shop</span>
+                    <span class="sol-ticket-hrs">0.5h</span>
+                    <span class="sol-ticket-check">&#x2705;</span>
+                  </div>
+                  <div class="sol-ticket-row">
+                    <span class="sol-ticket-time">3:45 - 4:00</span>
+                    <span class="sol-ticket-desc">Unload, paperwork</span>
+                    <span class="sol-ticket-hrs">0.25h</span>
+                  </div>
+                </div>
+                <div class="sol-ticket-section">
+                  <span class="sol-ticket-sec-label">Materials</span>
+                  <div class="sol-ticket-row">
+                    <span class="sol-ticket-desc" style="font-weight:600;">Gravel</span>
+                    <span class="sol-ticket-hrs">50 ton</span>
+                  </div>
+                </div>
+                <div class="sol-ticket-section">
+                  <span class="sol-ticket-sec-label">Verified by Hardware</span>
+                  <div class="sol-ticket-verify">
+                    <div class="sol-verify-item"><span class="sol-verify-check">&#x2705;</span><span>Arrival on site: 7:45 AM (GPS)</span></div>
+                    <div class="sol-verify-item"><span class="sol-verify-check">&#x2705;</span><span>Departure from site: 3:15 PM (GPS)</span></div>
+                    <div class="sol-verify-item"><span class="sol-verify-check">&#x2705;</span><span>Engine hours: 5.2h (Bobcat T650)</span></div>
+                  </div>
+                </div>
+                <div class="sol-ticket-total">
+                  <span>Total: 8.25 hrs</span>
+                  <span class="sol-ticket-status" style="margin-left:auto;">Verified</span>
+                </div>
+              </div>
+
+              <div class="sol-ticket-detail" id="sol-ticket-detail-15" style="display:none;">
+                <div class="sol-ticket-header">
+                  <span class="sol-ticket-title">Mon, Jun 15 - Colton B. (Operator)</span>
+                  <span class="sol-ticket-status">Approved</span>
+                  <button class="sol-ticket-close" onclick="solCloseTicket()">&times;</button>
+                </div>
+                <div class="sol-ticket-section">
+                  <span class="sol-ticket-sec-label">Time Entries</span>
+                  <div class="sol-ticket-row"><span class="sol-ticket-time">7:00 - 7:30</span><span class="sol-ticket-desc">Load equipment, pre-trip</span><span class="sol-ticket-hrs">0.5h</span></div>
+                  <div class="sol-ticket-row"><span class="sol-ticket-time">7:30 - 8:00</span><span class="sol-ticket-desc">Travel to site</span><span class="sol-ticket-hrs">0.5h</span><span class="sol-ticket-check">&#x2705;</span></div>
+                  <div class="sol-ticket-row"><span class="sol-ticket-time">8:00 - 12:00</span><span class="sol-ticket-desc">Grade and prep for gravel, load trucks</span><span class="sol-ticket-hrs">4.0h</span></div>
+                  <div class="sol-ticket-row"><span class="sol-ticket-time">12:30 - 4:00</span><span class="sol-ticket-desc">Spread and compact gravel (30 ton)</span><span class="sol-ticket-hrs">3.5h</span></div>
+                  <div class="sol-ticket-row"><span class="sol-ticket-time">4:00 - 4:30</span><span class="sol-ticket-desc">Travel back to shop</span><span class="sol-ticket-hrs">0.5h</span><span class="sol-ticket-check">&#x2705;</span></div>
+                  <div class="sol-ticket-row"><span class="sol-ticket-time">4:30 - 5:00</span><span class="sol-ticket-desc">Unload, paperwork</span><span class="sol-ticket-hrs">0.5h</span></div>
+                </div>
+                <div class="sol-ticket-section">
+                  <span class="sol-ticket-sec-label">Materials</span>
+                  <div class="sol-ticket-row"><span class="sol-ticket-desc" style="font-weight:600;">Gravel</span><span class="sol-ticket-hrs">30 ton</span></div>
+                </div>
+                <div class="sol-ticket-section">
+                  <span class="sol-ticket-sec-label">Verified by Hardware</span>
+                  <div class="sol-ticket-verify">
+                    <div class="sol-verify-item"><span class="sol-verify-check">&#x2705;</span><span>Arrival on site: 8:00 AM (GPS)</span></div>
+                    <div class="sol-verify-item"><span class="sol-verify-check">&#x2705;</span><span>Departure: 4:00 PM (GPS)</span></div>
+                    <div class="sol-verify-item"><span class="sol-verify-check">&#x2705;</span><span>Engine hours: 3.6h (Bobcat T650)</span></div>
+                  </div>
+                </div>
+                <div class="sol-ticket-total"><span>Total: 9.5 hrs</span><span class="sol-ticket-status" style="margin-left:auto;">Verified</span></div>
+              </div>
+            </div>
+
+            <!-- DOCUMENTS TAB -->
+            <div class="sol-mockup-body sol-tab-panel" id="sol-panel-documents" style="display:none;">
+              <div class="sol-docs-table">
+                <div class="sol-docs-head">
+                  <span class="sol-docs-col sol-docs-name">Name</span>
+                  <span class="sol-docs-col sol-docs-type">Type</span>
+                  <span class="sol-docs-col sol-docs-size">Size</span>
+                  <span class="sol-docs-col sol-docs-by">Uploaded By</span>
+                  <span class="sol-docs-col sol-docs-date">Date</span>
+                </div>
+                <div class="sol-docs-row sol-docs-folder">
+                  <span class="sol-docs-col sol-docs-name">&#x1F4C1; Invoices &#9656;</span>
+                  <span class="sol-docs-col sol-docs-type">Folder</span>
+                  <span class="sol-docs-col sol-docs-size">3 files</span>
+                  <span class="sol-docs-col sol-docs-by">Colton B.</span>
+                  <span class="sol-docs-col sol-docs-date">Jun 16</span>
+                </div>
+                <div class="sol-docs-row sol-docs-indent">
+                  <span class="sol-docs-col sol-docs-name">Invoice-001.pdf</span>
+                  <span class="sol-docs-col sol-docs-type">PDF</span>
+                  <span class="sol-docs-col sol-docs-size">245 KB</span>
+                  <span class="sol-docs-col sol-docs-by">Colton B.</span>
+                  <span class="sol-docs-col sol-docs-date">Jun 15</span>
+                </div>
+                <div class="sol-docs-row sol-docs-indent">
+                  <span class="sol-docs-col sol-docs-name">Invoice-002.pdf</span>
+                  <span class="sol-docs-col sol-docs-type">PDF</span>
+                  <span class="sol-docs-col sol-docs-size">198 KB</span>
+                  <span class="sol-docs-col sol-docs-by">Colton B.</span>
+                  <span class="sol-docs-col sol-docs-date">Jun 16</span>
+                </div>
+                <div class="sol-docs-row sol-docs-indent">
+                  <span class="sol-docs-col sol-docs-name">Invoice-003.pdf</span>
+                  <span class="sol-docs-col sol-docs-type">PDF</span>
+                  <span class="sol-docs-col sol-docs-size">312 KB</span>
+                  <span class="sol-docs-col sol-docs-by">Dylan M.</span>
+                  <span class="sol-docs-col sol-docs-date">Jun 16</span>
+                </div>
+                <div class="sol-docs-row">
+                  <span class="sol-docs-col sol-docs-name">&#x1F4C4; Quote.xlsx</span>
+                  <span class="sol-docs-col sol-docs-type">XLSX</span>
+                  <span class="sol-docs-col sol-docs-size">87 KB</span>
+                  <span class="sol-docs-col sol-docs-by">Colton B.</span>
+                  <span class="sol-docs-col sol-docs-date">Jun 10</span>
+                </div>
+                <div class="sol-docs-row">
+                  <span class="sol-docs-col sol-docs-name">&#x1F4C4; Locate-Files.pdf</span>
+                  <span class="sol-docs-col sol-docs-type">PDF</span>
+                  <span class="sol-docs-col sol-docs-size">1.2 MB</span>
+                  <span class="sol-docs-col sol-docs-by">Dylan M.</span>
+                  <span class="sol-docs-col sol-docs-date">Jun 12</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="sol-new-hardware">
+        <div class="sol-hw-text">
+          <h3 class="sol-hw-h">The hardware that verifies everything.</h3>
+          <p class="sol-hw-p">A GPS tracker on each machine captures location and engine hours automatically. That data is what backs up every timecard and LEM your crew submits.</p>
+          <div class="sol-hw-points">
+            <div class="sol-hw-point">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>No crew input required. Zero behavior change.</span>
+            </div>
+            <div class="sol-hw-point">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Engine hours detected through vibration. GPS logs arrival and departure.</span>
+            </div>
+            <div class="sol-hw-point">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Installs in minutes. Works in -40. Built for construction.</span>
+            </div>
+          </div>
+        </div>
+        <div class="sol-hw-gallery">
+          <div class="sol-hw-card">
+            <div class="sol-hw-card-img">
+              <img src="images/batt_on_equip.jpg" alt="Battery GPS tracker mounted on excavator">
+            </div>
+            <div class="sol-hw-card-label">
+              <img src="images/battery.png" alt="Battery" class="sol-hw-device-icon">
+              <span>Battery GPS</span>
+            </div>
+          </div>
+          <div class="sol-hw-card">
+            <div class="sol-hw-card-img">
+              <img src="images/construction-site.jpg" alt="Wired GPS tracker on truck">
+            </div>
+            <div class="sol-hw-card-label">
+              <img src="images/wired.png" alt="Wired" class="sol-hw-device-icon">
+              <span>Wired GPS</span>
+            </div>
+          </div>
+          <div class="sol-hw-card">
+            <div class="sol-hw-card-img">
+              <img src="images/tag_on_equip.jpg" alt="Bluetooth tag on skid steer attachment">
+            </div>
+            <div class="sol-hw-card-label">
+              <img src="images/tag.png" alt="Tag" class="sol-hw-device-icon">
+              <span>Bluetooth Tag</span>
             </div>
           </div>
         </div>
@@ -435,304 +709,212 @@
   </section>
 
   <style>
-    .sol2 { background: var(--indigo); padding: 6rem 0; }
-    .sol2-headline { margin-bottom: 3.5rem; }
-    .sol2-h { font-size: var(--headline-display-size); font-weight: 800; color: #fff; letter-spacing: -0.03em; line-height: 1.05; margin: 0 0 1.5rem; }
-    .sol2-sub { font-size: 1.0625rem; color: rgba(255,255,255,0.65); line-height: 1.75; max-width: 36rem; margin: 0; }
-    .sol2-compare { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: stretch; }
-    .sol2-col { display: flex; flex-direction: column; gap: 0.625rem; min-height: 0; align-self: stretch; }
-    .sol2-label { font-size: 0.9rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; }
-    .sol2-label-before { color: rgba(255,255,255,0.4); }
-    .sol2-label-ks { color: var(--orange); }
-    .sol2-card { border-radius: 0.75rem; overflow: hidden; flex: 1 1 auto; min-height: 0; display: flex; flex-direction: column; }
-    /* Paper card */
-    .paper-card { background: #fffef5; border: 1px solid #e0d9c0; padding: 1.25rem; box-shadow: 0 2px 12px rgba(0,0,0,0.15); display: flex; flex-direction: column; min-height: 0; overflow: hidden; flex: 1 1 auto; }
-    .ks-card2 { background: #fff; box-shadow: 0 8px 40px rgba(0,0,0,0.3); display: flex; flex-direction: column; flex: 1 1 auto; min-height: 0; }
-    .ks2-body { padding: 0.65rem 0.85rem 0.75rem; overflow: visible; flex: 1 1 auto; min-height: 0; display: flex; flex-direction: column; justify-content: flex-start; }
-    .ks2-name { font-size: 0.75rem; font-weight: 700; color: var(--indigo); }
-    .ks2-sub { font-size: 0.65rem; font-weight: 700; color: var(--indigo); opacity: 0.85; margin-top: 0.1rem; }
-    .ks2-t { color: var(--indigo); white-space: nowrap; flex-shrink: 0; font-weight: 600; min-width: 7.75rem; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
-    .ks2-d { color: var(--indigo); flex: 1; line-height: 1.45; min-width: 0; }
-    /* Equipment de-emphasis */
-    .eq-section { opacity: 0.75; }
-    .eq-name { font-size: 0.67rem !important; }
-    .eq-sub { font-size: 0.58rem !important; }
-    .eq-entries .ks2-entry { background: var(--gray-50); font-size: 0.58rem; }
-    .eq-entries .ks2-t { font-size: 0.58rem; min-width: 4.5rem; }
-    .eq-entries .ks2-d { font-size: 0.58rem; }
-    /* Equipment warning on paper ticket */
-    .pt-blank { border: 1px solid #fca5a5; border-radius: 0.25rem; padding: 0.75rem; flex: 1; min-height: 5rem; display: flex; align-items: flex-start; background: #fff5f5; }
-    .pt-blank-hint { font-size: 0.68rem; font-weight: 600; color: #dc2626; font-style: italic; }
-    .pt-sigs { display: flex; gap: 1.5rem; margin-top: auto; padding-top: 1.25rem; }
-    .pt-sig { flex: 1; display: flex; flex-direction: column; gap: 0.25rem; }
-    .pt-sig span { font-size: 0.58rem; color: #999; text-transform: uppercase; letter-spacing: 0.06em; }
-    .pt-sig-line { border-bottom: 1px solid #bbb; height: 1.25rem; }
-    .pt-co { font-size: 0.65rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: #555; border-bottom: 2px solid #ccc; padding-bottom: 0.4rem; margin-bottom: 0.625rem; }
-    .pt-meta { font-size: 0.7rem; color: #444; margin-bottom: 0.2rem; }
-    .pt-key { font-weight: 700; color: #222; }
-    .pt-sec { font-size: 0.6rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #888; margin: 0.75rem 0 0.375rem; }
-    .pt-table { width: 100%; border-collapse: collapse; }
-    .pt-table th { font-size: 0.58rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #999; text-align: left; padding: 0.2rem 0.375rem; border-bottom: 1px solid #ddd; }
-    .pt-table td { padding: 0.4rem 0.375rem; border-bottom: 1px solid #eee; vertical-align: top; }
-    .pt-hw { font-family: 'Georgia', serif; font-size: 0.68rem; color: #2a2a2a; line-height: 1.4; }
-    .ks2-row-head { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0; }
-    .ks2-av { width: 26px; height: 26px; border-radius: 50%; background: var(--indigo); color: #fff; font-size: 0.55rem; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-    .ks2-av.eq { background: var(--orange); }
-    .ks2-who { display: flex; flex-direction: column; flex: 1; }
-    .ks2-time-block { background: var(--gray-50); border-radius: 0.5rem; padding: 0.45rem 0.45rem 0.5rem; margin-bottom: 0.35rem; border: 1px solid var(--gray-100); }
-    .ks2-entries { display: flex; flex-direction: column; gap: 0.12rem; margin-bottom: 0.35rem; }
-    .ks2-entries-time { gap: 0.42rem; margin-bottom: 0.45rem; }
-    .ks2-entry { display: flex; align-items: center; gap: 0.4rem; padding: 0.32rem 0.4rem; border-radius: 0.25rem; font-size: 0.62rem; line-height: 1.45; }
-    .ks2-entry.hi { background: #f0fdf4; }
-    .ks2-ts { display: flex; flex-direction: column; gap: 0.2rem; padding: 0.28rem 0 0.2rem; border-top: 1px solid var(--gray-100); margin-bottom: 0.15rem; }
-    .ks2-ts-before-eq { margin-bottom: 0; padding-bottom: 0.35rem; padding-top: 0.35rem; }
-    .ks2-tschip { display: flex; align-items: center; font-size: 0.62rem; color: var(--gray-500); font-weight: 600; }
-    .ks2-divider { border: none; border-top: 1px solid var(--gray-200, #e5e7eb); margin: 0.35rem 0; min-height: 1px; }
-    /* border-top on empty rows is more reliable than border-bottom on flex rows; stronger color for hierarchy */
-    .ks2-divider-strong { border-top-color: var(--gray-300, #d1d5db); margin-top: 0.35rem; margin-bottom: 0.35rem; }
-    .ks2-eq-block {
-      margin-top: 1.15rem;
-      padding: 1.1rem 0.45rem 0.4rem;
-      border: 1px solid rgba(27, 44, 80, 0.08);
-      border-top: 2px solid var(--gray-300, #d1d5db);
-      background: rgba(27, 44, 80, 0.03);
-      border-radius: 0.5rem;
-    }
-    .ks2-eq-label { font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; color: var(--indigo); opacity: 0.9; margin: 0 0 0.5rem; }
-    .ks2-divider-under-eq-label { margin-top: 0; margin-bottom: 0.55rem; border-top-width: 2px; border-top-color: var(--gray-300, #d1d5db); }
-    .ks2-entry-eq-head { padding: 0.05rem 0.35rem 0.1rem; }
-    .ks2-entries.eq-entries { gap: 0.18rem; margin-bottom: 0.35rem; }
-    .ks2-verify-hw { display: inline-flex; align-items: center; gap: 0.3rem; flex-shrink: 0; margin-left: auto; }
-    .ks2-hw-svg { color: var(--orange); flex-shrink: 0; }
-    .ks2-entries.eq-entries-follow { margin-top: 0.28rem; }
-    .eq-entries .ks2-entry-eq-head + .ks2-entry { margin-top: 0.05rem; }
-    .ks2-eq-name { font-size: 0.65rem; font-weight: 800; color: var(--indigo); letter-spacing: -0.02em; }
-    .ks2-stat { font-size: 0.65rem; font-weight: 700; color: var(--indigo); padding-bottom: 0.25rem; }
-    .kpill { font-size: 0.6rem; font-weight: 700; padding: 0.15rem 0.5rem; border-radius: 2rem; flex-shrink: 0; white-space: nowrap; }
-    .kpill.green { background: #dcfce7; color: #15803d; }
-    .kpill.grey { background: var(--gray-100); color: var(--gray-500); }
-    @keyframes popIn {
-      0%   { opacity: 0; transform: scale(0.7); }
-      70%  { transform: scale(1.1); }
-      100% { opacity: 1; transform: scale(1); }
-    }
-    @media (prefers-reduced-motion: no-preference) {
-      html.js .ks-card2 .kpill.green.anim-badge { opacity: 0; }
-      html.js .ks-card2 .kpill.green.anim-badge.visible { animation: popIn 0.35s ease forwards; }
-    }
-    @media (max-width: 768px) { .sol2-compare { grid-template-columns: 1fr; } }
-  </style>
-
-  <!-- HOW IT WORKS -->
-  <section class="section section-gray hiw2-section" aria-labelledby="hiw2-heading">
-    <div class="container">
-      <div class="hiw2-header">
-        <p class="hiw2-label">How it works</p>
-        <h2 id="hiw2-heading">Five steps. Zero manual entry.</h2>
-      </div>
-
-      <div class="hiw2-steps">
-
-        <div class="hiw2-step">
-          <div class="hiw2-step-num">1</div>
-          <div class="hiw2-step-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          </div>
-          <h3 class="hiw2-step-title">Geofence</h3>
-          <p class="hiw2-step-desc">Draw a boundary around your job site. Takes two minutes.</p>
-        </div>
-
-        <div class="hiw2-step-arrow" aria-hidden="true">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="10" x2="19" y2="10"/><polyline points="13 4 19 10 13 16"/></svg>
-        </div>
-
-        <div class="hiw2-step">
-          <div class="hiw2-step-num">2</div>
-          <div class="hiw2-step-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="14" r="8"/><path d="M12 14l3.5-3"/></svg>
-          </div>
-          <h3 class="hiw2-step-title">Engine On</h3>
-          <p class="hiw2-step-desc">Machine starts on site. KeenSite logs it automatically. No app, no input.</p>
-        </div>
-
-        <div class="hiw2-step-arrow" aria-hidden="true">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="10" x2="19" y2="10"/><polyline points="13 4 19 10 13 16"/></svg>
-        </div>
-
-        <div class="hiw2-step">
-          <div class="hiw2-step-num">3</div>
-          <div class="hiw2-step-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-          </div>
-          <h3 class="hiw2-step-title">Live Tracking</h3>
-          <p class="hiw2-step-desc">Runtime, idle, and travel populate against your estimate in real time.</p>
-        </div>
-
-        <div class="hiw2-step-arrow" aria-hidden="true">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="10" x2="19" y2="10"/><polyline points="13 4 19 10 13 16"/></svg>
-        </div>
-
-        <div class="hiw2-step">
-          <div class="hiw2-step-num">4</div>
-          <div class="hiw2-step-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
-          </div>
-          <h3 class="hiw2-step-title">Over Budget</h3>
-          <p class="hiw2-step-desc">The moment hours exceed your estimate, you know. Not at invoice time. Right now.</p>
-        </div>
-
-        <div class="hiw2-step-arrow" aria-hidden="true">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="10" x2="19" y2="10"/><polyline points="13 4 19 10 13 16"/></svg>
-        </div>
-
-        <div class="hiw2-step">
-          <div class="hiw2-step-num">5</div>
-          <div class="hiw2-step-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
-          </div>
-          <h3 class="hiw2-step-title">Ready to Bill</h3>
-          <p class="hiw2-step-desc">LEM sheets, equipment logs, and crew hours all built automatically. Export and send.</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <style>
-    .hiw2-steps { display: flex; align-items: stretch; gap: 0.5rem; }
-    .hiw2-step { flex: 1; display: flex; flex-direction: column; align-items: center; text-align: center; padding: 2rem 1.25rem; background: #fff; border-radius: 0.75rem; border: 1px solid var(--gray-100); position: relative; }
-    .hiw2-step-num { position: absolute; top: -0.75rem; left: 50%; transform: translateX(-50%); width: 1.5rem; height: 1.5rem; background: var(--orange); color: #fff; font-size: 0.7rem; font-weight: 800; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
-    .hiw2-step-icon { color: var(--orange); margin-bottom: 1rem; margin-top: 0.5rem; flex-shrink: 0; }
-    .hiw2-step-title { font-size: 1rem; font-weight: 700; color: var(--indigo); margin: 0 0 0.5rem; letter-spacing: -0.01em; flex-shrink: 0; }
-    .hiw2-step-desc { font-size: 0.9rem; color: var(--gray-600); line-height: 1.6; margin: 0; flex-grow: 1; }
-    .hiw2-step-arrow { flex-shrink: 0; color: var(--gray-300); display: flex; align-items: center; align-self: center; padding: 0 0.25rem; }
+    .sol-new { background: var(--indigo); padding: 6rem 0; }
+    .sol-new-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 4rem; align-items: center; margin-bottom: 5rem; }
+    .sol-new-text { color: #fff; }
+    .sol-new-h { font-size: var(--headline-display-size); font-weight: 800; color: #fff; letter-spacing: -0.03em; line-height: 1.05; margin: 0 0 1.5rem; }
+    .sol-new-sub { font-size: 1.0625rem; color: rgba(255,255,255,0.65); line-height: 1.75; max-width: 32rem; margin: 0 0 2rem; }
+    .sol-new-features { display: flex; flex-direction: column; gap: 0.75rem; }
+    .sol-new-feat { display: flex; align-items: flex-start; gap: 0.6rem; font-size: 0.9375rem; color: rgba(255,255,255,0.85); line-height: 1.5; }
+    .sol-new-feat svg { color: var(--orange); flex-shrink: 0; margin-top: 0.15rem; }
+    .sol-new-img { }
+    .sol-mockup { background: #fff; border-radius: 0.875rem; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 16px 48px rgba(0,0,0,0.3); overflow: hidden; font-family: 'Inter', sans-serif; }
+    .sol-mockup-bar { background: #fff; padding: 1.25rem 1.25rem 0.75rem; display: flex; align-items: center; gap: 0.6rem; border-bottom: none; }
+    .sol-mockup-bar span { font-size: 1.1rem; font-weight: 800; color: var(--indigo); letter-spacing: -0.02em; }
+    .sol-mockup-bar-dot { display: none; }
+    .sol-mockup-badge-active { background: #dcfce7; color: #15803d; font-size: 0.65rem; font-weight: 700; padding: 0.2rem 0.65rem; border-radius: 2rem; margin-left: 0.5rem; }
+    .sol-mockup-nav { display: flex; gap: 1.5rem; padding: 0.5rem 1.25rem 0.6rem; border-bottom: 1px solid var(--gray-100); }
+    .sol-mockup-nav span { font-size: 0.68rem; font-weight: 600; color: var(--gray-400); cursor: default; text-transform: uppercase; letter-spacing: 0.04em; }
+    .sol-mockup-nav-active { color: var(--orange) !important; border-bottom: 2px solid var(--orange); padding-bottom: 0.35rem; }
+    .sol-mockup-body { padding: 1rem 1.25rem; }
+    .sol-mockup-label { font-size: 0.65rem; font-weight: 700; color: var(--gray-400); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.75rem; }
+    .sol-eq-card { background: #fff; border: 1px solid var(--gray-100); border-radius: 0.5rem; padding: 0.75rem 1rem; margin-bottom: 0.75rem; }
+    .sol-eq-header { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.4rem; }
+    .sol-eq-name { font-size: 0.8rem; font-weight: 700; color: var(--indigo); flex: 1; }
+    .sol-eq-badge { font-size: 0.58rem; font-weight: 700; padding: 0.15rem 0.5rem; border-radius: 2rem; }
+    .sol-eq-badge.unplanned { background: #fef9c3; color: #a16207; }
+    .sol-eq-hours { font-size: 0.75rem; font-weight: 700; color: var(--indigo); text-align: right; line-height: 1.3; }
+    .sol-eq-hours-green { color: #15803d; }
+    .sol-eq-est { font-weight: 500; color: var(--gray-400); font-size: 0.65rem; }
+    .sol-eq-sub { font-size: 0.6rem; font-weight: 500; color: var(--gray-400); }
+    .sol-eq-bar-wrap { background: var(--gray-100); border-radius: 2rem; height: 6px; overflow: hidden; margin-bottom: 0.5rem; }
+    .sol-eq-bar { height: 100%; border-radius: 2rem; transition: width 1.2s cubic-bezier(.4,0,.2,1); }
+    .sol-eq-bar-grey { background: var(--gray-300); }
+    .sol-eq-bar-green { background: #22c55e; width: 0; }
+    .sol-day { background: var(--gray-50); border-radius: 0.5rem; padding: 0.75rem; margin-top: 0.5rem; }
+    .sol-day-header { display: flex; align-items: center; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.4rem; }
+    .sol-day-date { font-size: 0.72rem; font-weight: 700; color: var(--indigo); }
+    .sol-day-legend { display: flex; gap: 0.6rem; font-size: 0.58rem; color: var(--gray-500); font-weight: 500; }
+    .sol-leg-dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%; margin-right: 0.2rem; vertical-align: middle; }
+    .sol-leg-dot.green { background: #22c55e; }
+    .sol-leg-dot.grey { background: #93c5fd; }
+    .sol-leg-dot.orange { background: var(--orange); }
+    .sol-day-time { font-size: 0.6rem; color: var(--gray-400); margin-left: auto; }
+    .sol-timeline { display: flex; height: 14px; border-radius: 3px; overflow: hidden; gap: 1px; margin-bottom: 0.4rem; }
+    .sol-tl-seg { border-radius: 2px; }
+    .sol-tl-seg.green { background: #22c55e; }
+    .sol-tl-seg.indigo { background: #1B2C50; }
+    .sol-tl-seg.lightblue { background: #93c5fd; }
+    .sol-tl-seg.orange { background: var(--orange); }
+    .sol-day-event { display: flex; align-items: center; gap: 0.4rem; font-size: 0.62rem; color: var(--gray-500); }
+    .sol-event-icon { font-size: 0.7rem; }
+    .sol-event-label { font-weight: 600; color: var(--orange); }
+    .sol-event-time { color: var(--orange); font-weight: 500; margin-left: auto; }
+    .sol-new-hardware { display: grid; grid-template-columns: 1fr 1.2fr; gap: 4rem; align-items: start; padding-top: 4rem; margin-top: 4rem; border-top: 1px solid rgba(255,255,255,0.1); }
+    .sol-hw-h { font-size: clamp(1.75rem, 3vw, 2.5rem); font-weight: 800; color: #fff; letter-spacing: -0.02em; margin: 0 0 1.25rem; }
+    .sol-hw-p { font-size: 1.0625rem; color: rgba(255,255,255,0.7); line-height: 1.75; margin: 0 0 1.5rem; }
+    .sol-hw-points { display: flex; flex-direction: column; gap: 0.75rem; }
+    .sol-hw-point { display: flex; align-items: flex-start; gap: 0.5rem; font-size: 0.9375rem; color: rgba(255,255,255,0.85); line-height: 1.5; }
+    .sol-hw-point svg { color: var(--orange); flex-shrink: 0; margin-top: 0.15rem; }
+    .sol-hw-gallery { position: relative; min-height: 420px; }
+    .sol-hw-card { position: absolute; border-radius: 0.75rem; overflow: hidden; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.15); box-shadow: 0 8px 32px rgba(0,0,0,0.3); }
+    .sol-hw-card:nth-child(1) { width: 55%; top: 0; left: 0; z-index: 1; }
+    .sol-hw-card:nth-child(2) { width: 50%; top: 15%; right: 0; z-index: 2; }
+    .sol-hw-card:nth-child(3) { width: 45%; bottom: 0; left: 20%; z-index: 3; }
+    .sol-hw-card-img { aspect-ratio: 4/3; overflow: hidden; position: relative; }
+    .sol-hw-card-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .sol-hw-card-label { display: flex; align-items: center; gap: 0.4rem; padding: 0.4rem 0.6rem; position: absolute; top: 0.5rem; left: 0.5rem; background: rgba(27,44,80,0.85); border-radius: 0.375rem; backdrop-filter: blur(4px); }
+    .sol-hw-card-label span { font-size: 0.7rem; font-weight: 600; color: #fff; }
+    .sol-hw-device-icon { width: 18px; height: 18px; object-fit: contain; }
     @media (max-width: 900px) {
-      .hiw2-steps { flex-direction: column; gap: 1rem; }
-      .hiw2-step { width: 100%; }
-      .hiw2-step-arrow { transform: rotate(90deg); margin: 0 auto; padding: 0; }
+      .sol-new-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .sol-new-hardware { grid-template-columns: 1fr; gap: 2rem; }
+      .sol-hw-gallery { grid-template-columns: 1fr 1fr; }
     }
+    /* Tab interaction */
+    .sol-mockup-nav span { cursor: pointer; transition: color 0.15s; }
+    .sol-mockup-nav span:hover { color: var(--indigo); }
+    /* Overview tab - list style */
+    .sol-ov-section { border: 1px solid var(--gray-100); border-radius: 0.5rem; padding: 0.75rem 1rem; margin-bottom: 0.75rem; }
+    .sol-ov-section-head { display: flex; align-items: center; gap: 0.5rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--gray-100); margin-bottom: 0.4rem; }
+    .sol-ov-section-title { font-size: 0.8rem; font-weight: 700; color: var(--indigo); }
+    .sol-ov-section-meta { font-size: 0.6rem; color: var(--gray-400); margin-left: auto; }
+    .sol-ov-row { display: flex; align-items: center; padding: 0.4rem 0; border-bottom: 1px solid var(--gray-50); }
+    .sol-ov-row:last-child { border-bottom: none; }
+    .sol-ov-row-name { font-size: 0.75rem; font-weight: 600; color: var(--indigo); flex: 1; }
+    .sol-ov-row-val { font-size: 0.72rem; font-weight: 600; color: var(--gray-500); }
+    /* Documents tab */
+    .sol-docs-table { border: 1px solid var(--gray-100); border-radius: 0.5rem; overflow: hidden; }
+    .sol-docs-head { display: grid; grid-template-columns: 2fr 0.7fr 0.7fr 1fr 0.7fr; gap: 0.5rem; padding: 0.5rem 0.75rem; background: var(--gray-50); border-bottom: 1px solid var(--gray-100); }
+    .sol-docs-col { font-size: 0.62rem; font-weight: 600; color: var(--gray-400); text-transform: uppercase; letter-spacing: 0.04em; }
+    .sol-docs-row { display: grid; grid-template-columns: 2fr 0.7fr 0.7fr 1fr 0.7fr; gap: 0.5rem; padding: 0.5rem 0.75rem; border-bottom: 1px solid var(--gray-50); font-size: 0.68rem; color: var(--gray-600); align-items: center; }
+    .sol-docs-row:last-child { border-bottom: none; }
+    .sol-docs-row .sol-docs-name { font-weight: 600; color: var(--indigo); }
+    .sol-docs-folder .sol-docs-name { font-weight: 700; }
+    .sol-docs-indent { padding-left: 2rem; }
+    .sol-docs-indent .sol-docs-name { color: var(--gray-600); font-weight: 500; }
+    /* Overview layout */
+    .sol-overview-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 1.5rem; }
+    .sol-overview-stats { display: flex; gap: 0.5rem; margin-bottom: 0.75rem; }
+    .sol-stat-box { background: var(--gray-50); border: 1px solid var(--gray-100); border-radius: 0.5rem; padding: 0.6rem 0.75rem; flex: 1; text-align: center; }
+    .sol-stat-label { font-size: 0.58rem; font-weight: 600; color: var(--gray-400); text-transform: uppercase; letter-spacing: 0.06em; display: block; }
+    .sol-stat-val { font-size: 1.25rem; font-weight: 700; color: var(--indigo); display: block; margin-top: 0.15rem; }
+    .sol-stat-val.sol-stat-green { color: #15803d; }
+    .sol-stat-unit { font-size: 0.7rem; font-weight: 500; color: var(--gray-400); }
+    .sol-overview-status { display: flex; align-items: center; gap: 0.4rem; }
+    /* Tickets tab */
+    .sol-tickets-cal { background: #fff; border: 1px solid var(--gray-100); border-radius: 0.5rem; padding: 1rem; }
+    .sol-cal-header { text-align: center; margin-bottom: 0.75rem; }
+    .sol-cal-title { font-size: 0.9rem; font-weight: 700; color: var(--indigo); display: block; }
+    .sol-cal-sub { font-size: 0.65rem; color: var(--gray-400); }
+    .sol-cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 0.25rem; text-align: center; }
+    .sol-cal-day-head { font-size: 0.6rem; font-weight: 600; color: var(--gray-400); padding: 0.25rem; }
+    .sol-cal-day { font-size: 0.7rem; color: var(--gray-600); padding: 0.4rem 0.25rem; border-radius: 0.375rem; cursor: default; }
+    .sol-cal-ticket { background: #dcfce7; color: #15803d; font-weight: 700; cursor: pointer; border-radius: 2rem; }
+    .sol-cal-ticket:hover { background: #bbf7d0; }
+    .sol-cal-today { background: var(--orange); color: #fff; font-weight: 700; border-radius: 2rem; }
+    /* Ticket detail */
+    .sol-ticket-detail { background: #fff; border: 1px solid var(--gray-100); border-radius: 0.5rem; margin-top: 0.75rem; padding: 1rem; animation: fadeSlideIn 0.3s ease; }
+    .sol-ticket-header { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--gray-100); }
+    .sol-ticket-title { font-size: 0.8rem; font-weight: 700; color: var(--indigo); flex: 1; }
+    .sol-ticket-status { font-size: 0.6rem; font-weight: 700; background: #dcfce7; color: #15803d; padding: 0.15rem 0.5rem; border-radius: 2rem; }
+    .sol-ticket-close { background: none; border: none; font-size: 1.1rem; color: var(--gray-400); cursor: pointer; padding: 0 0.25rem; }
+    .sol-ticket-section { margin-bottom: 0.75rem; }
+    .sol-ticket-sec-label { font-size: 0.6rem; font-weight: 700; color: var(--gray-400); text-transform: uppercase; letter-spacing: 0.06em; display: block; margin-bottom: 0.4rem; }
+    .sol-ticket-row { display: flex; align-items: center; gap: 0.5rem; padding: 0.3rem 0; border-bottom: 1px solid var(--gray-50); font-size: 0.68rem; }
+    .sol-ticket-time { color: var(--indigo); font-weight: 600; min-width: 5.5rem; font-variant-numeric: tabular-nums; }
+    .sol-ticket-desc { color: var(--gray-600); flex: 1; }
+    .sol-ticket-hrs { color: var(--gray-400); font-weight: 600; min-width: 2.5rem; text-align: right; }
+    .sol-ticket-check { font-size: 0.75rem; }
+    .sol-ticket-verify { display: flex; flex-direction: column; gap: 0.35rem; }
+    .sol-verify-item { display: flex; align-items: center; gap: 0.4rem; font-size: 0.68rem; color: var(--indigo); }
+    .sol-verify-check { font-size: 0.75rem; }
+    .sol-ticket-total { display: flex; align-items: center; font-size: 0.75rem; font-weight: 700; color: var(--indigo); padding-top: 0.5rem; border-top: 1px solid var(--gray-100); }
+    @keyframes fadeSlideIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+    @media (max-width: 600px) { .sol-overview-grid { grid-template-columns: 1fr; } }
   </style>
-  <section class="section section-indigo why2-section">
+
+  <!-- SOCIAL PROOF -->
+  <section class="section section-white" style="padding: 4rem 0;">
     <div class="container">
-      <div class="why2-grid">
-        <div class="why2-left">
-          <p class="section-label why2-label">WHY KEENSITE</p>
-          <h2 class="why2-h">We know what it costs when the paperwork doesn't add up.</h2>
-          <p class="why2-p">We built KeenSite from real jobsite experience. Missed hours, equipment no one logged,
-            billing disputes that could have been avoided. So we built the tool we wished we had.</p>
+      <div class="proof-block">
+        <div class="proof-img">
+          <img src="images/keylee_pilot_photo.jpg" alt="KeenSite team with KeyLee Contracting at their jobsite in Saskatchewan">
         </div>
-
-        <div class="why2-right">
-          <div class="why2-card">
-            <div class="why2-icon" aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="7" y="2" width="10" height="20" rx="2" ry="2" />
-                <line x1="11" y1="19" x2="13" y2="19" />
-              </svg>
-            </div>
-            <div class="why2-card-body">
-              <div class="why2-card-title">Your crew doesn't change how they work</div>
-              <div class="why2-card-desc">GPS and engine hours log automatically. The timecard takes 60 seconds at end of shift. Most of it is already filled in.</div>
-            </div>
-          </div>
-
-          <div class="why2-card">
-            <div class="why2-icon" aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-                <polyline points="14 2 14 8 20 8" />
-                <path d="M12 18v-8" />
-                <path d="M15 12a3 3 0 0 0-6 0c0 1.66 1.34 2 3 2s3 .34 3 2a3 3 0 0 1-6 0" />
-              </svg>
-            </div>
-            <div class="why2-card-body">
-              <div class="why2-card-title">Dispute a ticket? You have proof.</div>
-              <div class="why2-card-desc">Every hour is backed by GPS arrival, engine start/stop, and crew check-in. When a client pushes back, you send the record.</div>
-            </div>
-          </div>
-
-          <div class="why2-card">
-            <div class="why2-icon" aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="4" y1="21" x2="4" y2="14" />
-                <line x1="4" y1="10" x2="4" y2="3" />
-                <line x1="12" y1="21" x2="12" y2="12" />
-                <line x1="12" y1="8" x2="12" y2="3" />
-                <line x1="20" y1="21" x2="20" y2="16" />
-                <line x1="20" y1="12" x2="20" y2="3" />
-                <line x1="2" y1="14" x2="6" y2="14" />
-                <line x1="10" y1="8" x2="14" y2="8" />
-                <line x1="18" y1="16" x2="22" y2="16" />
-              </svg>
-            </div>
-            <div class="why2-card-body">
-              <div class="why2-card-title">Your office stops chasing the field</div>
-              <div class="why2-card-desc">Reports are built as the day happens. By the time your admin opens their laptop, the data is already there.</div>
-            </div>
-          </div>
+        <div class="proof-text">
+          <p class="proof-label">Pilot Partner</p>
+          <p class="proof-company">KeyLee Contracting</p>
+          <p class="proof-location">Piling &middot; Saskatchewan</p>
+          <p class="proof-desc">KeyLee wanted equipment hours they could trust without relying on operators to write them down, and LEMs that build themselves. That's exactly what we're piloting.</p>
         </div>
       </div>
     </div>
   </section>
+
+  <style>
+    .proof-block { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+    .proof-img { border-radius: 0.75rem; overflow: hidden; }
+    .proof-img img { width: 100%; height: auto; display: block; border-radius: 0.75rem; }
+    .proof-label { font-size: 0.75rem; font-weight: 700; color: var(--orange); text-transform: uppercase; letter-spacing: 0.08em; margin: 0 0 0.5rem; }
+    .proof-company { font-size: clamp(1.5rem, 3vw, 2.25rem); font-weight: 800; color: var(--indigo); letter-spacing: -0.02em; margin: 0 0 0.25rem; }
+    .proof-location { font-size: 1rem; color: var(--gray-500); margin: 0 0 1.25rem; }
+    .proof-desc { font-size: 1.0625rem; color: var(--gray-600); line-height: 1.75; margin: 0; }
+    @media (max-width: 900px) { .proof-block { grid-template-columns: 1fr; gap: 2rem; } }
+  </style>
 
   <section class="section section-gray">
     <div class="container">
-      <div class="section-center">
-        <p class="section-label">Who It's For</p>
-        <h2 class="headline-display">Built for specialty trades owners who quote by the hour.</h2>
-      </div>
-      <div class="wif-body">
-        <p class="wif-statement">Built for T&amp;M contractors who can't afford to guess.</p>
-        <div class="wif-pills">
-          <span class="wif-pill">Excavation</span>
-          <span class="wif-pill">Piling</span>
-          <span class="wif-pill">Earthworks</span>
-          <span class="wif-pill">Line Painting</span>
-          <span class="wif-pill">Civil</span>
+      <div class="wif-wrap">
+        <div class="wif-circle wif-circle-tl"><img src="images/piling_stock.jpg" alt="Piling equipment"></div>
+        <div class="wif-circle wif-circle-tr"><img src="images/exca_stock.jpg" alt="Excavator"></div>
+        <div class="wif-circle wif-circle-bl"><img src="images/skid_stock.jpg" alt="Skid steer"></div>
+        <div class="wif-circle wif-circle-br"><img src="images/tractor_stock.jpg" alt="Tractor"></div>
+        <div class="wif-center">
+          <p class="section-label">Who It's For</p>
+          <h2 class="headline-display">Built for specialty trades owners who quote by the hour.</h2>
+          <p class="wif-statement">Built for T&amp;M contractors who can't afford to guess.</p>
+          <div class="wif-pills">
+            <span class="wif-pill">Excavation</span>
+            <span class="wif-pill">Piling</span>
+            <span class="wif-pill">Earthworks</span>
+            <span class="wif-pill">Line Painting</span>
+            <span class="wif-pill">Civil</span>
+          </div>
+          <p class="wif-desc">If you're running piling, drilling, excavation, or civil crews on time-and-material contracts and your billing accuracy depends on what operators write down at the end of the day, KeenSite was built for you. You bill by the hour. Every hour has to be right.</p>
         </div>
-        <p>If you're running piling, drilling, excavation, or civil crews on time-and-material contracts and your billing accuracy depends on what operators write down at the end of the day, KeenSite was built for you. You bill by the hour. Every hour has to be right.</p>
       </div>
     </div>
   </section>
 
   <style>
-    .wif-body {
-      max-width: 48rem;
-      margin: 2.5rem auto 0;
-      text-align: center;
-    }
-    .wif-statement {
-      font-size: clamp(1.5rem, 3vw, 2rem);
-      font-weight: 800;
-      color: var(--indigo);
-      letter-spacing: -0.02em;
-      line-height: 1.2;
-      margin: 0 0 1.5rem;
-    }
-    .wif-pills {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 0.5rem;
-      margin-bottom: 2rem;
-    }
-    .wif-pill {
-      font-size: 0.8rem;
-      font-weight: 700;
-      color: var(--indigo);
-      background: #fff;
-      border: 1.5px solid var(--gray-300);
-      border-radius: 2rem;
-      padding: 0.35rem 0.9rem;
-      letter-spacing: 0.01em;
-    }
-    .wif-body p {
-      font-size: 1.125rem;
-      color: var(--gray-600);
-      line-height: 1.8;
+    .wif-wrap { position: relative; padding: 4rem 0; min-height: 500px; display: flex; align-items: center; justify-content: center; }
+    .wif-center { text-align: center; max-width: 36rem; position: relative; z-index: 2; }
+    .wif-statement { font-size: clamp(1.25rem, 2.5vw, 1.75rem); font-weight: 800; color: var(--indigo); letter-spacing: -0.02em; line-height: 1.2; margin: 1rem 0 1.5rem; }
+    .wif-pills { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; margin-bottom: 1.5rem; }
+    .wif-pill { font-size: 0.8rem; font-weight: 700; color: var(--indigo); background: #fff; border: 1.5px solid var(--gray-300); border-radius: 2rem; padding: 0.35rem 0.9rem; letter-spacing: 0.01em; }
+    .wif-desc { font-size: 1rem; color: var(--gray-600); line-height: 1.75; margin: 0; }
+    .wif-circle { position: absolute; width: 140px; height: 140px; border-radius: 50%; overflow: hidden; border: 4px solid #fff; box-shadow: 0 4px 16px rgba(0,0,0,0.1); z-index: 1; }
+    .wif-circle img { width: 100%; height: 100%; object-fit: cover; }
+    .wif-circle-tl { top: 2rem; left: 4%; }
+    .wif-circle-tr { top: 1rem; right: 4%; }
+    .wif-circle-bl { bottom: 2rem; left: 8%; }
+    .wif-circle-br { bottom: 1rem; right: 6%; }
+    @media (max-width: 900px) {
+      .wif-circle { width: 90px; height: 90px; }
+      .wif-circle-tl { top: 0; left: 0; }
+      .wif-circle-tr { top: 0; right: 0; }
+      .wif-circle-bl { bottom: 0; left: 0; }
+      .wif-circle-br { bottom: 0; right: 0; }
     }
   </style>
 
@@ -835,6 +1017,44 @@
       );
       obs.observe(card);
     })();
+  </script>
+  <script>
+    (function () {
+      var solMockup = document.querySelector('.sol-mockup');
+      if (!solMockup) return;
+      var solObs = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            solMockup.querySelectorAll('.anim-bar').forEach(function (el) {
+              var w = el.getAttribute('data-width');
+              if (w) setTimeout(function () { el.style.width = w + '%'; }, 400);
+            });
+            solObs.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.3 });
+      solObs.observe(solMockup);
+    })();
+  </script>
+  <script>
+    function solTab(tab) {
+      // Switch panels
+      document.querySelectorAll('.sol-tab-panel').forEach(function(p) { p.style.display = 'none'; });
+      var panel = document.getElementById('sol-panel-' + tab);
+      if (panel) panel.style.display = '';
+      // Switch active nav
+      document.querySelectorAll('#sol-tabs span[data-tab]').forEach(function(s) { s.classList.remove('sol-mockup-nav-active'); });
+      var activeTab = document.querySelector('#sol-tabs span[data-tab="' + tab + '"]');
+      if (activeTab) activeTab.classList.add('sol-mockup-nav-active');
+    }
+    function solOpenTicket(day) {
+      document.querySelectorAll('.sol-ticket-detail').forEach(function(d) { d.style.display = 'none'; });
+      var ticket = document.getElementById('sol-ticket-detail-' + day);
+      if (ticket) ticket.style.display = '';
+    }
+    function solCloseTicket() {
+      document.querySelectorAll('.sol-ticket-detail').forEach(function(d) { d.style.display = 'none'; });
+    }
   </script>
 </body>
 
