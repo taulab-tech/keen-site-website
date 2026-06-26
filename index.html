@@ -56,16 +56,12 @@
 
         <div class="navbar-links">
           <a href="/">Home</a>
-          <a href="/products/">Products</a>
-          <a href="/story/">Our Story</a>
           <a href="/team/">Team</a>
           <a href="/contact/" class="active">Contact</a>
         </div>
 
         <div id="mobileMenu" class="mobile-menu">
           <a href="/">Home</a>
-          <a href="/products/">Products</a>
-          <a href="/story/">Our Story</a>
           <a href="/team/">Team</a>
           <a href="/contact/" class="active">Contact</a>
         </div>
@@ -94,13 +90,13 @@
       <div class="hero-text">
         <h1 class="hero-split-headline">What Actually Happened<br><span class="hero-verified">On Site?</span></h1>
         <p><strong>Not what someone remembered at 5 PM.</strong></p>
-        <p>KeenSite automatically verifies labour, equipment, and job activity to generate accurate daily reports.</p>
+        <p>KeenSite uses GPS and engine data to verify labour and equipment hours, so your crew's reports are accurate before anyone approves them.</p>
         <div class="hero-tagline">
           <span>No Chasing</span>
           <span class="dot"></span>
           <span>No Guessing</span>
           <span class="dot"></span>
-          <span>No Headaches</span>
+          <span>No Disputes</span>
         </div>
         <a href="/contact/" class="btn btn-orange">
           Book a 20-minute call.
@@ -347,8 +343,8 @@
       <div class="sol-new-grid">
         <div class="sol-new-text">
           <p class="section-label" style="color:rgba(255,255,255,0.45);margin-bottom:1rem;">The Solution</p>
-          <h2 class="sol-new-h">Every hour verified.<br>Every machine accounted for.</h2>
-          <p class="sol-new-sub">KeenSite cross-references GPS, engine hours, and crew activity against your schedule. By end of shift, the record is built and verified. No chasing, no paperwork.</p>
+          <h2 class="sol-new-h">Every hour verified.</h2>
+          <p class="sol-new-sub">KeenSite cross-references GPS, engine hours, and crew activity against your schedule. By end of shift, the record is pre-built and verified by hardware. Your team reviews and approves — no chasing, no guessing.</p>
           <div class="sol-new-features">
             <div class="sol-new-feat">
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
@@ -360,7 +356,7 @@
             </div>
             <div class="sol-new-feat">
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
-              <span>Daily reports and LEMs ready to send by morning</span>
+              <span>Daily reports and LEMs pre-filled and ready for approval</span>
             </div>
           </div>
         </div>
@@ -708,6 +704,95 @@
     </div>
   </section>
 
+  <!-- PRICING -->
+  <section class="section section-white pricing-section">
+    <div class="container">
+      <div class="pricing-header">
+        <p class="section-label">Pricing</p>
+        <h2 class="pricing-headline">Simple pricing. No surprises.</h2>
+        <p class="pricing-sub">One price per device. Everything included. Most contractors pay for it with the first T&M invoice they don't have to argue about.</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card pricing-card-main">
+          <div class="pricing-card-images">
+            <img src="/images/battery.png" alt="Battery GPS Tracker" class="pricing-device-img">
+            <img src="/images/wired.png" alt="Wired GPS Tracker" class="pricing-device-img">
+          </div>
+          <div class="pricing-card-badge">GPS Tracker</div>
+          <h3 class="pricing-card-name">Battery or Wired</h3>
+          <p class="pricing-card-use">For active machines — trucks, skid steers, excavators</p>
+          <div class="pricing-card-price">
+            <span class="pricing-amt">$250</span>
+            <span class="pricing-term">per device, one-time</span>
+          </div>
+          <div class="pricing-card-monthly">
+            <span class="pricing-monthly-amt">+ $30</span>
+            <span class="pricing-monthly-term">/device/month software</span>
+          </div>
+          <ul class="pricing-includes">
+            <li>GPS location tracking</li>
+            <li>Engine hours &amp; runtime</li>
+            <li>Verified timecards &amp; LEMs</li>
+            <li>Daily field reports</li>
+            <li>Maintenance alerts</li>
+            <li>Bluetooth hub for nearby Tags</li>
+          </ul>
+        </div>
+        <div class="pricing-card pricing-card-tag">
+          <div class="pricing-card-images">
+            <img src="/images/tag.png" alt="Bluetooth Tag" class="pricing-device-img">
+          </div>
+          <div class="pricing-card-badge">Bluetooth Beacon</div>
+          <h3 class="pricing-card-name">Tag</h3>
+          <p class="pricing-card-use">For passive assets — generators, trailers, attachments</p>
+          <div class="pricing-card-price">
+            <span class="pricing-amt">$40</span>
+            <span class="pricing-term">per tag, one-time</span>
+          </div>
+          <div class="pricing-card-monthly">
+            <span class="pricing-monthly-amt pricing-monthly-free">No monthly fee</span>
+          </div>
+          <ul class="pricing-includes">
+            <li>Passive asset tracking</li>
+            <li>Auto-detected by nearby GPS units</li>
+            <li>Know where every attachment is</li>
+            <li>No charging, no cell plan</li>
+          </ul>
+        </div>
+      </div>
+      <p class="pricing-footnote">20 machines? That's $5,000 to set up + $600/month. One missed billable hour per day across your fleet costs more than that.</p>
+    </div>
+  </section>
+
+  <style>
+    .pricing-section { padding: 5rem 0; }
+    .pricing-header { text-align: center; margin-bottom: 3rem; }
+    .pricing-headline { font-size: var(--headline-display-size); font-weight: 800; color: var(--indigo); letter-spacing: -0.03em; line-height: 1.05; margin: 0 0 1rem; }
+    .pricing-sub { font-size: 1.0625rem; color: var(--gray-600); line-height: 1.75; max-width: 36rem; margin: 0 auto; }
+    .pricing-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; max-width: 52rem; margin: 0 auto; }
+    .pricing-card { background: #fff; border: 1.5px solid var(--gray-200); border-radius: 1rem; padding: 2.5rem 2rem; display: flex; flex-direction: column; }
+    .pricing-card-images { display: flex; align-items: center; justify-content: center; gap: 1.5rem; margin-bottom: 1.5rem; padding: 1rem; background: var(--gray-50); border-radius: 0.75rem; }
+    .pricing-device-img { height: 120px; width: auto; object-fit: contain; }
+    .pricing-card-main { border-color: var(--orange); box-shadow: 0 4px 24px rgba(234,88,12,0.08); }
+    .pricing-card-badge { font-size: 0.7rem; font-weight: 700; color: var(--orange); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.5rem; }
+    .pricing-card-name { font-size: 1.5rem; font-weight: 800; color: var(--indigo); margin: 0 0 0.4rem; letter-spacing: -0.02em; }
+    .pricing-card-use { font-size: 0.875rem; color: var(--gray-500); margin: 0 0 1.25rem; font-weight: 500; }
+    .pricing-card-price { display: flex; align-items: baseline; gap: 0.5rem; margin-bottom: 0.25rem; }
+    .pricing-amt { font-size: 2.5rem; font-weight: 800; color: var(--indigo); letter-spacing: -0.03em; }
+    .pricing-term { font-size: 0.875rem; color: var(--gray-500); }
+    .pricing-card-monthly { margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--gray-100); }
+    .pricing-monthly-amt { font-size: 1.25rem; font-weight: 700; color: var(--indigo); }
+    .pricing-monthly-term { font-size: 0.875rem; color: var(--gray-500); }
+    .pricing-monthly-free { color: #15803d; }
+    .pricing-includes { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.6rem; }
+    .pricing-includes li { font-size: 0.9375rem; color: var(--gray-600); padding-left: 1.5rem; position: relative; line-height: 1.5; }
+    .pricing-includes li::before { content: '✓'; position: absolute; left: 0; color: var(--orange); font-weight: 700; }
+    .pricing-footnote { text-align: center; margin-top: 2rem; font-size: 0.9375rem; color: var(--gray-500); font-style: italic; }
+    @media (max-width: 700px) {
+      .pricing-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+
   <style>
     .sol-new { background: var(--indigo); padding: 6rem 0; }
     .sol-new-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 4rem; align-items: center; margin-bottom: 5rem; }
@@ -887,7 +972,6 @@
             <span class="wif-pill">Excavation</span>
             <span class="wif-pill">Piling</span>
             <span class="wif-pill">Earthworks</span>
-            <span class="wif-pill">Line Painting</span>
             <span class="wif-pill">Civil</span>
           </div>
           <p class="wif-desc">If you're running piling, drilling, excavation, or civil crews on time-and-material contracts and your billing accuracy depends on what operators write down at the end of the day, KeenSite was built for you. You bill by the hour. Every hour has to be right.</p>
@@ -921,8 +1005,8 @@
   <!-- CTA -->
   <section class="section section-indigo cta-section">
     <div class="container">
-      <h2>Make reporting and billing automatic.</h2>
-      <p>See how KeenSite can eliminate the gap between field work and accurate billing for your team.</p>
+      <h2>Make reporting accurate and effortless.</h2>
+      <p>See how KeenSite verifies field data so your team can approve with confidence.</p>
       <a href="/contact/" class="btn btn-orange">
         Book a 20-minute call.
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="none"
@@ -947,15 +1031,14 @@
         </div>
         <div class="footer-col">
           <h4>Company</h4>
-          <a href="/story/">Our Story</a>
           <a href="/team/">Team</a>
           <a href="/contact/">Contact</a>
         </div>
         <div class="footer-col">
           <h4>Product</h4>
-          <a href="/">Features</a>
-          <a href="/">GPS Tracking</a>
-          <a href="/">Reporting</a>
+          <a href="/#hardware">Hardware</a>
+          <a href="/#pricing">GPS Tracking</a>
+          <a href="/#solution">Reporting</a>
         </div>
       </div>
       <div class="footer-bottom">
