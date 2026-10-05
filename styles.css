@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
 *, *::before, *::after {
   margin: 0;
@@ -1517,7 +1517,7 @@ h2.headline-display {
 }
 
 .form-group label {
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
   font-weight: 500;
   color: var(--gray-700);
 }
@@ -1528,7 +1528,7 @@ h2.headline-display {
   padding: 0.75rem 1rem;
   border: 1px solid var(--gray-300);
   border-radius: 0.5rem;
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-family: inherit;
   color: var(--indigo);
   background: var(--white);
@@ -1564,7 +1564,7 @@ h2.headline-display {
 
 /* ── CONTACT SIDEBAR ── */
 .contact-sidebar h3 {
-  font-size: 1.125rem;
+  font-size: 1.1875rem;
   font-weight: 600;
   color: var(--indigo);
   margin-bottom: 1.5rem;
@@ -1586,7 +1586,7 @@ h2.headline-display {
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 0.375rem;
-  background: rgba(220, 111, 61, 0.1);
+  background: var(--orange);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1596,57 +1596,18 @@ h2.headline-display {
 .contact-info-icon svg {
   width: 1.25rem;
   height: 1.25rem;
-  color: var(--orange);
+  color: var(--white);
 }
 
 .contact-info-item .info-label {
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
   font-weight: 500;
   color: var(--gray-700);
 }
 
 .contact-info-item .info-value {
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
   color: var(--gray-500);
-}
-
-.expect-box {
-  background: var(--gray-50);
-  border: 1px solid var(--gray-100);
-  border-radius: 0.75rem;
-  padding: 1.5rem;
-  margin-top: 2rem;
-}
-
-.expect-box h4 {
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: var(--indigo);
-  margin-bottom: 0.75rem;
-}
-
-.expect-box li {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.75rem;
-  margin-bottom: 0.75rem;
-}
-
-.expect-box li:last-child {
-  margin-bottom: 0;
-}
-
-.expect-box li svg {
-  width: 1rem;
-  height: 1rem;
-  color: var(--orange);
-  flex-shrink: 0;
-  margin-top: 0.125rem;
-}
-
-.expect-box li span {
-  font-size: 0.875rem;
-  color: var(--gray-600);
 }
 
 /* ── FOOTER ── */

@@ -26,12 +26,63 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      margin-top: 0.5rem;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      margin-top: 0.75rem;
       color: var(--gray-400);
-      transition: color 0.2s;
+      border: 1.5px solid var(--gray-200);
+      transition: color 0.2s, border-color 0.2s, background 0.2s;
     }
     .team-linkedin:hover {
       color: #0a66c2;
+      border-color: #0a66c2;
+      background: rgba(10,102,194,0.06);
+    }
+    /* Team member card upgrade */
+    .team-member {
+      background: var(--white);
+      border: 1px solid var(--gray-100);
+      border-radius: 1rem;
+      padding: 2rem 1.5rem 1.75rem;
+      text-align: center;
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .team-member:hover {
+      box-shadow: 0 8px 32px rgba(27,44,80,0.1);
+      transform: translateY(-2px);
+    }
+    .team-grid {
+      gap: 1.25rem !important;
+    }
+    .team-member-photo {
+      width: 6rem;
+      height: 6rem;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 auto 1.25rem;
+      border: 3px solid var(--gray-100);
+      background-color: var(--gray-50);
+    }
+    @media (min-width: 1024px) {
+      .team-member-photo {
+        width: 7rem;
+        height: 7rem;
+      }
+    }
+    .team-member h3 {
+      font-size: 1.0625rem;
+      font-weight: 700;
+      color: var(--indigo);
+      letter-spacing: -0.01em;
+    }
+    .team-member .role {
+      font-size: 0.8125rem;
+      font-weight: 600;
+      color: var(--orange);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-top: 0.25rem;
     }
   </style>
   <script type="text/javascript">
@@ -63,12 +114,18 @@
 
         <div class="navbar-links">
           <a href="/">Home</a>
+          <a href="/#how">How it works</a>
+          <a href="/#maintenance">Maintenance</a>
+          <a href="/#pricing">Pricing</a>
           <a href="/team/" class="active">Team</a>
           <a href="/contact/">Contact</a>
         </div>
 
         <div id="mobileMenu" class="mobile-menu">
           <a href="/">Home</a>
+          <a href="/#how">How it works</a>
+          <a href="/#maintenance">Maintenance</a>
+          <a href="/#pricing">Pricing</a>
           <a href="/team/" class="active">Team</a>
           <a href="/contact/">Contact</a>
         </div>
@@ -104,8 +161,7 @@
     <div class="container">
       <div class="section-center" style="margin-bottom:3.5rem;">
         <h2>The team behind KeenSite</h2>
-        <p style="margin-top:1rem; color:var(--gray-500); line-height:1.6;">We're a small, focused team building
-          something meaningful for the construction industry.</p>
+        <p style="margin-top:1rem; color:var(--gray-500); line-height:1.6; max-width: 28rem; margin-left: auto; margin-right: auto;">A small team with deep roots in construction and technology — building what we wished existed.</p>
       </div>
       <div class="team-grid">
         <div class="team-member">
@@ -152,19 +208,73 @@
     </div>
   </section>
 
-  <section class="section section-indigo cta-section">
+  <section class="cta-section-new" style="--section-bg: var(--indigo);">
     <div class="container">
-      <h2>Ready to see it in action?</h2>
-      <a href="/contact/" class="btn btn-orange" style="margin-top:2rem;">
-        Get a Demo
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="none"
-          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <line x1="5" y1="12" x2="19" y2="12" />
-          <polyline points="12 5 19 12 12 19" />
-        </svg>
-      </a>
+      <div class="cta-inner">
+        <div class="cta-text">
+          <p class="section-label" style="color: rgba(255,255,255,0.5);">Ready to see it?</p>
+          <h2>See KeenSite on one of your jobs.</h2>
+          <p>Bring one quote and a week of tickets. We'll walk through where hours, delays, and extras may be getting missed.</p>
+        </div>
+        <div class="cta-action">
+          <a href="/contact/" class="btn btn-orange">
+            See KeenSite on one of your jobs
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
+          </a>
+          <p class="cta-note">No pressure, no long-term commitment required.</p>
+        </div>
+      </div>
     </div>
   </section>
+
+  <style>
+    .cta-section-new {
+      background: var(--indigo);
+      padding: 5rem 0;
+    }
+    .cta-inner {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 4rem;
+      align-items: center;
+    }
+    .cta-text h2 {
+      font-size: clamp(1.75rem, 3vw, 2.5rem);
+      font-weight: 800;
+      color: var(--white);
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+      margin: 0 0 0.875rem;
+    }
+    .cta-text p {
+      font-size: 1.0625rem;
+      color: rgba(255,255,255,0.65);
+      line-height: 1.7;
+      margin: 0;
+      max-width: 36rem;
+    }
+    .cta-action {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.875rem;
+      flex-shrink: 0;
+    }
+    .cta-note {
+      font-size: 0.8125rem;
+      color: rgba(255,255,255,0.4);
+      margin: 0;
+      text-align: center;
+    }
+    @media (max-width: 768px) {
+      .cta-inner { grid-template-columns: 1fr; gap: 2rem; }
+      .cta-action { align-items: flex-start; }
+    }
+  </style>
 
   <footer class="footer">
     <div class="container footer-inner">

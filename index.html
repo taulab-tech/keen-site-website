@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KeenSite | Equipment Tracking & T&M Billing Software for Alberta & Saskatchewan Contractors</title>
-  <meta name="description" content="KeenSite automatically tracks equipment hours, crew time, and jobsite activity for excavating, piling, and civil contractors in Alberta and Saskatchewan. Verified T&M records and LEM sheets, built automatically.">
+  <title>KeenSite | Know When a Job Starts Losing Money | Excavation, Earthworks &amp; Piling Software</title>
+  <meta name="description" content="KeenSite connects your quotes, field records, and equipment data to show where hours, delays, extras, and overruns are drifting from plan, while the job is still active. Built for excavation, earthworks, piling, drilling, and civil contractors.">
   <meta name="keywords" content="excavating contractor software Alberta, piling contractor software Saskatchewan, T&M billing software Canada, equipment hours tracking, LEM sheet software, civil contractor field reporting, GPS tracking excavator skid steer, construction timecard app Alberta, automatic field reports, T&M verified records">
   <meta name="robots" content="index, follow">
   <meta name="author" content="KeenSite">
@@ -14,13 +14,13 @@
   <link rel="canonical" href="https://www.keensite.ca/">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.keensite.ca/">
-  <meta property="og:title" content="KeenSite | Equipment Tracking & T&M Billing Software for Alberta & Saskatchewan Contractors">
-  <meta property="og:description" content="KeenSite automatically tracks equipment hours, crew time, and jobsite activity for excavating, piling, and civil contractors in Alberta and Saskatchewan. Verified T&M records and LEM sheets, built automatically.">
+  <meta property="og:title" content="KeenSite | Know When a Job Starts Losing Money">
+  <meta property="og:description" content="Connect your quotes, field records, and equipment data to see where a job is drifting from plan while there is still time to act.">
   <meta property="og:image" content="https://www.keensite.ca/images/logo.png">
   <meta property="og:site_name" content="KeenSite">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="KeenSite | Equipment Tracking & T&M Billing Software for Alberta & Saskatchewan Contractors">
-  <meta name="twitter:description" content="KeenSite automatically tracks equipment hours, crew time, and jobsite activity for excavating, piling, and civil contractors in Alberta and Saskatchewan.">
+  <meta name="twitter:title" content="KeenSite | Know When a Job Starts Losing Money">
+  <meta name="twitter:description" content="Connect your quotes, field records, and equipment data to see where a job is drifting from plan while there is still time to act.">
   <meta name="twitter:image" content="https://www.keensite.ca/images/logo.png">
   <link rel="icon" href="/images/logo.png">
   <link rel="stylesheet" href="/styles.css">
@@ -55,15 +55,21 @@
       <div class="navbar-right">
 
         <div class="navbar-links">
-          <a href="/">Home</a>
+          <a href="/" class="active">Home</a>
+          <a href="/#how">How it works</a>
+          <a href="/#maintenance">Maintenance</a>
+          <a href="/#pricing">Pricing</a>
           <a href="/team/">Team</a>
-          <a href="/contact/" class="active">Contact</a>
+          <a href="/contact/">Contact</a>
         </div>
 
         <div id="mobileMenu" class="mobile-menu">
-          <a href="/">Home</a>
+          <a href="/" class="active">Home</a>
+          <a href="/#how">How it works</a>
+          <a href="/#maintenance">Maintenance</a>
+          <a href="/#pricing">Pricing</a>
           <a href="/team/">Team</a>
-          <a href="/contact/" class="active">Contact</a>
+          <a href="/contact/">Contact</a>
         </div>
 
         <div class="navbar-actions">
@@ -84,323 +90,209 @@
     </div>
   </nav>
 
-  <!-- HERO -->
-  <section class="hero hero-split">
-    <div class="container hero-split-inner">
-      <div class="hero-text">
-        <h1 class="hero-split-headline">From field to office.<br><span class="hero-verified">Automatically.</span></h1>
-        <ul class="hero-bullets">
-          <li>Foremen should be running crews.</li>
-          <li>PMs should be managing projects.</li>
-          <li>Owners should be making decisions.</li>
+
+  <!-- 1. HERO: PROFIT DRIFT -->
+  <section class="kd-hero" id="top">
+    <div class="container kd-hero-grid">
+      <div class="kd-hero-text">
+        <h1>Know when a job starts <span>losing money.</span></h1>
+        <p class="kd-hero-sub">KeenSite connects your quotes, field records, and equipment data to show where hours, delays, extras, and overruns are drifting from plan, while there's still time to do something about them.</p>
+        <div class="kd-cta-row">
+          <a href="/contact/" class="btn btn-orange">See it on one of your jobs
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+          <a href="https://calendly.com/colton-keensite/30min" target="_blank" rel="noopener" class="btn kd-btn-ghost">Book a 30-minute call</a>
+        </div>
+      </div>
+
+      <div class="kd-scope sol-mockup" id="kdScope" aria-label="Example: planned versus actual on one job">
+        <div class="sol-mockup-bar"><span>Riverbend Phase 3</span><span class="sol-mockup-badge-active">Active</span><span class="kd-watch"><i></i>Watching</span></div>
+        <div class="sol-mockup-nav"><span class="sol-mockup-nav-active">Overview</span><span>Activity</span><span>Daily Tickets</span><span>Documents</span></div>
+        <div class="kd-scope-body">
+          <div class="sol-ov-section">
+            <div class="sol-ov-section-head"><span class="sol-ov-section-title">Planned Equipment</span><span class="sol-ov-section-meta">1 unit &middot; 28h quoted</span></div>
+            <div class="sol-ov-row"><span class="sol-ov-row-name">CAT 320</span><span class="sol-ov-row-val"><span data-count="31.4" data-dec="1">31.4</span> / 28h</span></div>
+            <div class="kd-track" style="--ov:8%"><i class="kd-plan"></i><i class="kd-fill"></i><i class="kd-over"></i></div>
+          </div>
+          <div class="sol-ov-section">
+            <div class="sol-ov-section-head"><span class="sol-ov-section-title">Labour</span><span class="sol-ov-section-meta">2 crew &middot; 56h quoted</span></div>
+            <div class="sol-ov-row"><span class="sol-ov-row-name">Operator</span><span class="sol-ov-row-val"><span data-count="31.5" data-dec="1">31.5</span> / 28h</span></div>
+            <div class="kd-track" style="--ov:10%"><i class="kd-plan"></i><i class="kd-fill"></i><i class="kd-over"></i></div>
+            <div class="sol-ov-row"><span class="sol-ov-row-name">Swamper</span><span class="sol-ov-row-val"><span data-count="31.5" data-dec="1">31.5</span> / 28h</span></div>
+            <div class="kd-track" style="--ov:10%"><i class="kd-plan"></i><i class="kd-fill"></i><i class="kd-over"></i></div>
+          </div>
+          <div class="sol-ov-section">
+            <div class="sol-ov-section-head"><span class="sol-ov-section-title">Materials</span></div>
+            <div class="sol-ov-row"><span class="sol-ov-row-name">Gravel</span><span class="sol-ov-row-val"><span data-count="58" data-dec="0">58</span> / 50 ton</span></div>
+            <div class="kd-track" style="--ov:12.8%"><i class="kd-plan"></i><i class="kd-fill"></i><i class="kd-over"></i></div>
+          </div>
+          <div class="kd-flags">
+            <div class="kd-flags-label"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22V4"/><path d="M4 4h13l-2 4 2 4H4"/></svg> KeenSite flags</div>
+            <div class="kd-flag-grid">
+              <div class="kd-flag">+3.4 excavator hrs</div>
+              <div class="kd-flag">+7 labour hrs</div>
+              <div class="kd-flag">+8 tons material</div>
+              <div class="kd-flag red">1 hr standby</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="kd-sec kd-dark" id="how" style="overflow:hidden;">
+    <div class="container">
+      <div class="kd-conn-head">
+        <p class="kd-label">How it works</p>
+        <h2 class="kd-h2">Documents, texts, and GPS data, <em>turned into structure.</em></h2>
+        <p class="kd-lede">It all feeds into one live picture of the job &mdash; no new software for the crew, no manual entry for the office.</p>
+      </div>
+
+      <div class="kd-flow2">
+        <div class="kd-flow-side">
+          <p class="kd-flow-side-tag">What goes in</p>
+          <div class="kd-orbit-wrap kd-reveal">
+            <div class="kd-orbit">
+              <div class="kd-orbit-ring"></div>
+              <div class="kd-orbit-ring r2"></div>
+              <div class="kd-orbit-spin">
+                <div class="kd-orbit-node" style="--a:45deg">
+                  <div class="kd-orbit-card">
+                    <span class="kd-orbit-card-ic"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></span>
+                    <b>Quotes</b>
+                  </div>
+                </div>
+                <div class="kd-orbit-node" style="--a:135deg">
+                  <div class="kd-orbit-card">
+                    <span class="kd-orbit-card-ic"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6a1 1 0 0 1 1 1v1h1a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h1V4a1 1 0 0 1 1-1z"/><path d="M9 12l2 2 4-4"/></svg></span>
+                    <b>Timesheets &amp; tickets</b>
+                  </div>
+                </div>
+                <div class="kd-orbit-node" style="--a:225deg">
+                  <div class="kd-orbit-card">
+                    <span class="kd-orbit-card-ic wa"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-12.36 7.56L3 20l1.05-5.4A8.5 8.5 0 1 1 21 11.5z"/></svg></span>
+                    <b>WhatsApp messages</b>
+                  </div>
+                </div>
+                <div class="kd-orbit-node" style="--a:315deg">
+                  <div class="kd-orbit-card">
+                    <span class="kd-orbit-card-ic"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="17" width="16" height="3" rx="1.5"/><path d="M5 17V10h6v7"/><path d="M9 10 L17 4"/><path d="M17 4 L21 12"/><path d="M21 12 L17.5 14.5 L21.5 15.5 Z"/></svg></span>
+                    <b>GPS &amp; equipment trackers</b>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="kd-flow-arrow">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </div>
+
+        <div class="kd-flow-side">
+          <p class="kd-flow-side-tag">What you see</p>
+          <div class="kd-flow-ui">
+            <div class="kd-flow-ui-stage kd-reveal">
+              <div class="sol-mockup">
+                <div class="sol-mockup-bar"><span>Riverbend Phase 3</span><span class="sol-mockup-badge-active"><i class="kd-live" style="display:inline-block;width:6px;height:6px;margin-right:.3rem;vertical-align:1px;"></i>Active</span></div>
+                <div class="sol-mockup-body">
+                  <div class="sol-ov-section">
+                    <div class="sol-ov-section-head"><span class="sol-ov-section-title">Labour</span><span class="sol-ov-section-meta">56h quoted</span></div>
+                    <div class="sol-ov-row"><span class="sol-ov-row-name">Operator</span><span class="sol-ov-row-val"><span data-count="31.5" data-dec="1">0</span> / 28h <span class="sol-ov-over">+3.5h</span></span></div>
+                    <div class="kd-track" style="--ov:10%"><i class="kd-plan"></i><i class="kd-fill"></i><i class="kd-over"></i></div>
+                  </div>
+                  <div class="sol-ov-section">
+                    <div class="sol-ov-section-head"><span class="sol-ov-section-title">Equipment</span><span class="sol-ov-section-meta">28h quoted</span></div>
+                    <div class="sol-ov-row"><span class="sol-ov-row-name">CAT 320</span><span class="sol-ov-row-val"><span data-count="31.4" data-dec="1">0</span> / 28h <span class="sol-ov-over">+3.4h</span></span></div>
+                    <div class="kd-track" style="--ov:8%"><i class="kd-plan"></i><i class="kd-fill"></i><i class="kd-over"></i></div>
+                  </div>
+                  <div class="sol-ov-section">
+                    <div class="sol-ov-section-head"><span class="sol-ov-section-title">Materials</span><span class="sol-ov-section-meta">50 ton quoted</span></div>
+                    <div class="sol-ov-row"><span class="sol-ov-row-name">Gravel</span><span class="sol-ov-row-val"><span data-count="58" data-dec="0">0</span> / 50 ton <span class="sol-ov-over">+8 ton</span></span></div>
+                    <div class="kd-track" style="--ov:12.8%"><i class="kd-plan"></i><i class="kd-fill"></i><i class="kd-over"></i></div>
+                  </div>
+                </div>
+              </div>
+              <div class="kd-flow-notif" style="--t:-1.1rem; --r:-2.5rem; --fd:-1s; --pd:.75s;">
+                <span class="kd-flow-notif-ic"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span>
+                <div><b>Equipment over plan</b><span>+3.4 hrs vs. quote</span></div>
+              </div>
+              <div class="kd-flow-notif bill" style="--b:-1.4rem; --l:-2.75rem; --fd:-3.5s; --pd:1s;">
+                <span class="kd-flow-notif-ic"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="2" x2="12" y2="22"/><path d="M17 6H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></span>
+                <div><b>Extra to bill</b><span>1 hr standby detected</span></div>
+              </div>
+              <div class="kd-flow-notif msg" style="--t:56%; --r:-3rem; --fd:-5s; --pd:1.25s;">
+                <span class="kd-flow-notif-ic"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
+                <div><b>Possible delay</b><span class="kd-flow-quote">&ldquo;hit rocks at riverbend&rdquo;<span class="kd-flow-quote-from">&mdash; Dave</span></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 2. OWNER -->
+  <section class="kd-sec kd-white" id="solution">
+    <div class="container kd-split">
+      <div>
+        <p class="kd-label">For the owner</p>
+        <h2 class="kd-h2">Know where the money is going <em>before the invoice.</em></h2>
+        <p class="kd-lede">KeenSite tells you when a job goes over budget, and when there's an extra you can bill. Contractors rarely lose margin in one big hit. It leaks out a few hours at a time.</p>
+        <ul class="kd-leaks">
+          <li>Extra hours</li>
+          <li>Standby</li>
+          <li>Delays</li>
+          <li>Scope changes</li>
         </ul>
-        <p>Instead, foremen are filling out timecards from memory. PMs are chasing paper. And owners don't see the problem until the invoice. KeenSite captures equipment hours, crew time, and extras as they happen, so you can pivot on day three, not discover it on the bill.</p>
-        <a href="/contact/" class="btn btn-orange">
-          Book a 20-minute call.
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="5" y1="12" x2="19" y2="12" />
-            <polyline points="12 5 19 12 12 19" />
-          </svg>
+        <a href="/contact/" class="btn btn-orange">See profit drift on a real job
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
         </a>
       </div>
-      <div class="hero-video-wrap">
-        <video class="hero-video-right" autoplay muted loop playsinline>
-          <source src="images/keen_hero_3.mp4" type="video/mp4">
-        </video>
+
+      <div>
+        <div class="kd-notes" aria-label="Example alerts">
+          <div class="kd-nc over kd-reveal" style="--ml:0;--fd:0s;--d:0s">
+            <span class="kd-nc-ic"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span>
+            <div><div class="kd-nc-top"><span class="kd-nc-tag">Over budget</span><span class="kd-nc-time">Just now</span></div><b>Excavator is over plan</b><p>Riverbend Phase 3: 31.4 hrs against 28 quoted.</p></div>
+          </div>
+          <div class="kd-nc bill kd-reveal" style="--ml:3.5rem;--fd:-1.5s;--d:0.12s">
+            <span class="kd-nc-ic"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
+            <div><div class="kd-nc-top"><span class="kd-nc-tag">Potential extra</span><span class="kd-nc-time">12 min ago</span></div><b>1 hr standby</b><p>"Waiting on surveyor for 2 hours" - Dave.</p></div>
+          </div>
+          <div class="kd-nc over kd-reveal" style="--ml:1rem;--fd:-3s;--d:0.24s">
+            <span class="kd-nc-ic"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span>
+            <div><div class="kd-nc-top"><span class="kd-nc-tag">Over budget</span><span class="kd-nc-time">1 hr ago</span></div><b>Gravel is over plan</b><p>58 tons used against 50 quoted.</p></div>
+          </div>
+          <div class="kd-nc msg kd-reveal" style="--ml:4rem;--fd:-4.5s;--d:0.36s">
+            <span class="kd-nc-ic"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
+            <div><div class="kd-nc-top"><span class="kd-nc-tag">Potential delay</span><span class="kd-nc-time">Yesterday</span></div><b>Hit Rocks</b><p>"hit rocks at riverbend" - Dave.</p></div>
+          </div>
+        </div>
+        <p class="kd-example-tag">Example alerts.</p>
       </div>
     </div>
   </section>
 
-  <style>
-    .hero-split {
-      background: #ffffff;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      padding: 7rem 0 5rem;
-    }
-    .hero-split-inner {
-      display: grid;
-      grid-template-columns: 1fr 480px;  /* fixed width for video side */
-      gap: 3rem;
-      align-items: center;
-    }
-    .hero-text {
-      color: var(--indigo);
-    }
-    .hero-split-headline {
-      font-size: clamp(3rem, 6vw, 5rem);
-      font-weight: 800;
-      color: var(--indigo) !important;
-      letter-spacing: -0.03em;
-      line-height: 1.05;
-      margin: 0 0 1.5rem;
-      text-shadow: none !important;
-    }
-    .hero-verified {
-      color: var(--orange);
-      display: block;
-    }
-    .hero-text p {
-      color: var(--gray-600);
-      font-size: 1.0625rem;
-      line-height: 1.75;
-      margin: 0 0 0.75rem;
-      text-shadow: none;
-    }
-    .hero-text p strong {
-      color: var(--indigo);
-    }
-    .hero-bullets {
-      list-style: none;
-      padding: 0;
-      margin: 0 0 1.25rem;
-    }
-    .hero-bullets li {
-      font-size: 1.0625rem;
-      font-weight: 700;
-      color: var(--indigo);
-      line-height: 1.75;
-      padding-left: 1.25rem;
-      position: relative;
-    }
-    .hero-bullets li::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0.65em;
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background: var(--orange);
-    }
-    .hero-text .hero-tagline {
-      margin: 1.5rem 0 2rem;
-      display: flex;
-      gap: 1.25rem;
-      flex-wrap: wrap;
-    }
-    .hero-tag-item {
-      display: flex;
-      align-items: center;
-      gap: 0.4rem;
-      font-size: 0.875rem;
-      font-weight: 700;
-      color: var(--indigo);
-      letter-spacing: 0.01em;
-    }
-    .hero-video-wrap {
-      border-radius: 1rem;
-      overflow: hidden;
-      box-shadow: 0 16px 48px rgba(0, 0, 0, 0.12);
-      width: 100%;
-      background: #000;
-    }
-    .hero-video-right {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-    @media (max-width: 900px) {
-      .hero-split {
-        padding: 6rem 0 4rem;
-        min-height: auto;
-        overflow: hidden;
-      }
-      .hero-split-inner {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-      }
-      .hero-text {
-        min-width: 0;
-      }
-      .hero-text p {
-        font-size: 1rem;
-      }
-      .hero-text .hero-tagline {
-        gap: 0.75rem;
-      }
-      .hero-video-wrap {
-        max-width: 100%;
-        margin: 0 auto;
-      }
-    }
-  </style>
-
-  <!-- PROBLEM -->
-  <!-- Opening statement -->
-  <section class="section section-white" style="padding-bottom:1.5rem; border-bottom: 1px solid var(--gray-100);"></section>
+  <!-- 3. GM -->
+  <section class="kd-sec kd-gray" id="operations">
     <div class="container">
-      <p class="section-label">The Problem</p>
-      <p class="prob-closer-text">Small leaks have big costs.</p>
-    </div>
-  </section>
-
-  <section class="section section-white" style="padding-top:3rem; padding-bottom:5rem;">
-    <div class="container">
-      <div class="prob-grid">
-
-        <!-- Block 1: text + cards -->
-        <div class="prob-block">
-          <div class="prob-cards">
-            <div class="prob-card">
-              <div class="prob-card-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-              </div>
-              <div>
-                <p class="prob-card-title">Foremen run crews, not spreadsheets. Reports can be off by 10%</p>
-                <p class="prob-card-body">Their job is managing the site, not tracking every hour. Timecards get filled from memory at shift end. Hours rounded, details gone.</p>
-              </div>
-            </div>
-            <div class="prob-card">
-              <div class="prob-card-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
-              </div>
-              <div>
-                <p class="prob-card-title">The office should manage projects, not data entry.</p>
-                <p class="prob-card-body">Timecard to spreadsheet to invoice. Every handoff is time spent moving information instead of managing progress.</p>
-              </div>
-            </div>
-            <div class="prob-card">
-              <div class="prob-card-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="13" x2="15" y2="13"/></svg>
-              </div>
-              <div>
-                <p class="prob-card-title">4% of revenue leaks out every month</p>
-                <p class="prob-card-body">Lost tickets, uncaptured hours, forgotten charges. For every $1M in revenue, that's $40K gone before anyone notices.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Block 2: image -->
-        <div class="prob-block prob-block-image">
-          <img src="/images/reports.jpg" alt="Field reports" class="prob-image">
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <style>
-    .prob-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 3rem;
-      align-items: start;
-    }
-    .prob-block {
-      padding: 2rem 2.5rem;
-      display: flex;
-      flex-direction: column;
-    }
-    .prob-sub {
-      font-size: 1rem;
-      color: var(--gray-600);
-      line-height: 1.7;
-      margin: 0 0 2rem;
-    }
-    .prob-cards {
-      display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
-    }
-    .prob-card {
-      display: flex;
-      align-items: flex-start;
-      gap: 0.875rem;
-      background: #ffffff;
-      border: 2px solid var(--indigo);
-      border-radius: 0.75rem;
-      padding: 1.25rem 1.5rem;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-    .prob-card:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-    }
-    .prob-card-icon {
-      color: var(--orange);
-      flex-shrink: 0;
-      margin-top: 0.15rem;
-      background: rgba(255, 107, 0, 0.1);
-      border-radius: 0.5rem;
-      padding: 0.5rem;
-    }
-    .prob-card-title {
-      font-size: 1rem;
-      font-weight: 800;
-      color: var(--indigo);
-      margin: 0 0 0.35rem;
-      letter-spacing: -0.01em;
-    }
-    .prob-card-body {
-      font-size: 0.875rem;
-      color: var(--gray-600);
-      line-height: 1.6;
-      margin: 0;
-    }
-    .prob-closer-text {
-      font-size: var(--headline-display-size);
-      font-weight: 800;
-      color: var(--indigo);
-      letter-spacing: -0.03em;
-      line-height: 1.05;
-      margin: 0;
-    }
-    .prob-block-image {
-      padding: 0;
-      overflow: hidden;
-      border-radius: 0.75rem;
-      align-self: stretch;
-    }
-    .prob-image {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      border-radius: 0.75rem;
-    }
-    @media (max-width: 900px) {
-      .prob-grid { grid-template-columns: 1fr; }
-      .prob-block { padding: 1.5rem 0; }
-    }
-  </style>
-
-  <!-- SOLUTION -->
-  <section class="sol-new">
-    <div class="container">
-      <div class="sol-new-grid">
-        <div class="sol-new-text">
-          <p class="section-label" style="color:rgba(255,255,255,0.45);margin-bottom:1rem;">The Solution</p>
-          <h2 class="sol-new-h">See what's happening on site. As it happens.</h2>
-          <p class="sol-new-sub">KeenSite pulls GPS, engine data, and crew tickets into one view per job. So you instantly know when you're losing money.</p>
-          <div class="sol-new-features">
-            <div class="sol-new-feat">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
-              <span>Equipment hours and crew time logged automatically from GPS</span>
-            </div>
-            <div class="sol-new-feat">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
-              <span>Daily tickets scanned in. Actuals populated. No re-typing.</span>
-            </div>
-            <div class="sol-new-feat">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
-              <span>"Hit rock," "standby," "wait for crane" flagged as potential extras automatically</span>
-            </div>
-            <div class="sol-new-feat">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
-              <span>Estimated vs. actual visible on day 3, not day 30</span>
-            </div>
-          </div>
+      <div class="kd-split kd-gm">
+        <div>
+          <p class="kd-label">For the GM</p>
+          <h2 class="kd-h2">Know what's happening on every job <em>before you have to ask.</em></h2>
+          <p class="kd-lede">One place to see what's happening across your jobs and your equipment. No hunting through texts, spreadsheets, and glove-box paperwork.</p>
+          <ul class="kd-chips">
+            <li>Active jobs</li><li>Equipment</li><li>Machine hours</li><li>Field activity</li><li>Maintenance</li><li>Tickets</li><li>Issues</li><li>Job progress</li>
+          </ul>
         </div>
         <div class="sol-new-img">
           <div class="sol-mockup">
             <div class="sol-mockup-bar">
               <div class="sol-mockup-bar-dot"></div>
-              <span>26-1 University of Saskatchewan</span>
+              <span>Riverbend Phase 3</span>
               <span class="sol-mockup-badge-active">Active</span>
             </div>
             <div class="sol-mockup-nav" id="sol-tabs">
@@ -411,35 +303,26 @@
             </div>
 
             <!-- OVERVIEW TAB -->
-            <div class="sol-mockup-body sol-tab-panel" id="sol-panel-overview">
+<div class="sol-mockup-body sol-tab-panel" id="sol-panel-overview">
               <div class="sol-overview-grid">
                 <div class="sol-overview-left">
                   <div class="sol-ov-section">
-                    <div class="sol-ov-section-head"><span class="sol-ov-section-title">Planned Equipment</span><span class="sol-ov-section-meta">1 unit &middot; 28h estimated</span></div>
-                    <div class="sol-ov-row"><span class="sol-ov-row-name">2018 T650 Bobcat</span><span class="sol-ov-row-val">8.9 / 28h</span></div>
-                    <div class="sol-ov-progress"><div class="sol-ov-progress-bar" style="width: 31.8%;"></div></div>
+                    <div class="sol-ov-section-head"><span class="sol-ov-section-title">Planned Equipment</span><span class="sol-ov-section-meta">1 unit &middot; 28h quoted</span></div>
+                    <div class="sol-ov-row"><span class="sol-ov-row-name">CAT 320</span><span class="sol-ov-row-val">31.4 / 28h <span class="sol-ov-over">+3.4h</span></span></div><div class="kd-track kd-static" style="--ov:8%"><i class="kd-plan"></i><i class="kd-fill"></i><i class="kd-over"></i></div>
                   </div>
                   <div class="sol-ov-section">
-                    <div class="sol-ov-section-head"><span class="sol-ov-section-title">Labour</span><span class="sol-ov-section-meta">2 crew &middot; 56h estimated</span></div>
-                    <div class="sol-ov-row"><span class="sol-ov-row-name">Operator</span><span class="sol-ov-row-val">17.75 / 28h</span></div>
-                    <div class="sol-ov-progress"><div class="sol-ov-progress-bar" style="width: 63.4%;"></div></div>
-                    <div class="sol-ov-row"><span class="sol-ov-row-name">Swamper</span><span class="sol-ov-row-val">17.75 / 28h</span></div>
-                    <div class="sol-ov-progress"><div class="sol-ov-progress-bar" style="width: 63.4%;"></div></div>
+                    <div class="sol-ov-section-head"><span class="sol-ov-section-title">Labour</span><span class="sol-ov-section-meta">2 crew &middot; 56h quoted</span></div>
+                    <div class="sol-ov-row"><span class="sol-ov-row-name">Operator</span><span class="sol-ov-row-val">31.5 / 28h <span class="sol-ov-over">+3.5h</span></span></div><div class="kd-track kd-static" style="--ov:10%"><i class="kd-plan"></i><i class="kd-fill"></i><i class="kd-over"></i></div><div class="sol-ov-row"><span class="sol-ov-row-name">Swamper</span><span class="sol-ov-row-val">31.5 / 28h <span class="sol-ov-over">+3.5h</span></span></div><div class="kd-track kd-static" style="--ov:10%"><i class="kd-plan"></i><i class="kd-fill"></i><i class="kd-over"></i></div>
                   </div>
                   <div class="sol-ov-section">
                     <div class="sol-ov-section-head"><span class="sol-ov-section-title">Materials</span></div>
-                    <div class="sol-ov-row"><span class="sol-ov-row-name">Gravel</span><span class="sol-ov-row-val">20 / 50 ton</span></div>
-                    <div class="sol-ov-progress"><div class="sol-ov-progress-bar" style="width: 40%;"></div></div>
+                    <div class="sol-ov-row"><span class="sol-ov-row-name">Gravel</span><span class="sol-ov-row-val">58 / 50 ton <span class="sol-ov-over">+8 ton</span></span></div><div class="kd-track kd-static" style="--ov:12.8%"><i class="kd-plan"></i><i class="kd-fill"></i><i class="kd-over"></i></div>
                   </div>
                 </div>
                 <div class="sol-overview-right">
-                  <div class="sol-overview-stats">
-                    <div class="sol-stat-box"><span class="sol-stat-label">Estimated</span><span class="sol-stat-val">28 <span class="sol-stat-unit">hrs</span></span></div>
-                    <div class="sol-stat-box"><span class="sol-stat-label">Actual</span><span class="sol-stat-val sol-stat-green">8.9 <span class="sol-stat-unit">hrs</span></span></div>
-                  </div>
                   <div class="sol-overview-map"><img src="images/eng_map.png" alt="Geofence map" style="width:100%;height:auto;border-radius:0.5rem;border:1px solid var(--gray-100);"></div>
-                  <div class="sol-overview-status" style="margin-top:0.75rem;"><span class="sol-leg-dot green" style="width:8px;height:8px;"></span><span style="font-size:0.72rem;font-weight:600;color:var(--indigo);">Currently On Site</span></div>
-                  <div style="font-size:0.65rem;color:var(--gray-400);margin-top:0.25rem;padding-left:1.1rem;">No equipment on site right now</div>
+                  <div class="kd-flags-label">KeenSite flags</div>
+                  <div class="kd-static-flags"><div class="kd-flag">+3.4 excavator hrs</div><div class="kd-flag">+8 tons material</div><div class="kd-flag red">1 hr standby</div></div>
                 </div>
               </div>
             </div>
@@ -462,11 +345,11 @@
               <!-- Equipment 2 -->
               <div class="sol-eq-card">
                 <div class="sol-eq-header">
-                  <span class="sol-eq-name">2018 T650 Bobcat</span>
-                  <span class="sol-eq-hours sol-eq-hours-green">8.9h <span class="sol-eq-est">/ 28h est</span><br><span class="sol-eq-sub">0.5h travel</span></span>
+                  <span class="sol-eq-name">CAT 320</span>
+                  <span class="sol-eq-hours">31.4h <span class="sol-eq-est">/ 28h est</span><br><span class="sol-eq-sub">0.5h travel</span></span>
                 </div>
                 <div class="sol-eq-bar-wrap">
-                  <div class="sol-eq-bar sol-eq-bar-green anim-bar" data-width="32"></div>
+                  <div class="sol-eq-bar sol-eq-bar-green anim-bar" style="background:var(--orange)" data-width="100"></div>
                 </div>
 
                 <!-- Day breakdown -->
@@ -593,7 +476,7 @@
                   <div class="sol-ticket-verify">
                     <div class="sol-verify-item"><span class="sol-verify-check">&#x2705;</span><span>Arrival on site: 7:45 AM (GPS)</span></div>
                     <div class="sol-verify-item"><span class="sol-verify-check">&#x2705;</span><span>Departure from site: 3:15 PM (GPS)</span></div>
-                    <div class="sol-verify-item"><span class="sol-verify-check">&#x2705;</span><span>Engine hours: 5.2h (Bobcat T650)</span></div>
+                    <div class="sol-verify-item"><span class="sol-verify-check">&#x2705;</span><span>Engine hours: 5.2h (CAT 320)</span></div>
                   </div>
                 </div>
                 <div class="sol-ticket-total">
@@ -626,7 +509,7 @@
                   <div class="sol-ticket-verify">
                     <div class="sol-verify-item"><span class="sol-verify-check">&#x2705;</span><span>Arrival on site: 8:00 AM (GPS)</span></div>
                     <div class="sol-verify-item"><span class="sol-verify-check">&#x2705;</span><span>Departure: 4:00 PM (GPS)</span></div>
-                    <div class="sol-verify-item"><span class="sol-verify-check">&#x2705;</span><span>Engine hours: 3.6h (Bobcat T650)</span></div>
+                    <div class="sol-verify-item"><span class="sol-verify-check">&#x2705;</span><span>Engine hours: 3.6h (CAT 320)</span></div>
                   </div>
                 </div>
                 <div class="sol-ticket-total"><span>Total: 9.5 hrs</span><span class="sol-ticket-status" style="margin-left:auto;">Verified</span></div>
@@ -691,274 +574,374 @@
           </div>
         </div>
       </div>
+    </div>
+  </section>
 
-      <!-- AI DOCUMENT INTELLIGENCE -->
-      <div class="ai-doc-section">
-        <div class="ai-doc-text">
-          <p class="section-label" style="color:rgba(255,255,255,0.45);margin-bottom:1rem;">No Re-Entry Required</p>
-          <h3 class="ai-doc-h">Catch mistakes before they cost you money.</h3>
-          <p class="ai-doc-sub">Drop in a quote and KeenSite reads the rates, materials, and scope. No re-typing. When the invoice comes back, it checks the numbers against what was quoted and what actually happened on site.</p>
+  <!-- 5. ZERO CREW BURDEN -->
+  <section class="kd-sec kd-white" id="hardware">
+    <div class="container">
+      <p class="kd-label">Zero crew burden</p>
+      <h2 class="kd-h2" style="max-width:46rem">Your crews shouldn't have to <em>change how they work.</em></h2>
+      <p class="kd-lede">Two things do the work crews used to do by hand: a tracker on the machine, and a reader that ingests what's already on paper.</p>
+
+      <div class="kd-how-row kd-reveal">
+        <div class="kd-how2-col">
+          <div class="kd-how2-head">
+            <span class="kd-how2-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+            <h3>Equipment trackers fill in the hours.</h3>
+          </div>
+          <p>A tracker on each machine logs engine hours and location on its own. By the time a LEM gets built, the Equipment section is already filled in &mdash; nobody looks up a reading or calls one in.</p>
+          <div class="kd-scan-channels">
+            <span class="kd-scan-chip"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M1 16V6a1 1 0 0 1 1-1h9v11"/><path d="M11 9h5l4 4v3"/><circle cx="6.5" cy="17" r="2"/><circle cx="17.5" cy="17" r="2"/><path d="M3 17h1.5M8.5 17h7M19.5 17h1.5"/></svg>Trucks</span>
+            <span class="kd-scan-chip"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="15" width="9" height="4" rx="1"/><path d="M5 15v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4"/><path d="M9 11l5-6 4 1-3 6"/><path d="M15 12l3 1-1 3-3-1z"/></svg>Excavators</span>
+            <span class="kd-scan-chip"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="9" height="5" rx="1"/><path d="M13 12h3l2 2h-2"/><circle cx="7" cy="18" r="1.8"/><circle cx="12" cy="18" r="1.8"/></svg>Skid Steers</span>
+            <span class="kd-scan-chip"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="12" width="17" height="3" rx="0.5"/><path d="M19 13.5h2"/><circle cx="6" cy="17.5" r="1.6"/><circle cx="12" cy="17.5" r="1.6"/></svg>Trailers</span>
+          </div>
+          <div class="kd-dash kd-how2-card">
+            <div class="kd-dash-head"><small>Daily LEM &middot; Riverbend Phase 3</small><b>Equipment</b></div>
+            <div class="kd-dash-sec kd-how2-stat">
+              <div><small>CAT 320 Excavator</small><b>8.2<span>hrs</span></b></div>
+              <span class="kd-pill ok">Auto-filled from tracker</span>
+            </div>
+          </div>
+          <p class="kd-how2-cap">Battery, wired, or a Bluetooth tag for attachments &mdash; whichever fits the machine. Installs in minutes, works in -40.</p>
         </div>
-        <div class="ai-doc-visual">
-          <div class="ai-doc-overlap">
-
-            <!-- QUOTE (back left, Excel spreadsheet style) -->
-            <div class="ai-doc-paper ai-doc-paper-quote">
-              <div class="aiq-chrome">
-                <div class="aiq-chrome-dots"><span></span><span></span><span></span></div>
-                <div class="aiq-chrome-tab">
-                  <svg viewBox="0 0 24 24" width="10" height="10" fill="#1d6f42" stroke="none"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 7h4l2 5-2 5H7" fill="#fff"/></svg>
-                  <span>quote_riverbend.xlsx</span>
-                </div>
+        <div class="sol-hw-gallery" data-hw-carousel>
+          <div class="sol-hw-track">
+            <div class="sol-hw-slide is-active">
+              <img src="images/batt_on_equip.jpg" alt="Battery GPS tracker mounted on excavator">
+              <div class="sol-hw-slide-label">
+                <img src="images/battery.png" alt="Battery" class="sol-hw-device-icon">
+                <span>Battery GPS</span>
               </div>
-              <div class="aiq-toolbar">
-                <span class="aiq-tb-cell">A1</span>
-                <span class="aiq-tb-fx">fx</span>
-              </div>
-              <div class="aiq-sheet">
-                <!-- Column headers -->
-                <div class="aiq-row aiq-col-headers">
-                  <span class="aiq-rn"></span>
-                  <span>A</span><span>B</span><span>C</span><span>D</span><span>E</span>
-                </div>
-                <!-- Row 1: Title -->
-                <div class="aiq-row">
-                  <span class="aiq-rn">1</span>
-                  <span class="aiq-cell aiq-cell-bold" style="grid-column: span 4;">John Doe Earthworks - Estimate</span>
-                  <span class="aiq-cell"></span>
-                </div>
-                <!-- Row 2: Project -->
-                <div class="aiq-row">
-                  <span class="aiq-rn">2</span>
-                  <span class="aiq-cell aiq-cell-lbl">Project:</span>
-                  <span class="aiq-cell" style="grid-column: span 2;">Riverbend Phase 3</span>
-                  <span class="aiq-cell"></span>
-                  <span class="aiq-cell"></span>
-                </div>
-                <!-- Row 3: Client -->
-                <div class="aiq-row">
-                  <span class="aiq-rn">3</span>
-                  <span class="aiq-cell aiq-cell-lbl">Client:</span>
-                  <span class="aiq-cell" style="grid-column: span 2;">Smith Bros. Civil</span>
-                  <span class="aiq-cell"></span>
-                  <span class="aiq-cell"></span>
-                </div>
-                <!-- Row 4: Date -->
-                <div class="aiq-row">
-                  <span class="aiq-rn">4</span>
-                  <span class="aiq-cell aiq-cell-lbl">Date:</span>
-                  <span class="aiq-cell">May 28, 2026</span>
-                  <span class="aiq-cell"></span>
-                  <span class="aiq-cell"></span>
-                  <span class="aiq-cell"></span>
-                </div>
-                <!-- Blank row -->
-                <div class="aiq-row"><span class="aiq-rn">5</span><span class="aiq-cell"></span><span class="aiq-cell"></span><span class="aiq-cell"></span><span class="aiq-cell"></span><span class="aiq-cell"></span></div>
-                <!-- Row 6: Section header - Labour -->
-                <div class="aiq-row aiq-row-section">
-                  <span class="aiq-rn">6</span>
-                  <span class="aiq-cell aiq-cell-bold">Labour</span>
-                  <span class="aiq-cell aiq-cell-bold">Hrs</span>
-                  <span class="aiq-cell aiq-cell-bold">Rate</span>
-                  <span class="aiq-cell aiq-cell-bold">Unit</span>
-                  <span class="aiq-cell aiq-cell-bold">Total</span>
-                </div>
-                <div class="aiq-row">
-                  <span class="aiq-rn">7</span>
-                  <span class="aiq-cell">Swamper</span>
-                  <span class="aiq-cell">60</span>
-                  <span class="aiq-cell">$65.00</span>
-                  <span class="aiq-cell">/hr</span>
-                  <span class="aiq-cell">$3,900</span>
-                </div>
-                <!-- Blank -->
-                <div class="aiq-row"><span class="aiq-rn">8</span><span class="aiq-cell"></span><span class="aiq-cell"></span><span class="aiq-cell"></span><span class="aiq-cell"></span><span class="aiq-cell"></span></div>
-                <!-- Equipment -->
-                <div class="aiq-row aiq-row-section aiq-row-equip">
-                  <span class="aiq-rn">9</span>
-                  <span class="aiq-cell aiq-cell-bold">Equipment</span>
-                  <span class="aiq-cell aiq-cell-bold">Hrs</span>
-                  <span class="aiq-cell aiq-cell-bold">Rate</span>
-                  <span class="aiq-cell aiq-cell-bold">Unit</span>
-                  <span class="aiq-cell aiq-cell-bold">Total</span>
-                </div>
-                <div class="aiq-row">
-                  <span class="aiq-rn">10</span>
-                  <span class="aiq-cell">CAT 320 c/w Op</span>
-                  <span class="aiq-cell">40</span>
-                  <span class="aiq-cell">$195.00</span>
-                  <span class="aiq-cell">/hr</span>
-                  <span class="aiq-cell">$7,800</span>
-                </div>
-                <div class="aiq-row">
-                  <span class="aiq-rn">11</span>
-                  <span class="aiq-cell">Tandem Gravel Haul</span>
-                  <span class="aiq-cell">20</span>
-                  <span class="aiq-cell">$320.00</span>
-                  <span class="aiq-cell">/load</span>
-                  <span class="aiq-cell">$6,400</span>
-                </div>
-                <!-- Blank -->
-                <div class="aiq-row"><span class="aiq-rn">12</span><span class="aiq-cell"></span><span class="aiq-cell"></span><span class="aiq-cell"></span><span class="aiq-cell"></span><span class="aiq-cell"></span></div>
-                <!-- Materials -->
-                <div class="aiq-row aiq-row-section aiq-row-material">
-                  <span class="aiq-rn">13</span>
-                  <span class="aiq-cell aiq-cell-bold">Material</span>
-                  <span class="aiq-cell aiq-cell-bold">Qty</span>
-                  <span class="aiq-cell aiq-cell-bold">Rate</span>
-                  <span class="aiq-cell aiq-cell-bold">Unit</span>
-                  <span class="aiq-cell aiq-cell-bold">Total</span>
-                </div>
-                <div class="aiq-row aiq-row-flagged">
-                  <span class="aiq-rn">14</span>
-                  <span class="aiq-cell aiq-cell-flagged">2" Road Crush</span>
-                  <span class="aiq-cell">100</span>
-                  <span class="aiq-cell">$22.00</span>
-                  <span class="aiq-cell">/ton</span>
-                  <span class="aiq-cell">$2,200</span>
-                </div>
-                <div class="aiq-row">
-                  <span class="aiq-rn">15</span>
-                  <span class="aiq-cell">Bedding Sand</span>
-                  <span class="aiq-cell">70</span>
-                  <span class="aiq-cell">$18.50</span>
-                  <span class="aiq-cell">/ton</span>
-                  <span class="aiq-cell">$1,295</span>
-                </div>
-              </div>
-              <div class="ai-doc-flag ai-doc-flag-quote"><span>&#x26A0;</span> Quoted: 2" Road Crush</div>
             </div>
-
-            <!-- INVOICE (middle) -->
-            <div class="ai-doc-paper ai-doc-paper-invoice">
-              <div class="ainv-header">
-                <div class="ainv-brand">
-                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#1B2C50" stroke-width="2.5"><polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5"/></svg>
-                  <div>
-                    <div class="ainv-brand-name">John Doe Earthworks Inc.</div>
-                    <div class="ainv-brand-detail">4827 - 51 Ave, Red Deer AB T4N 4H3</div>
-                  </div>
-                </div>
-                <div class="ainv-title">INVOICE</div>
+            <div class="sol-hw-slide">
+              <img src="images/excavator_sep28.jpg" alt="Wired GPS tracker on truck">
+              <div class="sol-hw-slide-label">
+                <img src="images/wired.png" alt="Wired" class="sol-hw-device-icon">
+                <span>Wired GPS</span>
               </div>
-              <div class="ainv-info-bar">
-                <div class="ainv-info-left">
-                  <div class="ainv-info-label">BILL TO</div>
-                  <div class="ainv-info-value"><strong>Smith Bros. Civil</strong></div>
-                  <div class="ainv-info-value">4510 Blackfoot Trail SE, Calgary AB</div>
-                </div>
-                <div class="ainv-info-right">
-                  <table class="ainv-info-tbl">
-                    <tr><td class="ainv-info-label">Invoice #</td><td class="ainv-info-value">INV-2026-0847</td></tr>
-                    <tr><td class="ainv-info-label">Date</td><td class="ainv-info-value">June 16, 2026</td></tr>
-                    <tr><td class="ainv-info-label">PO #</td><td class="ainv-info-value">WC-4401</td></tr>
-                  </table>
-                </div>
-              </div>
-              <table class="ainv-line-tbl">
-                <thead><tr><th>Description</th><th>Qty</th><th>Unit</th><th>Rate</th><th>Amount</th></tr></thead>
-                <tbody>
-                  <tr><td>CAT 320 Excavator c/w Op</td><td>8.25</td><td>hrs</td><td>$195.00</td><td>$1,608.75</td></tr>
-                  <tr><td>Labourer / Swamper</td><td>8.25</td><td>hrs</td><td>$65.00</td><td>$536.25</td></tr>
-                  <tr><td>Tandem Truck - Gravel Haul</td><td>6</td><td>loads</td><td>$320.00</td><td>$1,920.00</td></tr>
-                  <tr class="ainv-flagged-row"><td class="ainv-flagged-cell">3/4" Crush Gravel (delivered)</td><td>96</td><td>ton</td><td>$24.50</td><td>$2,352.00</td></tr>
-                </tbody>
-              </table>
-              <div class="ainv-summary">
-                <div class="ainv-summary-row"><span>Subtotal</span><span>$6,417.00</span></div>
-                <div class="ainv-summary-row"><span>GST (5%)</span><span>$320.85</span></div>
-                <div class="ainv-summary-row ainv-summary-total"><span>TOTAL DUE</span><span>$6,737.85</span></div>
-              </div>
-              <div class="ainv-footer-bar"><span>Net 30</span><span>accounts@jdoe-earthworks.ca</span></div>
-              <div class="ai-doc-flag ai-doc-flag-inv"><span>&#x26A0;</span> Invoiced: 3/4" Crush</div>
             </div>
-
-            <!-- TIME CARD (front right) -->
-            <div class="ai-doc-paper ai-doc-paper-ticket">
-              <div class="ailem-header">
-                <div class="ailem-header-left">
-                  <div class="ailem-brand">
-                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#1B2C50" stroke-width="2.5"><polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5"/></svg>
-                    <span class="ailem-brand-name">John Doe Earthworks</span>
-                  </div>
-                  <div class="ailem-doc-title">Time Card</div>
-                </div>
+            <div class="sol-hw-slide">
+              <img src="images/tag_on_equip.jpg" alt="Bluetooth tag on skid steer attachment">
+              <div class="sol-hw-slide-label">
+                <img src="images/tag.png" alt="Tag" class="sol-hw-device-icon">
+                <span>Bluetooth Tag</span>
               </div>
-              <div class="ailem-fields">
-                <div class="ailem-field"><span class="ailem-field-lbl">Worker</span><span class="ailem-field-val">Colton</span></div>
-                <div class="ailem-field"><span class="ailem-field-lbl">Job Number</span><span class="ailem-field-val">26-01</span></div>
-                <div class="ailem-field"><span class="ailem-field-lbl">Date</span><span class="ailem-field-val">June 17, 2026</span></div>
-              </div>
-
-              <!-- LABOUR section -->
-              <div class="ailem-section-head ailem-section-labour">LABOUR</div>
-              <div class="ailem-grid">
-                <div class="ailem-grid-header">
-                  <span class="ailem-col-a">Start</span>
-                  <span class="ailem-col-b">End</span>
-                  <span class="ailem-col-c" style="grid-column: span 3;">Description</span>
-                </div>
-                <div class="ailem-grid-row">
-                  <span class="ailem-col-a">6:00 am</span>
-                  <span class="ailem-col-b">7:00</span>
-                  <span class="ailem-col-c" style="grid-column: span 3;">Safety Meeting</span>
-                </div>
-                <div class="ailem-grid-row">
-                  <span class="ailem-col-a">7:00</span>
-                  <span class="ailem-col-b">8:00</span>
-                  <span class="ailem-col-c" style="grid-column: span 3;">Travel</span>
-                </div>
-                <div class="ailem-grid-row ailem-grid-row-flagged" style="outline: 2px solid var(--orange); outline-offset: -1px; border-radius: 2px; background: #fff7ed;">
-                  <span class="ailem-col-a" style="outline: none;">8:00 am</span>
-                  <span class="ailem-col-b">9:00</span>
-                  <span class="ailem-col-c" style="grid-column: span 3;">Waited for gravel truck</span>
-                </div>
-                <div class="ailem-grid-row">
-                  <span class="ailem-col-a">9:00</span>
-                  <span class="ailem-col-b">4:00</span>
-                  <span class="ailem-col-c" style="grid-column: span 3;">Graded, took longer than expected</span>
-                </div>
-              </div>
-
-              <!-- EQUIPMENT section -->
-              <div class="ailem-section-head ailem-section-equip">EQUIPMENT</div>
-              <div class="ailem-grid">
-                <div class="ailem-grid-header">
-                  <span class="ailem-col-a">Start</span>
-                  <span class="ailem-col-b">End</span>
-                  <span class="ailem-col-c" style="grid-column: span 3;">Equipment</span>
-                </div>
-                <div class="ailem-grid-row">
-                  <span class="ailem-col-a">8:00</span>
-                  <span class="ailem-col-b">4:00</span>
-                  <span class="ailem-col-c" style="grid-column: span 3;">CAT 320 Excavator</span>
-                </div>
-              </div>
-
-              <!-- MATERIALS section -->
-              <div class="ailem-section-head ailem-section-mat">MATERIAL</div>
-              <div class="ailem-grid">
-                <div class="ailem-grid-row">
-                  <span class="ailem-col-a" style="grid-column: span 5;">2" Road Crush 50 tonn</span>
-                </div>
-              </div>
-              <div class="ai-doc-flag ai-doc-flag-tk"><span>&#x26A0;</span> 1 hr wait time — not on schedule</div>
             </div>
-
-            <!-- Scan overlay -->
-            <div class="ai-doc-scan">
-              <div class="ai-doc-scan-corners">
-                <i class="ai-sc ai-sc-tl"></i><i class="ai-sc ai-sc-tr"></i>
-                <i class="ai-sc ai-sc-bl"></i><i class="ai-sc ai-sc-br"></i>
-              </div>
-              <div class="ai-doc-scan-beam"></div>
-            </div>
-
-            <!-- Callout -->
-
+          </div>
+          <button type="button" class="sol-hw-nav prev" aria-label="Previous device"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg></button>
+          <button type="button" class="sol-hw-nav next" aria-label="Next device"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></button>
+          <div class="sol-hw-dots">
+            <button type="button" class="sol-hw-dot is-active" aria-label="Show Battery GPS"></button>
+            <button type="button" class="sol-hw-dot" aria-label="Show Wired GPS"></button>
+            <button type="button" class="sol-hw-dot" aria-label="Show Bluetooth Tag"></button>
           </div>
         </div>
       </div>
+
+      <div class="kd-how-row kd-reveal" style="--d:.15s">
+        <div class="kd-doc-gallery" data-hw-carousel>
+        <div class="kd-doc-track">
+        <div class="sol-hw-slide kd-doc-slide is-active">
+        <div class="kd-lem-doc">
+          <div class="ai-doc-scan">
+            <div class="ai-doc-scan-corners"><i class="ai-sc ai-sc-tl"></i><i class="ai-sc ai-sc-tr"></i><i class="ai-sc ai-sc-bl"></i><i class="ai-sc ai-sc-br"></i></div>
+            <div class="ai-doc-scan-beam"></div>
+          </div>
+          <div class="ailem-header">
+            <div class="ailem-header-left">
+              <div class="ailem-brand">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#1B2C50" stroke-width="2.5"><polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5"/></svg>
+                <span class="ailem-brand-name">John Doe Earthworks</span>
+              </div>
+              <div class="ailem-doc-title">Time Card</div>
+            </div>
+          </div>
+          <div class="ailem-fields">
+            <div class="ailem-field"><span class="ailem-field-lbl">Worker</span><span class="ailem-field-val">Colton</span></div>
+            <div class="ailem-field"><span class="ailem-field-lbl">Job Number</span><span class="ailem-field-val">26-01</span></div>
+            <div class="ailem-field"><span class="ailem-field-lbl">Date</span><span class="ailem-field-val">June 17, 2026</span></div>
+          </div>
+          <div class="ailem-section-head ailem-section-labour">LABOUR</div>
+          <div class="ailem-grid">
+            <div class="ailem-grid-header">
+              <span class="ailem-col-a">Start</span>
+              <span class="ailem-col-b">End</span>
+              <span class="ailem-col-c" style="grid-column: span 3;">Description</span>
+            </div>
+            <div class="ailem-grid-row">
+              <span class="ailem-col-a">6:00 am</span>
+              <span class="ailem-col-b">7:00 am</span>
+              <span class="ailem-col-c" style="grid-column: span 3;">Safety Meeting</span>
+            </div>
+            <div class="ailem-grid-row">
+              <span class="ailem-col-a">7:00 am</span>
+              <span class="ailem-col-b">8:00 am</span>
+              <span class="ailem-col-c" style="grid-column: span 3;">Travel</span>
+            </div>
+            <div class="ailem-grid-row ailem-grid-row-flagged" style="outline: 2px solid var(--orange); outline-offset: -1px; border-radius: 2px; background: #fff7ed;">
+              <span class="ailem-col-a" style="outline: none;">8:00 am</span>
+              <span class="ailem-col-b">9:00 am</span>
+              <span class="ailem-col-c" style="grid-column: span 3;">Waited for gravel truck</span>
+            </div>
+            <div class="ailem-grid-row">
+              <span class="ailem-col-a">9:00 am</span>
+              <span class="ailem-col-b">4:00 pm</span>
+              <span class="ailem-col-c" style="grid-column: span 3;">Graded, took longer than expected</span>
+            </div>
+          </div>
+          <div class="ailem-section-head ailem-section-equip">EQUIPMENT</div>
+          <div class="ailem-grid">
+            <div class="ailem-grid-header">
+              <span class="ailem-col-a">Start</span>
+              <span class="ailem-col-b">End</span>
+              <span class="ailem-col-c" style="grid-column: span 3;">Equipment</span>
+            </div>
+            <div class="ailem-grid-row">
+              <span class="ailem-col-a">8:00 am</span>
+              <span class="ailem-col-b">4:00 pm</span>
+              <span class="ailem-col-c" style="grid-column: span 3;">CAT 320 Excavator</span>
+            </div>
+          </div>
+          <div class="ailem-section-head ailem-section-mat">MATERIAL</div>
+          <div class="ailem-grid">
+            <div class="ailem-grid-row">
+              <span class="ailem-col-a" style="grid-column: span 5;">2&Prime; Road Crush 50 tonn</span>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <div class="sol-hw-slide kd-doc-slide">
+        <div class="kd-wa-doc">
+          <div class="ai-doc-scan">
+            <div class="ai-doc-scan-corners"><i class="ai-sc ai-sc-tl"></i><i class="ai-sc ai-sc-tr"></i><i class="ai-sc ai-sc-bl"></i><i class="ai-sc ai-sc-br"></i></div>
+            <div class="ai-doc-scan-beam"></div>
+          </div>
+          <div class="kd-wa-header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="#fff"><path d="M12.04 2c-5.52 0-10 4.48-10 10 0 1.77.46 3.45 1.26 4.9L2 22l5.27-1.38a9.93 9.93 0 0 0 4.77 1.22h.01c5.52 0 10-4.48 10-10S17.56 2 12.04 2zm5.86 14.1c-.25.7-1.45 1.33-2 1.42-.51.08-1.16.11-1.87-.12-.43-.14-.98-.32-1.68-.63-2.96-1.28-4.89-4.25-5.04-4.45-.15-.2-1.2-1.6-1.2-3.05 0-1.45.76-2.16 1.03-2.46.27-.3.6-.37.8-.37.2 0 .4 0 .57.01.18.01.43-.07.67.51.25.6.84 2.07.91 2.22.07.15.12.33.02.53-.1.2-.15.32-.3.49-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.3.76 1.25 1.63 2.03 1.12 1 2.07 1.31 2.37 1.46.3.15.47.13.65-.05.18-.18.75-.87.95-1.17.2-.3.4-.25.67-.15.27.1 1.72.81 2.02.96.3.15.5.22.57.35.08.12.08.72-.17 1.42z"/></svg>
+            <div class="kd-wa-header-info">
+              <b>The Crew</b>
+              <small>Dave, Jim, Tyler +1</small>
+            </div>
+          </div>
+          <div class="kd-wa-body">
+            <div class="kd-wa-bubble">
+              <span class="kd-wa-name kd-wa-name-dave">Dave</span>
+              <p>hit rocks at riverbend</p>
+              <small>8:42 AM</small>
+            </div>
+            <div class="kd-wa-bubble">
+              <span class="kd-wa-name kd-wa-name-jim">Jim</span>
+              <p>surveyor is here, says hes going to be another few hours</p>
+              <small>8:51 AM</small>
+            </div>
+            <div class="kd-wa-bubble">
+              <span class="kd-wa-name kd-wa-name-tyler">Tyler</span>
+              <p>truck 1-01 is leaking oil, I'm taking it to the shop now</p>
+              <small>9:05 AM</small>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        </div>
+        <div class="kd-doc-controls">
+          <button type="button" class="sol-hw-nav prev" aria-label="Previous example"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg></button>
+          <div class="sol-hw-dots">
+            <button type="button" class="sol-hw-dot is-active" aria-label="Show Time Card"></button>
+            <button type="button" class="sol-hw-dot" aria-label="Show WhatsApp"></button>
+          </div>
+          <button type="button" class="sol-hw-nav next" aria-label="Next example"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></button>
+        </div>
+        </div>
+        <div class="kd-how2-col">
+          <div class="kd-how2-head">
+            <span class="kd-how2-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7V5a2 2 0 0 1 2-2h2M4 17v2a2 2 0 0 0 2 2h2M20 7V5a2 2 0 0 0-2-2h-2M20 17v2a2 2 0 0 1-2 2h-2"/><line x1="7" y1="12" x2="17" y2="12"/></svg></span>
+            <h3>The reader scans what's already written down.</h3>
+          </div>
+          <p>Tickets, notes, LEMs &mdash; however your crew already records it, on paper or in whatever app you use. No new software for the crew to learn.</p>
+          <div class="kd-scan-channels">
+            <span class="kd-scan-chip"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>Photo</span>
+            <span class="kd-scan-chip"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>PDF / Excel</span>
+            <span class="kd-scan-chip"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Text message</span>
+            <span class="kd-scan-chip whatsapp"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-12.36 7.56L3 20l1.05-5.4A8.5 8.5 0 1 1 21 11.5z"/></svg>WhatsApp</span>
+          </div>
+          <ul class="kd-scan-list">
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><div><b>Daily tickets and timesheets</b><span>Photographed on a phone or uploaded from the office. Same paper, same handwriting.</span></div></li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><div><b>Existing PDFs, Excel quotes, and scanned reports</b><span>No rebuilding your templates to fit KeenSite.</span></div></li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><div><b>Notes written in the margins</b><span>&ldquo;Waited for gravel truck&rdquo; gets read and matched to the job, not lost on a ticket in a truck door.</span></div></li>
+          </ul>
+          <p class="kd-how2-cap">Exports to QuickBooks. Works alongside SiteDocs.</p>
+        </div>
+      </div>
+
+      <p class="kd-crew-quote">Less input from the field. <span>More visibility for the office.</span></p>
+    </div>
+  </section>
+
+  <!-- 4. MAINTENANCE -->
+  <section class="kd-sec kd-gray" id="maintenance">
+    <div class="container">
+      <p class="kd-label">Equipment &amp; maintenance</p>
+      <h2 class="kd-h2" style="max-width:44rem">Your equipment already tells us when it's being worked.</h2>
+      <p class="kd-lede">Use the same equipment data to keep maintenance ahead of the next breakdown.</p>
+
+      <div class="kd-maint" style="margin-top:2.5rem">
+        <div>
+          <div class="kd-photo">
+            <img src="/images/heavy_duty_mech.jpg" alt="Mechanic servicing heavy equipment">
+            <span>SERVICE, BEFORE IT BREAKS</span>
+          </div>
+          <p class="kd-nos"><span>No spreadsheets.</span><span>No guessing.</span><span>No chasing operators for hours.</span></p>
+          <ol class="kd-auto">
+            <li><div><b>Set the interval once.</b><span>Oil and filter every 500 engine hours. Truck service every 10,000 km. Whatever your schedule is.</span></div></li>
+            <li><div><b>The GPS unit counts for you.</b><span>Engine hours and kilometres come off the machine. <em>Nobody calls in a reading.</em></span></div></li>
+            <li><div><b>Hit the interval, get a ticket.</b><span>The moment a machine reaches its service interval, KeenSite opens a maintenance ticket automatically &mdash; nobody has to notice it or flag it. Upcoming turns yellow, overdue turns red, the right person is notified, and parts, suppliers and receipts stay with the ticket.</span></div></li>
+          </ol>
+        </div>
+
+        <div class="kd-dash kd-svc kd-reveal">
+          <div class="kd-eq">
+            <div class="kd-eq-top">
+              <div class="kd-eq-thumb"><img src="/images/exca_stock.jpg" alt="CAT 320 excavator"></div>
+              <div class="kd-eq-id"><b>CAT 320</b><span>Excavator</span></div>
+              <div class="kd-eq-status">
+                <span class="kd-badge good">Good</span>
+                <span class="kd-badge online"><i></i>Online</span>
+                <small class="kd-eq-seen">Last seen 12 minutes ago</small>
+              </div>
+            </div>
+            <div class="kd-eq-stats">
+              <div class="num"><small><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15.5 14"/></svg> Hour Meter</small><b>4,821<span>h</span></b></div>
+              <div class="num"><small><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg> Next Service</small><b>78<span>h</span></b></div>
+              <div class="txt"><small><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Job</small><b>Riverbend Phase 3</b></div>
+            </div>
+          </div>
+          <table class="kd-tbl">
+            <thead><tr><th>Service</th><th>Every</th><th>Hours since last</th><th>Next</th></tr></thead>
+            <tbody>
+              <tr><td>Oil change</td><td class="n">500h</td><td><span class="kd-mini"><i class="r" style="width:100%"></i></span></td><td><span class="kd-pill bad">18h overdue</span></td></tr>
+              <tr><td>Hydraulic filter</td><td class="n">1,000h</td><td><span class="kd-mini"><i class="a" style="width:84.4%"></i></span></td><td><span class="kd-pill amber">Upcoming &middot; 78h</span></td></tr>
+            </tbody>
+          </table>
+          <table class="kd-tbl kd-hist">
+            <thead><tr><th>Tickets</th><th>Service</th><th>Status</th><th></th></tr></thead>
+            <tbody>
+              <tr><td>Service Request</td><td>Oil Change</td><td><span class="kd-pill amber">In progress</span></td><td><a href="#" class="kd-view-ticket">View ticket</a></td></tr>
+              <tr><td>Service Request</td><td>Hydraulic filter</td><td><span class="kd-pill ok">Completed</span></td><td><a href="#" class="kd-view-ticket">View ticket</a></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. WHO IT'S FOR -->
+  <section class="kd-sec kd-white" id="who">
+    <div class="container">
+      <div class="kd-story-head" style="max-width:46rem">
+        <p class="kd-label">Who it's for</p>
+        <h2 class="kd-h2">Built for contractors who run equipment and bill by the hour.</h2>
+      </div>
+      <div class="kd-who-grid">
+        <div class="kd-who-c kd-reveal"><img src="/images/exca_stock.jpg" alt="Excavator on site" loading="lazy"><span>Excavation</span></div>
+        <div class="kd-who-c kd-reveal" style="--d:.1s"><img src="/images/skid_stock.jpg" alt="Skid steer working" loading="lazy"><span>Earthworks</span></div>
+        <div class="kd-who-c kd-reveal" style="--d:.2s"><img src="/images/piling_stock.jpg" alt="Piling equipment" loading="lazy"><span>Piling &amp; drilling</span></div>
+        <div class="kd-who-c kd-reveal" style="--d:.3s"><img src="/images/tractor_stock.jpg" alt="Civil construction equipment" loading="lazy"><span>Civil / utility</span></div>
+      </div>
+      <p class="kd-who-not">Not built for everyone in construction. If you don't run your own equipment on time-and-material work, KeenSite probably isn't the right fit.</p>
+    </div>
+  </section>
+
+  <!-- 12. PRICING -->
+  <section class="kd-sec kd-white pricing-section" id="pricing">
+    <div class="container">
+      <div class="pricing-header">
+        <p class="section-label">Pricing</p>
+        <h2 class="pricing-headline">Start with the equipment that matters most.</h2>
+        <p class="pricing-sub">The GPS unit is the data layer. It's what makes the hours, activity, and maintenance numbers on your jobs accurate. Start with your busiest machines and add more as you go.</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card pricing-card-main">
+          <div class="pricing-card-header-band">
+            <div class="pricing-card-badge">Battery / Wired GPS</div>
+            <span class="pricing-card-tag-pill">Most popular</span>
+          </div>
+          <div class="pricing-card-images">
+            <img src="/images/battery.png" alt="Battery GPS device" class="pricing-device-img">
+            <img src="/images/wired.png" alt="Wired GPS device" class="pricing-device-img">
+          </div>
+          <h3 class="pricing-card-name">Battery or Wired</h3>
+          <p class="pricing-card-use">For active machines: trucks, skid steers, excavators</p>
+          <div class="pricing-card-price">
+            <span class="pricing-amt">$250</span>
+            <span class="pricing-term">one-time</span>
+          </div>
+          <div class="pricing-card-monthly">
+            <span class="pricing-monthly-amt">+ $30</span>
+            <span class="pricing-monthly-term">/device/month</span>
+          </div>
+          <ul class="pricing-includes">
+            <li>GPS</li>
+            <li>Engine hours</li>
+            <li>Equipment activity</li>
+            <li>Job verification</li>
+            <li>Maintenance</li>
+            <li>Job data</li>
+          </ul>
+          <a href="/contact/" class="pricing-cta">See it on my job <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        </div>
+        <div class="pricing-card pricing-card-tag">
+          <div class="pricing-card-header-band">
+            <div class="pricing-card-badge">Bluetooth Tag</div>
+          </div>
+          <div class="pricing-card-images">
+            <img src="/images/tag.png" alt="Bluetooth tag" class="pricing-device-img">
+          </div>
+          <h3 class="pricing-card-name">Tag</h3>
+          <p class="pricing-card-use">For attachments, trailers, and generators</p>
+          <div class="pricing-card-price">
+            <span class="pricing-amt">$40</span>
+            <span class="pricing-term">per tag, one-time</span>
+          </div>
+          <div class="pricing-card-monthly">
+            <span class="pricing-monthly-amt pricing-monthly-free">No monthly fee</span>
+          </div>
+          <ul class="pricing-includes">
+            <li>Picked up by nearby GPS units</li>
+            <li>Know where every attachment is</li>
+            <li>No charging, no cell plan</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. CTA -->
+  <section class="kd-sec kd-dark kd-cta" id="contact-cta">
+    <div class="container kd-cta-grid">
+      <div>
+        <p class="kd-label">Early access pilot</p>
+        <h2 class="kd-h2">Run KeenSite across <em>all your jobs</em> for a month.</h2>
+        <p class="kd-lede kd-cta-lede">Run it free for 30 days, across every job you've got &mdash; not just one. We're onboarding a handful of pilot partners to build this with us, and they get a direct say in what we build next.</p>
+      </div>
+      <div class="kd-cta-box">
+        <small>HOW THE PILOT WORKS</small>
+        <ol class="kd-cta-steps">
+          <li>We connect your quotes, tickets, and equipment data across your active jobs.</li>
+          <li>You run KeenSite free for a month, on everything you've got going.</li>
+          <li>You tell us what's useful, what's missing, and what to build next.</li>
+        </ol>
+        <a href="/contact/" class="btn btn-orange">Join the pilot
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+        <a href="https://calendly.com/colton-keensite/30min" target="_blank" rel="noopener" class="btn kd-btn-ghost">Book a 30-minute call</a>
+        <p class="kd-cta-fine">No cost. No long-term contract.</p>
+      </div>
+    </div>
+  </section>
 
       <style>
         .ai-doc-section { padding-top: 4rem; margin-top: 4rem; border-top: 1px solid rgba(255,255,255,0.1); }
@@ -1058,8 +1041,8 @@
       <style>
         /* Scan + callout + responsive */
         .ai-doc-scan { position: absolute; inset: 0; z-index: 4; pointer-events: none; }
-        .ai-doc-scan-corners { position: absolute; inset: 1rem; }
-        .ai-sc { position: absolute; width: 24px; height: 24px; border-color: var(--orange); border-style: solid; border-width: 0; }
+        .ai-doc-scan-corners { position: absolute; inset: 0; }
+        .ai-sc { position: absolute; width: 28px; height: 28px; border-color: var(--orange); border-style: solid; border-width: 0; }
         .ai-sc-tl { top: 0; left: 0; border-top-width: 3px; border-left-width: 3px; }
         .ai-sc-tr { top: 0; right: 0; border-top-width: 3px; border-right-width: 3px; }
         .ai-sc-bl { bottom: 0; left: 0; border-bottom-width: 3px; border-left-width: 3px; }
@@ -1084,148 +1067,106 @@
           .ai-doc-flag-inv { left: 0.75rem; transform: none; }
         }
       </style>
-
-      <div class="sol-new-hardware">
-        <div class="sol-hw-text">
-          <h3 class="sol-hw-h">Every machine tracked. Zero input required.</h3>
-          <p class="sol-hw-p">A GPS tracker on each machine captures location and engine hours automatically. That data backs up every timecard and LEM your crew submits.</p>
-          <div class="sol-hw-points">
-            <div class="sol-hw-point">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
-              <span>No crew input required. Nothing changes for the field.</span>
-            </div>
-            <div class="sol-hw-point">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
-              <span>Engine hours detected through vibration. GPS logs arrival and departure.</span>
-            </div>
-            <div class="sol-hw-point">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
-              <span>Installs in minutes. Works in -40. Built for construction.</span>
-            </div>
-          </div>
-        </div>
-        <div class="sol-hw-gallery">
-          <div class="sol-hw-card">
-            <div class="sol-hw-card-img">
-              <img src="images/batt_on_equip.jpg" alt="Battery GPS tracker mounted on excavator">
-            </div>
-            <div class="sol-hw-card-label">
-              <img src="images/battery.png" alt="Battery" class="sol-hw-device-icon">
-              <span>Battery GPS</span>
-            </div>
-          </div>
-          <div class="sol-hw-card">
-            <div class="sol-hw-card-img">
-              <img src="images/construction-site.jpg" alt="Wired GPS tracker on truck">
-            </div>
-            <div class="sol-hw-card-label">
-              <img src="images/wired.png" alt="Wired" class="sol-hw-device-icon">
-              <span>Wired GPS</span>
-            </div>
-          </div>
-          <div class="sol-hw-card">
-            <div class="sol-hw-card-img">
-              <img src="images/tag_on_equip.jpg" alt="Bluetooth tag on skid steer attachment">
-            </div>
-            <div class="sol-hw-card-label">
-              <img src="images/tag.png" alt="Tag" class="sol-hw-device-icon">
-              <span>Bluetooth Tag</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PRICING -->
-  <section class="section section-white pricing-section">
-    <div class="container">
-      <div class="pricing-header">
-        <p class="section-label">Pricing</p>
-        <h2 class="pricing-headline">Simple pricing. No surprises.</h2>
-        <p class="pricing-sub">One price per device. Everything included. Most contractors pay for it with the first T&M invoice they don't have to argue about.</p>
-      </div>
-      <div class="pricing-grid">
-        <div class="pricing-card pricing-card-main">
-          <div class="pricing-card-images">
-            <img src="/images/battery.png" alt="Battery GPS Tracker" class="pricing-device-img">
-            <img src="/images/wired.png" alt="Wired GPS Tracker" class="pricing-device-img">
-          </div>
-          <div class="pricing-card-badge">GPS Tracker</div>
-          <h3 class="pricing-card-name">Battery or Wired</h3>
-          <p class="pricing-card-use">For active machines — trucks, skid steers, excavators</p>
-          <div class="pricing-card-price">
-            <span class="pricing-amt">$250</span>
-            <span class="pricing-term">per device, one-time</span>
-          </div>
-          <div class="pricing-card-monthly">
-            <span class="pricing-monthly-amt">+ $30</span>
-            <span class="pricing-monthly-term">/device/month software</span>
-          </div>
-          <ul class="pricing-includes">
-            <li>GPS location tracking</li>
-            <li>Engine hours &amp; runtime</li>
-            <li>Verified timecards &amp; LEMs</li>
-            <li>Daily field reports</li>
-            <li>Maintenance alerts</li>
-            <li>Bluetooth hub for nearby Tags</li>
-          </ul>
-        </div>
-        <div class="pricing-card pricing-card-tag">
-          <div class="pricing-card-images">
-            <img src="/images/tag.png" alt="Bluetooth Tag" class="pricing-device-img">
-          </div>
-          <div class="pricing-card-badge">Bluetooth Beacon</div>
-          <h3 class="pricing-card-name">Tag</h3>
-          <p class="pricing-card-use">For passive assets — generators, trailers, attachments</p>
-          <div class="pricing-card-price">
-            <span class="pricing-amt">$40</span>
-            <span class="pricing-term">per tag, one-time</span>
-          </div>
-          <div class="pricing-card-monthly">
-            <span class="pricing-monthly-amt pricing-monthly-free">No monthly fee</span>
-          </div>
-          <ul class="pricing-includes">
-            <li>Passive asset tracking</li>
-            <li>Auto-detected by nearby GPS units</li>
-            <li>Know where every attachment is</li>
-            <li>No charging, no cell plan</li>
-          </ul>
-        </div>
-      </div>
-      <p class="pricing-footnote">20 machines? That's $5,000 to set up + $600/month. One missed billable hour per day across your fleet costs more than that.</p>
-    </div>
-  </section>
-
   <style>
-    .pricing-section { padding: 5rem 0; }
-    .pricing-header { text-align: center; margin-bottom: 3rem; }
+    .pricing-section { padding: 5rem 0 6rem; }
+    .pricing-header { text-align: center; margin-bottom: 3.5rem; }
     .pricing-headline { font-size: var(--headline-display-size); font-weight: 800; color: var(--indigo); letter-spacing: -0.03em; line-height: 1.05; margin: 0 0 1rem; }
     .pricing-sub { font-size: 1.0625rem; color: var(--gray-600); line-height: 1.75; max-width: 36rem; margin: 0 auto; }
-    .pricing-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; max-width: 52rem; margin: 0 auto; }
-    .pricing-card { background: #fff; border: 1.5px solid var(--gray-200); border-radius: 1rem; padding: 2.5rem 2rem; display: flex; flex-direction: column; }
-    .pricing-card-images { display: flex; align-items: center; justify-content: center; gap: 1.5rem; margin-bottom: 1.5rem; padding: 1rem; background: var(--gray-50); border-radius: 0.75rem; }
-    .pricing-device-img { height: 120px; width: auto; object-fit: contain; }
-    .pricing-card-main { border-color: var(--orange); box-shadow: 0 4px 24px rgba(234,88,12,0.08); }
-    .pricing-card-badge { font-size: 0.7rem; font-weight: 700; color: var(--orange); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.5rem; }
-    .pricing-card-name { font-size: 1.5rem; font-weight: 800; color: var(--indigo); margin: 0 0 0.4rem; letter-spacing: -0.02em; }
-    .pricing-card-use { font-size: 0.875rem; color: var(--gray-500); margin: 0 0 1.25rem; font-weight: 500; }
-    .pricing-card-price { display: flex; align-items: baseline; gap: 0.5rem; margin-bottom: 0.25rem; }
+    .pricing-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; max-width: 52rem; margin: 0 auto; }
+    .pricing-card {
+      background: #fff;
+      border: 1.5px solid var(--gray-200);
+      border-radius: 1rem;
+      padding: 0 0 2rem;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    .pricing-card-header-band {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.875rem 1.75rem;
+      background: var(--gray-50);
+      border-bottom: 1px solid var(--gray-100);
+      min-height: 2.75rem;
+    }
+    .pricing-card-images {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      margin: 1.75rem 1.75rem 0;
+      padding: 1.25rem;
+      background: var(--gray-50);
+      border-radius: 0.75rem;
+      border: 1px solid var(--gray-100);
+    }
+    .pricing-device-img { height: 110px; width: auto; object-fit: contain; }
+    .pricing-card-main {
+      border-color: var(--orange);
+      box-shadow: 0 4px 32px rgba(220,111,61,0.12);
+    }
+    .pricing-card-main .pricing-card-header-band {
+      background: var(--indigo);
+      border-bottom-color: transparent;
+    }
+    .pricing-card-main .pricing-card-badge {
+      color: rgba(255,255,255,0.7);
+    }
+    .pricing-card-tag-pill {
+      font-size: 0.65rem;
+      font-weight: 700;
+      color: var(--orange);
+      background: rgba(220,111,61,0.15);
+      border-radius: 2rem;
+      padding: 0.2rem 0.65rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    .pricing-card-badge { font-size: 0.7rem; font-weight: 700; color: var(--gray-500); text-transform: uppercase; letter-spacing: 0.08em; }
+    .pricing-card-name { font-size: 1.5rem; font-weight: 800; color: var(--indigo); margin: 1.5rem 1.75rem 0.4rem; letter-spacing: -0.02em; }
+    .pricing-card-use { font-size: 0.875rem; color: var(--gray-500); margin: 0 1.75rem 1.25rem; font-weight: 500; }
+    .pricing-card-price { display: flex; align-items: baseline; gap: 0.5rem; margin: 0 1.75rem 0.25rem; }
     .pricing-amt { font-size: 2.5rem; font-weight: 800; color: var(--indigo); letter-spacing: -0.03em; }
     .pricing-term { font-size: 0.875rem; color: var(--gray-500); }
-    .pricing-card-monthly { margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--gray-100); }
-    .pricing-monthly-amt { font-size: 1.25rem; font-weight: 700; color: var(--indigo); }
-    .pricing-monthly-term { font-size: 0.875rem; color: var(--gray-500); }
+    .pricing-card-monthly { margin: 0 1.75rem 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--gray-100); }
+    .pricing-monthly-amt { font-size: 1.125rem; font-weight: 700; color: var(--indigo); }
+    .pricing-monthly-term { font-size: 0.875rem; color: var(--gray-500); margin-left: 0.25rem; }
     .pricing-monthly-free { color: #15803d; }
-    .pricing-includes { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.6rem; }
+    .pricing-includes { list-style: none; padding: 0 1.75rem; margin: 0; display: flex; flex-direction: column; gap: 0.65rem; flex: 1; }
     .pricing-includes li { font-size: 0.9375rem; color: var(--gray-600); padding-left: 1.5rem; position: relative; line-height: 1.5; }
     .pricing-includes li::before { content: '✓'; position: absolute; left: 0; color: var(--orange); font-weight: 700; }
-    .pricing-footnote { text-align: center; margin-top: 2rem; font-size: 0.9375rem; color: var(--gray-500); font-style: italic; }
+    .pricing-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin: 1.75rem 1.75rem 0;
+      padding: 0.75rem 1.5rem;
+      background: var(--orange);
+      color: #fff;
+      font-size: 0.9375rem;
+      font-weight: 600;
+      border-radius: 0.5rem;
+      text-decoration: none;
+      transition: opacity 0.2s;
+      align-self: flex-start;
+    }
+    .pricing-cta:hover { opacity: 0.9; }
+    .pricing-footnote {
+      text-align: center;
+      margin-top: 2.5rem;
+      font-size: 0.9375rem;
+      color: var(--gray-500);
+      font-style: italic;
+      max-width: 44rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
     @media (max-width: 700px) {
       .pricing-grid { grid-template-columns: 1fr; }
     }
   </style>
-
   <style>
     .sol-new { background: var(--indigo); padding: 6rem 0; overflow: hidden; }
     .sol-new-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 4rem; align-items: center; margin-bottom: 5rem; }
@@ -1284,20 +1225,24 @@
     .sol-hw-points { display: flex; flex-direction: column; gap: 0.75rem; }
     .sol-hw-point { display: flex; align-items: flex-start; gap: 0.5rem; font-size: 0.9375rem; color: rgba(255,255,255,0.85); line-height: 1.5; }
     .sol-hw-point svg { color: var(--orange); flex-shrink: 0; margin-top: 0.15rem; }
-    .sol-hw-gallery { position: relative; min-height: 420px; }
-    .sol-hw-card { position: absolute; border-radius: 0.75rem; overflow: hidden; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.15); box-shadow: 0 8px 32px rgba(0,0,0,0.3); }
-    .sol-hw-card:nth-child(1) { width: 55%; top: 0; left: 0; z-index: 1; }
-    .sol-hw-card:nth-child(2) { width: 50%; top: 15%; right: 0; z-index: 2; }
-    .sol-hw-card:nth-child(3) { width: 45%; bottom: 0; left: 20%; z-index: 3; }
-    .sol-hw-card-img { aspect-ratio: 4/3; overflow: hidden; position: relative; }
-    .sol-hw-card-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
-    .sol-hw-card-label { display: flex; align-items: center; gap: 0.4rem; padding: 0.4rem 0.6rem; position: absolute; top: 0.5rem; left: 0.5rem; background: rgba(27,44,80,0.85); border-radius: 0.375rem; backdrop-filter: blur(4px); }
-    .sol-hw-card-label span { font-size: 0.7rem; font-weight: 600; color: #fff; }
-    .sol-hw-device-icon { width: 18px; height: 18px; object-fit: contain; }
+    .sol-hw-gallery { position: relative; border-radius: 0.75rem; overflow: hidden; background: #fff; border: 1px solid var(--kd-line); box-shadow: 0 16px 40px rgba(27,44,80,0.16); }
+    .sol-hw-track { position: relative; aspect-ratio: 4/3; }
+    .sol-hw-slide { position: absolute; inset: 0; opacity: 0; visibility: hidden; transition: opacity .5s ease; }
+    .sol-hw-slide.is-active { opacity: 1; visibility: visible; z-index: 1; }
+    .sol-hw-slide > img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .sol-hw-slide-label { display: flex; align-items: center; gap: 0.5rem; padding: 0.4rem 0.7rem 0.4rem 0.4rem; position: absolute; top: 0.6rem; left: 0.6rem; background: rgba(255,255,255,0.95); border-radius: 0.5rem; box-shadow: 0 4px 14px rgba(27,44,80,0.18); }
+    .sol-hw-slide-label span { font-size: 0.75rem; font-weight: 700; color: var(--indigo); }
+    .sol-hw-device-icon { width: 56px; height: 56px; flex-shrink: 0; object-fit: contain; }
+    .sol-hw-nav { position: absolute; top: 50%; transform: translateY(-50%); width: 2.15rem; height: 2.15rem; border-radius: 50%; background: rgba(255,255,255,0.92); border: 1px solid var(--kd-line); display: flex; align-items: center; justify-content: center; color: var(--indigo); cursor: pointer; z-index: 2; padding: 0; transition: background .15s ease; }
+    .sol-hw-nav:hover { background: #fff; }
+    .sol-hw-nav.prev { left: 0.6rem; }
+    .sol-hw-nav.next { right: 0.6rem; }
+    .sol-hw-dots { position: absolute; bottom: 0.7rem; left: 50%; transform: translateX(-50%); display: flex; gap: 0.4rem; z-index: 2; }
+    .sol-hw-dot { width: 0.45rem; height: 0.45rem; border-radius: 50%; background: rgba(255,255,255,0.55); border: none; padding: 0; cursor: pointer; }
+    .sol-hw-dot.is-active { background: #fff; box-shadow: 0 0 0 1px rgba(27,44,80,0.25); }
     @media (max-width: 900px) {
       .sol-new-grid { grid-template-columns: 1fr; gap: 2.5rem; }
       .sol-new-hardware { grid-template-columns: 1fr; gap: 2rem; }
-      .sol-hw-gallery { grid-template-columns: 1fr 1fr; }
       .sol-mockup { max-width: 100%; overflow-x: auto; }
       .sol-new-img { max-width: 100%; overflow: hidden; }
     }
@@ -1364,95 +1309,520 @@
     @keyframes fadeSlideIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
     @media (max-width: 600px) { .sol-overview-grid { grid-template-columns: 1fr; } }
   </style>
-
-  <!-- SOCIAL PROOF -->
-  <section class="section section-white" style="padding: 4rem 0;">
-    <div class="container">
-      <div class="proof-block">
-        <div class="proof-img">
-          <img src="images/keylee_pilot_photo.jpg" alt="KeenSite team with KeyLee Contracting at their jobsite in Saskatchewan">
-        </div>
-        <div class="proof-text">
-          <p class="proof-label">Pilot Partner</p>
-          <p class="proof-company">KeyLee Contracting</p>
-          <p class="proof-location">Piling &middot; Saskatchewan</p>
-          <p class="proof-desc">KeyLee wanted equipment hours they could trust without relying on operators to write them down, and LEMs that build themselves. That's exactly what we're piloting.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <style>
-    .proof-block { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
-    .proof-img { border-radius: 0.75rem; overflow: hidden; }
-    .proof-img img { width: 100%; height: auto; display: block; border-radius: 0.75rem; }
-    .proof-label { font-size: 0.75rem; font-weight: 700; color: var(--orange); text-transform: uppercase; letter-spacing: 0.08em; margin: 0 0 0.5rem; }
-    .proof-company { font-size: clamp(1.5rem, 3vw, 2.25rem); font-weight: 800; color: var(--indigo); letter-spacing: -0.02em; margin: 0 0 0.25rem; }
-    .proof-location { font-size: 1rem; color: var(--gray-500); margin: 0 0 1.25rem; }
-    .proof-desc { font-size: 1.0625rem; color: var(--gray-600); line-height: 1.75; margin: 0; }
-    @media (max-width: 900px) { .proof-block { grid-template-columns: 1fr; gap: 2rem; } }
-  </style>
+/* ============ KEENSITE HOME — profit drift redesign ============ */
+:root {
+  --kd-green: #15803d;
+  --kd-green-bg: #dcfce7;
+  --kd-red: #dc2626;
+  --kd-red-bg: #fef2f2;
+  --kd-amber: #a16207;
+  --kd-amber-bg: #fef9c3;
+  --kd-blue: #2563eb;
+  --kd-blue-bg: #dbeafe;
+  --kd-orange-bg: #fff4ec;
+  --kd-line: #e5e7eb;
+  --kd-mono: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+.kd-sec { padding: 6rem 0; }
+.kd-white { background: #fff; }
+.kd-gray { background: var(--gray-50); border-top: 1px solid var(--gray-100); border-bottom: 1px solid var(--gray-100); }
+.kd-dark { background: var(--indigo); color: #fff; }
+.kd-darker { background: var(--indigo-darker); color: #fff; }
+.kd-h2 { font-size: clamp(2rem, 4.2vw, 3.25rem); font-weight: 800; letter-spacing: -0.03em; line-height: 1.06; color: var(--indigo); margin: 0 0 1.1rem; }
+.kd-dark .kd-h2, .kd-darker .kd-h2 { color: #fff; }
+.kd-h2 em { font-style: normal; color: var(--orange); }
+.kd-lede { font-size: 1.0625rem; line-height: 1.7; color: var(--gray-600); max-width: 36rem; margin: 0 0 1.5rem; }
+.kd-dark .kd-lede, .kd-darker .kd-lede { color: rgba(255,255,255,0.68); }
+.kd-label { font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--orange); margin: 0 0 1rem; }
+.kd-mono { font-family: var(--kd-mono); font-variant-numeric: tabular-nums; }
+.kd-btn-ghost { background: transparent; color: #fff; border-color: rgba(255,255,255,0.35); }
+.kd-btn-ghost:hover { border-color: #fff; opacity: 1; }
+.kd-btn-ghost-dark { background: transparent; color: var(--indigo); border-color: var(--gray-300); }
+.kd-btn-ghost-dark:hover { border-color: var(--indigo); opacity: 1; }
+.kd-split { display: grid; grid-template-columns: 1fr 1.1fr; gap: 4rem; align-items: center; }
+.kd-cta-row { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; }
+.kd-note { font-size: 0.8125rem; color: var(--gray-500); margin: 0.75rem 0 0; }
 
-  <section class="section section-gray">
-    <div class="container">
-      <div class="wif-wrap">
-        <div class="wif-circle wif-circle-tl"><img src="images/piling_stock.jpg" alt="Piling equipment"></div>
-        <div class="wif-circle wif-circle-tr"><img src="images/exca_stock.jpg" alt="Excavator"></div>
-        <div class="wif-circle wif-circle-bl"><img src="images/skid_stock.jpg" alt="Skid steer"></div>
-        <div class="wif-circle wif-circle-br"><img src="images/tractor_stock.jpg" alt="Tractor"></div>
-        <div class="wif-center">
-          <p class="section-label">Who It's For</p>
-          <h2 class="headline-display">Built for specialty trades owners who quote by the hour.</h2>
-          <p class="wif-statement">Built for T&amp;M contractors who can't afford to guess.</p>
-          <div class="wif-pills">
-            <span class="wif-pill">Excavation</span>
-            <span class="wif-pill">Piling</span>
-            <span class="wif-pill">Earthworks</span>
-            <span class="wif-pill">Civil</span>
-          </div>
-          <p class="wif-desc">If you're running piling, drilling, excavation, or civil crews on time-and-material contracts and your billing accuracy depends on what operators write down at the end of the day, KeenSite was built for you. You bill by the hour. Every hour has to be right.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+/* reveal on scroll */
+.js .kd-reveal { opacity: 0; transform: translateY(14px); transition: opacity .6s ease, transform .6s ease; transition-delay: var(--d, 0s); }
+.js .kd-reveal.in { opacity: 1; transform: none; }
 
-  <style>
-    .wif-wrap { position: relative; padding: 4rem 0; min-height: 500px; display: flex; align-items: center; justify-content: center; }
-    .wif-center { text-align: center; max-width: 36rem; position: relative; z-index: 2; }
-    .wif-statement { font-size: clamp(1.25rem, 2.5vw, 1.75rem); font-weight: 800; color: var(--indigo); letter-spacing: -0.02em; line-height: 1.2; margin: 1rem 0 1.5rem; }
-    .wif-pills { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; margin-bottom: 1.5rem; }
-    .wif-pill { font-size: 0.8rem; font-weight: 700; color: var(--indigo); background: #fff; border: 1.5px solid var(--gray-300); border-radius: 2rem; padding: 0.35rem 0.9rem; letter-spacing: 0.01em; }
-    .wif-desc { font-size: 1rem; color: var(--gray-600); line-height: 1.75; margin: 0; }
-    .wif-circle { position: absolute; width: 140px; height: 140px; border-radius: 50%; overflow: hidden; border: 4px solid #fff; box-shadow: 0 4px 16px rgba(0,0,0,0.1); z-index: 1; }
-    .wif-circle img { width: 100%; height: 100%; object-fit: cover; }
-    .wif-circle-tl { top: 2rem; left: 4%; }
-    .wif-circle-tr { top: 1rem; right: 4%; }
-    .wif-circle-bl { bottom: 2rem; left: 8%; }
-    .wif-circle-br { bottom: 1rem; right: 6%; }
-    @media (max-width: 900px) {
-      .wif-circle { width: 90px; height: 90px; }
-      .wif-circle-tl { top: 0; left: 0; }
-      .wif-circle-tr { top: 0; right: 0; }
-      .wif-circle-bl { bottom: 0; left: 0; }
-      .wif-circle-br { bottom: 0; right: 0; }
-    }
-  </style>
+/* ---------- HERO ---------- */
+.kd-hero { position: relative; min-height: 100vh; display: flex; align-items: center; padding: 7.5rem 0 4.5rem; color: #fff; overflow: hidden;
+  background: linear-gradient(90deg, rgba(15,26,46,.97) 0%, rgba(15,26,46,.88) 45%, rgba(15,26,46,.5) 100%), url('/images/exca_stock.jpg') center 60% / cover, var(--indigo-darker); }
+.kd-hero-grid { display: grid; grid-template-columns: 1fr 30rem; gap: 3.5rem; align-items: center; }
+.kd-eyebrow { display: inline-flex; align-items: center; gap: .55rem; font-family: var(--kd-mono); font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; color: rgba(255,255,255,.75); margin: 0 0 1.25rem; }
+.kd-live { width: 8px; height: 8px; border-radius: 50%; background: #22c55e; box-shadow: 0 0 0 0 rgba(34,197,94,.6); animation: kdPulse 2s infinite; }
+@keyframes kdPulse { 0% { box-shadow: 0 0 0 0 rgba(34,197,94,.55); } 70% { box-shadow: 0 0 0 9px rgba(34,197,94,0); } 100% { box-shadow: 0 0 0 0 rgba(34,197,94,0); } }
+.kd-hero h1 { font-size: clamp(2.75rem, 5.6vw, 4.75rem); font-weight: 800; letter-spacing: -0.035em; line-height: 1.02; margin: 0 0 1.4rem; color: #fff; text-shadow: none; }
+.kd-hero h1 span { color: var(--orange); }
+.kd-hero-sub { font-size: 1.125rem; line-height: 1.7; color: rgba(255,255,255,.8); max-width: 34rem; margin: 0 0 2rem; font-weight: 500; }
+.kd-hero-proof { font-size: .9rem; color: rgba(255,255,255,.6); margin: 1.1rem 0 0; max-width: 30rem; line-height: 1.5; }
+.kd-hero-proof strong { color: #fff; font-weight: 600; }
 
-  <!-- CTA -->
-  <section class="section section-indigo cta-section">
-    <div class="container">
-      <h2>Make reporting accurate and effortless.</h2>
-      <p>See how KeenSite verifies field data so your team can approve with confidence.</p>
-      <a href="/contact/" class="btn btn-orange">
-        Book a 20-minute call.
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="none"
-          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <line x1="5" y1="12" x2="19" y2="12" />
-          <polyline points="12 5 19 12 12 19" />
-        </svg>
-      </a>
-    </div>
-  </section>
+/* the scope panel */
+.kd-scope { background: #fff; color: var(--indigo); border-radius: .5rem; box-shadow: 0 24px 60px rgba(0,0,0,.45); overflow: hidden; font-size: .8rem; }
+.kd-scope-head { background: var(--indigo-darker); color: #fff; padding: .85rem 1.1rem; display: flex; align-items: center; justify-content: space-between; gap: .75rem; }
+.kd-scope-proj small { display: block; font-family: var(--kd-mono); font-size: .62rem; letter-spacing: .1em; color: rgba(255,255,255,.5); text-transform: uppercase; }
+.kd-scope-proj b { font-size: 1rem; letter-spacing: -0.01em; }
+.kd-watch { font-family: var(--kd-mono); font-size: .62rem; letter-spacing: .08em; text-transform: uppercase; color: #86efac; display: inline-flex; align-items: center; gap: .4rem; }
+.kd-watch i { width: 6px; height: 6px; border-radius: 50%; background: #22c55e; animation: kdPulse 2s infinite; }
+.kd-steps { display: flex; border-bottom: 1px solid var(--kd-line); background: var(--gray-50); }
+.kd-step { flex: 1; text-align: center; padding: .5rem 0; font-family: var(--kd-mono); font-size: .64rem; letter-spacing: .1em; font-weight: 700; color: var(--gray-400); border-bottom: 2px solid transparent; cursor: pointer; background: none; border-top: 0; border-left: 0; border-right: 0; transition: color .3s, border-color .3s; }
+.kd-scope.is-quote .kd-step[data-s="quote"], .kd-scope.is-actual .kd-step[data-s="actual"], .kd-scope.is-drift .kd-step[data-s="drift"] { color: var(--indigo); border-bottom-color: var(--orange); }
+.kd-scope.is-drift .kd-step[data-s="drift"] { color: var(--orange); }
+.kd-scope-body { padding: 1rem 1.1rem 1.1rem; }
+.kd-cols { display: flex; justify-content: space-between; font-family: var(--kd-mono); font-size: .6rem; letter-spacing: .1em; text-transform: uppercase; color: var(--gray-400); margin-bottom: .55rem; }
+.kd-row { margin-bottom: .95rem; }
+.kd-row-top { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: .35rem; }
+.kd-row-name { font-weight: 700; font-size: .85rem; }
+.kd-row-nums { font-family: var(--kd-mono); font-size: .72rem; color: var(--gray-500); display: flex; gap: .9rem; }
+.kd-row-nums .a { color: var(--indigo); font-weight: 700; opacity: 0; transition: opacity .4s; }
+.kd-scope.is-actual .kd-row-nums .a { opacity: 1; }
+.kd-row-nums .q { opacity: 0; transition: opacity .4s; }
+.kd-scope.is-quote .kd-row-nums .q { opacity: 1; }
+.kd-track { position: relative; height: 12px; background: var(--gray-100); border-radius: 2px; }
+.kd-plan { position: absolute; left: 0; top: 0; bottom: 0; width: 0; border-right: 2px solid var(--indigo); background: repeating-linear-gradient(135deg, #e2e8f0 0 4px, #f1f5f9 4px 8px); transition-property: width; transition-duration: .9s; transition-timing-function: cubic-bezier(.4,0,.2,1); transition-delay: var(--stg, 0s); }
+.kd-scope.is-quote .kd-plan { width: 80%; }
+.kd-fill { position: absolute; left: 0; top: 2px; bottom: 2px; width: 0; background: var(--indigo); border-radius: 1px; transition-property: width; transition-duration: 1.3s; transition-timing-function: cubic-bezier(.4,0,.2,1); transition-delay: var(--stg, 0s); }
+.kd-over { position: absolute; left: 80%; top: 2px; bottom: 2px; width: 0; background: var(--orange); border-radius: 0 1px 1px 0; transition-property: width; transition-duration: .7s; transition-timing-function: ease; transition-delay: calc(var(--stg, 0s) + 1.2s); }
+.kd-scope.is-actual .kd-fill { width: 80%; }
+.kd-scope.is-actual .kd-over { width: var(--ov); }
+.kd-flags { border-top: 1px dashed var(--gray-300); padding-top: .85rem; margin-top: .25rem; }
+.kd-flags-label { font-family: var(--kd-mono); font-size: .62rem; letter-spacing: .1em; text-transform: uppercase; color: var(--orange); font-weight: 700; margin-bottom: .55rem; display: flex; align-items: center; gap: .4rem; }
+.kd-flag-grid { display: grid; grid-template-columns: 1fr 1fr; gap: .4rem; }
+.kd-flag { display: flex; align-items: center; gap: .45rem; font-family: var(--kd-mono); font-size: .74rem; font-weight: 700; padding: .45rem .55rem; background: var(--kd-orange-bg); border-left: 3px solid var(--orange); color: var(--indigo); opacity: 0; transform: translateX(-8px); transition: opacity .4s, transform .4s; }
+.kd-flag.red { background: var(--kd-red-bg); border-left-color: var(--kd-red); }
+.kd-scope.is-drift .kd-flag { opacity: 1; transform: none; }
+.kd-scope.is-drift .kd-flag:nth-child(1) { transition-delay: .05s; } .kd-scope.is-drift .kd-flag:nth-child(2) { transition-delay: .2s; } .kd-scope.is-drift .kd-flag:nth-child(3) { transition-delay: .35s; } .kd-scope.is-drift .kd-flag:nth-child(4) { transition-delay: .5s; }
+.kd-verdict { margin-top: .85rem; background: var(--indigo); color: #fff; padding: .7rem .9rem; display: flex; align-items: center; gap: .6rem; font-weight: 700; font-size: .9rem; opacity: 0; transition: opacity .5s ease .7s; }
+.kd-scope.is-drift .kd-verdict { opacity: 1; }
+.kd-verdict svg { color: var(--orange); flex-shrink: 0; }
+.kd-scope-src { font-family: var(--kd-mono); font-size: .6rem; color: var(--gray-400); margin-top: .7rem; letter-spacing: .04em; }
+
+/* ---------- OWNER ---------- */
+.kd-leaks { display: grid; grid-template-columns: 1fr 1fr; gap: .1rem 1.5rem; margin: 0 0 2rem; max-width: 34rem; }
+.kd-leaks li { display: flex; gap: .6rem; align-items: baseline; padding: .55rem 0; border-bottom: 1px solid var(--kd-line); font-size: .95rem; font-weight: 600; color: var(--indigo); }
+.kd-leaks li::before { content: ""; width: 7px; height: 7px; background: var(--orange); flex-shrink: 0; transform: translateY(-1px); }
+.kd-dash { background: #fff; border: 1px solid var(--kd-line); border-radius: .5rem; box-shadow: 0 16px 48px rgba(27,44,80,.12); overflow: hidden; }
+.kd-dash-head { display: flex; justify-content: space-between; align-items: center; padding: .9rem 1.2rem; border-bottom: 1px solid var(--kd-line); }
+.kd-dash-head small { display: block; font-family: var(--kd-mono); font-size: .62rem; letter-spacing: .1em; text-transform: uppercase; color: var(--gray-400); }
+.kd-dash-head b { font-size: 1.05rem; letter-spacing: -0.01em; }
+.kd-pill { font-size: .66rem; font-weight: 700; padding: .2rem .6rem; border-radius: 2rem; white-space: nowrap; }
+.kd-pill.warn { background: var(--kd-orange-bg); color: #b4501f; }
+.kd-pill.ok { background: var(--kd-green-bg); color: var(--kd-green); }
+.kd-pill.bad { background: var(--kd-red-bg); color: var(--kd-red); }
+.kd-pill.amber { background: var(--kd-amber-bg); color: var(--kd-amber); }
+.kd-pill.mute { background: var(--gray-100); color: var(--gray-500); }
+.kd-stats { display: grid; grid-template-columns: repeat(3, 1fr); border-bottom: 1px solid var(--kd-line); }
+.kd-stat { padding: 1rem 1.2rem; border-right: 1px solid var(--kd-line); }
+.kd-stat:last-child { border-right: 0; }
+.kd-stat small { display: block; font-size: .66rem; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; color: var(--gray-400); }
+.kd-stat b { display: block; font-family: var(--kd-mono); font-size: 1.35rem; letter-spacing: -0.02em; margin-top: .2rem; }
+.kd-stat.hot b { color: var(--orange); }
+.kd-dash-sec { padding: 1.1rem 1.2rem; border-bottom: 1px solid var(--kd-line); }
+.kd-dash-sec:last-child { border-bottom: 0; }
+.kd-sec-title { font-family: var(--kd-mono); font-size: .62rem; letter-spacing: .1em; text-transform: uppercase; color: var(--gray-400); margin-bottom: .7rem; display: flex; justify-content: space-between; }
+.kd-money { position: relative; height: 22px; background: repeating-linear-gradient(135deg, #e5e7eb 0 4px, #f3f4f6 4px 8px); border-radius: 2px; margin-bottom: 1.5rem; }
+.kd-money-cost { position: absolute; left: 0; top: 0; bottom: 0; background: var(--indigo); width: 0; transition: width 1.2s cubic-bezier(.4,0,.2,1); }
+.kd-money-over { position: absolute; left: 75%; top: 0; bottom: 0; background: var(--orange); width: 0; transition: width .8s ease 1s; }
+.kd-money.in .kd-money-cost { width: 75%; }
+.kd-money.in .kd-money-over { width: 11.8%; }
+.kd-money-tick { position: absolute; top: -5px; bottom: -5px; width: 0; border-left: 2px dashed var(--indigo); left: 75%; }
+.kd-money-lbl { position: absolute; top: 28px; font-size: .62rem; font-weight: 600; color: var(--gray-500); white-space: nowrap; }
+.kd-mbars { display: grid; gap: .65rem; }
+.kd-mbar { display: grid; grid-template-columns: 6.2rem 1fr 3rem; align-items: center; gap: .7rem; font-size: .75rem; font-weight: 600; }
+.kd-mbar-t { height: 14px; background: var(--gray-100); border-radius: 2px; overflow: hidden; }
+.kd-mbar-t i { display: block; height: 100%; width: 0; transition: width 1.1s cubic-bezier(.4,0,.2,1) .3s; }
+.kd-mbar b { font-family: var(--kd-mono); text-align: right; font-size: .95rem; }
+.kd-mbar.proj b { color: var(--orange); }
+.kd-money.in ~ .kd-mbars .kd-mbar-t i { width: var(--w); }
+.kd-alerts { display: grid; gap: .45rem; }
+.kd-alert { display: flex; gap: .55rem; align-items: center; font-size: .82rem; font-weight: 600; padding: .5rem .65rem; background: var(--kd-orange-bg); border-left: 3px solid var(--orange); }
+.kd-alert svg { flex-shrink: 0; color: var(--orange); }
+.kd-example-tag { font-size: .7rem; color: var(--gray-400); text-align: right; margin-top: .6rem; }
+
+/* ---------- CONNECT DIAGRAM ---------- */
+.kd-conn-head { text-align: center; max-width: 42rem; margin: 0 auto 3.5rem; }
+.kd-conn-head .kd-lede { margin-left: auto; margin-right: auto; }
+.kd-flow2 { max-width: 76rem; margin: 0 auto; display: flex; align-items: center; gap: 3.5rem; }
+.kd-flow-side { flex: 1 1 0; min-width: 0; display: flex; flex-direction: column; align-items: center; }
+.kd-flow-side-tag { font-family: var(--kd-mono); font-size: .72rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: var(--gray-400); margin: 0 0 3.25rem; }
+.kd-flow-arrow { position: relative; flex: 0 0 auto; width: 3.75rem; height: 3.75rem; border-radius: 50%; background: radial-gradient(circle at 35% 30%, #f0905f, var(--orange) 65%); color: #fff; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 10px rgba(220,111,61,.1), 0 10px 32px rgba(220,111,61,.5); z-index: 2; animation: kdOrbitPulse 3.2s ease-in-out infinite; }
+.kd-flow-ui { width: 100%; }
+.kd-flow-ui .sol-mockup { max-width: 30rem; margin: 0 auto; }
+.kd-float-tag { position: absolute; top: -.75rem; left: 50%; transform: translateX(-50%); z-index: 2; background: var(--indigo); color: #fff; font-family: var(--kd-mono); font-size: .78rem; font-weight: 800; letter-spacing: .1em; padding: .4rem .95rem; border-radius: .3rem; box-shadow: 0 6px 14px rgba(0,0,0,.35); }
+.kd-flow-ui-stage { position: relative; max-width: 30rem; margin: 0 auto; }
+
+/* right side: bars fill, numbers count up, and notifications pop in once scrolled into view */
+.kd-flow-ui-stage .sol-ov-section:nth-child(1) { --stg: 0s; }
+.kd-flow-ui-stage .sol-ov-section:nth-child(2) { --stg: .25s; }
+.kd-flow-ui-stage .sol-ov-section:nth-child(3) { --stg: .5s; }
+.kd-flow-ui-stage.in .kd-plan { width: 80%; }
+.kd-flow-ui-stage.in .kd-fill { width: 80%; }
+.kd-flow-ui-stage.in .kd-over { width: var(--ov); }
+.kd-flow-ui-stage .kd-flow-notif { opacity: 0; transform: scale(.82) translateY(6px); transition: opacity .5s ease, transform .5s cubic-bezier(.34,1.56,.64,1); transition-delay: var(--pd, 0s); }
+.kd-flow-ui-stage.in .kd-flow-notif { opacity: 1; transform: scale(1) translateY(0); }
+.kd-float-tag { opacity: 0; transition: opacity .4s ease .2s; }
+.kd-flow-ui-stage.in .kd-float-tag { opacity: 1; }
+
+/* orbit: inputs revolve slowly around a central KeenSite core */
+.kd-orbit-wrap { width: 100%; display: flex; justify-content: center; }
+.kd-orbit { position: relative; width: 25rem; height: 25rem; max-width: 100%; --radius: 6.9rem; }
+.kd-orbit-ring { position: absolute; inset: 0; border: 1px dashed rgba(255,255,255,.16); border-radius: 50%; }
+.kd-orbit-ring.r2 { inset: 3.2rem; border-color: rgba(220,111,61,.22); }
+@keyframes kdOrbitPulse { 0%, 100% { box-shadow: 0 0 0 10px rgba(220,111,61,.1), 0 10px 32px rgba(220,111,61,.5); } 50% { box-shadow: 0 0 0 16px rgba(220,111,61,.06), 0 10px 40px rgba(220,111,61,.65); } }
+.kd-orbit-spin { position: absolute; inset: 0; z-index: 1; animation: kdOrbitSpin 95s linear infinite; }
+@keyframes kdOrbitSpin { to { transform: rotate(360deg); } }
+.kd-orbit-node { position: absolute; top: 50%; left: 50%; width: 0; height: 0; transform: rotate(var(--a)); }
+.kd-orbit-card { position: absolute; top: 0; left: 0; display: flex; align-items: center; gap: .7rem; width: 11.5rem; padding: .75rem .9rem; background: rgba(255,255,255,.1); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border: 1px solid rgba(255,255,255,.26); border-radius: .75rem; box-shadow: 0 14px 32px rgba(0,0,0,.4); transform: translate(var(--radius), -50%) rotate(calc(-1 * var(--a))); animation: kdOrbitCounter 95s linear infinite; }
+@keyframes kdOrbitCounter { from { transform: translate(var(--radius), -50%) rotate(calc(-1 * var(--a))); } to { transform: translate(var(--radius), -50%) rotate(calc(-1 * var(--a) - 360deg)); } }
+.kd-orbit-card-ic { width: 3.3rem; height: 3.3rem; border-radius: .7rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; background: var(--orange); color: #fff; box-shadow: 0 4px 14px rgba(220,111,61,.5); }
+.kd-orbit-card-ic.wa { background: #25D366; box-shadow: 0 4px 14px rgba(37,211,102,.5); }
+.kd-orbit-card b { display: block; font-size: 1rem; font-weight: 800; color: #fff; letter-spacing: -0.01em; line-height: 1.3; }
+@media (max-width: 1100px) { .kd-orbit { width: 21.5rem; height: 21.5rem; --radius: 5.9rem; } .kd-orbit-card { width: 10rem; } }
+@media (max-width: 420px) { .kd-orbit { width: 17.5rem; height: 17.5rem; --radius: 4.8rem; } .kd-orbit-card { width: 8rem; padding: .55rem .65rem; font-size: .92em; } .kd-orbit-card b { font-size: .78rem; } .kd-orbit-card-ic { width: 2.5rem; height: 2.5rem; } }
+.kd-flow-notif { position: absolute; top: var(--t, auto); right: var(--r, auto); bottom: var(--b, auto); left: var(--l, auto); display: flex; align-items: flex-start; gap: .55rem; width: 12.5rem; background: #fff; border-left: 4px solid var(--orange); border-radius: .35rem; padding: .55rem .7rem; box-shadow: 0 14px 32px rgba(0,0,0,.4); animation: kdFloat 6s ease-in-out infinite; animation-delay: var(--fd, 0s); z-index: 5; }
+.kd-flow-notif.bill { border-left-color: var(--kd-green); }
+.kd-flow-notif.msg { border-left-color: var(--kd-blue); }
+.kd-flow-notif-ic { width: 2.4rem; height: 2.4rem; flex-shrink: 0; display: flex; align-items: center; justify-content: center; background: var(--orange); color: #fff; border-radius: .4rem; }
+.kd-flow-notif-ic svg { color: #fff; }
+.kd-flow-notif.bill .kd-flow-notif-ic { background: var(--kd-green); color: #fff; }
+.kd-flow-notif.msg .kd-flow-notif-ic { background: var(--kd-blue); color: #fff; }
+.kd-flow-notif b { display: block; font-size: .88rem; font-weight: 800; color: var(--indigo); line-height: 1.25; }
+.kd-flow-notif span { font-size: .76rem; font-weight: 600; color: var(--gray-600); }
+.kd-flow-notif .kd-flow-quote { display: block; margin-top: .25rem; padding: .35rem .5rem; background: var(--gray-50, #f4f4f5); border-radius: .3rem; font-style: italic; font-weight: 600; color: var(--gray-700, #3f3f46); }
+.kd-flow-notif .kd-flow-quote-from { display: block; margin-top: .15rem; font-style: normal; font-weight: 700; color: var(--gray-400); font-size: .68rem; }
+
+/* ---------- STORY / EXAMPLE ---------- */
+.kd-story-head { max-width: 40rem; margin: 0 0 2.5rem; }
+.kd-story { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; border: 1px solid var(--kd-line); background: #fff; }
+.kd-story-c { padding: 1.1rem 1.2rem; border-right: 1px solid var(--kd-line); position: relative; }
+.kd-story-c:last-child { border-right: 0; }
+.kd-story-c small { display: block; font-family: var(--kd-mono); font-size: .66rem; letter-spacing: .14em; color: var(--gray-400); font-weight: 700; margin-bottom: .55rem; }
+.kd-story-c ul li { font-size: .95rem; font-weight: 600; padding: .15rem 0; }
+.kd-story-c ul li.hl { color: #b4501f; }
+.kd-story-out { background: var(--indigo); color: #fff; padding: 1.2rem 1.4rem; display: grid; grid-template-columns: auto 1fr; gap: 1.5rem; align-items: center; }
+.kd-story-out > small { font-family: var(--kd-mono); font-size: .68rem; letter-spacing: .14em; color: var(--orange); font-weight: 700; }
+.kd-story-flags { display: grid; grid-template-columns: repeat(3, 1fr); gap: .6rem; }
+.kd-story-flags div { display: flex; gap: .5rem; align-items: center; font-weight: 700; font-size: .9rem; background: rgba(255,255,255,.08); padding: .6rem .8rem; border-left: 3px solid var(--orange); }
+.kd-story-flags svg { color: var(--orange); flex-shrink: 0; }
+.kd-story-after { font-size: 1.2rem; font-weight: 700; letter-spacing: -0.01em; margin: 2rem 0 0; max-width: 34rem; }
+.kd-paper-wrap { margin-top: 3rem; }
+.kd-paper-cap { font-family: var(--kd-mono); font-size: .68rem; letter-spacing: .12em; text-transform: uppercase; color: var(--gray-400); text-align: center; margin-bottom: .5rem; }
+
+/* ---------- GM ---------- */
+.kd-ops { background: #fff; border: 1px solid var(--kd-line); border-radius: .5rem; box-shadow: 0 16px 48px rgba(27,44,80,.12); overflow: hidden; }
+.kd-ops-head { background: var(--indigo); color: #fff; padding: .8rem 1.1rem; display: flex; justify-content: space-between; align-items: center; }
+.kd-ops-head b { letter-spacing: -0.01em; }
+.kd-ops-head small { font-family: var(--kd-mono); font-size: .62rem; letter-spacing: .08em; color: rgba(255,255,255,.55); text-transform: uppercase; }
+.kd-tbl { width: 100%; border-collapse: collapse; font-size: .78rem; }
+.kd-tbl th { text-align: left; font-family: var(--kd-mono); font-size: .58rem; letter-spacing: .1em; text-transform: uppercase; color: var(--gray-400); font-weight: 600; padding: .55rem 1.1rem; background: var(--gray-50); border-bottom: 1px solid var(--kd-line); }
+.kd-tbl td { padding: .6rem 1.1rem; border-bottom: 1px solid var(--gray-100); vertical-align: middle; }
+.kd-tbl td:first-child { font-weight: 700; }
+.kd-tbl .sub { display: block; font-weight: 500; font-size: .68rem; color: var(--gray-400); }
+.kd-tbl .n { font-family: var(--kd-mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.kd-mini { display: block; height: 5px; background: var(--gray-100); width: 5.5rem; border-radius: 1px; margin-top: .3rem; position: relative; overflow: hidden; }
+.kd-mini i { position: absolute; left: 0; top: 0; bottom: 0; background: var(--indigo); }
+.kd-mini i.o { background: var(--orange); }
+.kd-ops-sec { font-family: var(--kd-mono); font-size: .6rem; letter-spacing: .12em; text-transform: uppercase; color: var(--orange); font-weight: 700; padding: .7rem 1.1rem .4rem; background: #fff; }
+.kd-ops-foot { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--kd-line); }
+.kd-ops-foot div { padding: .75rem 1.1rem; border-right: 1px solid var(--kd-line); font-size: .66rem; color: var(--gray-500); font-weight: 600; text-transform: uppercase; letter-spacing: .05em; }
+.kd-ops-foot div:last-child { border-right: 0; }
+.kd-ops-foot b { display: block; font-family: var(--kd-mono); font-size: 1.2rem; color: var(--indigo); letter-spacing: -0.02em; text-transform: none; }
+.kd-ops-foot b.hot { color: var(--orange); }
+.kd-seesaw { font-size: 1.15rem; font-weight: 700; line-height: 1.45; letter-spacing: -0.01em; border-left: 3px solid var(--orange); padding-left: 1rem; margin: 0 0 1.5rem; max-width: 30rem; }
+.kd-seesaw span { display: block; color: var(--gray-500); font-weight: 600; }
+.kd-chips { display: flex; flex-wrap: wrap; gap: .4rem; margin: 0; }
+.kd-chips li { font-size: .8rem; font-weight: 600; padding: .35rem .7rem; border: 1px solid var(--gray-300); background: #fff; }
+.kd-jobview { margin-top: 5rem; padding-top: 4rem; border-top: 1px solid var(--kd-line); display: grid; grid-template-columns: 1fr 1.7fr; gap: 3.5rem; align-items: start; }
+.kd-jobview h3 { font-size: clamp(1.6rem, 2.6vw, 2.1rem); font-weight: 800; letter-spacing: -0.02em; line-height: 1.12; margin: 0 0 1rem; }
+.kd-jobview .sol-mockup { border-color: var(--kd-line); box-shadow: 0 16px 48px rgba(27,44,80,.14); }
+.kd-hint { font-size: .8rem; color: var(--gray-400); margin-top: .75rem; }
+
+/* ---------- MAINTENANCE ---------- */
+.kd-chain { display: grid; grid-template-columns: repeat(4, 1fr); margin: 2.25rem 0 3.5rem; }
+.kd-chain-s { position: relative; background: #fff; border: 1px solid var(--kd-line); padding: 1rem 1.15rem; margin-right: -1px; }
+.kd-chain-s small { display: block; font-family: var(--kd-mono); font-size: .62rem; letter-spacing: .12em; color: var(--gray-400); }
+.kd-chain-s b { font-size: .98rem; letter-spacing: -0.01em; }
+.kd-chain-s:not(:last-child)::after { content: ""; position: absolute; right: -9px; top: 50%; width: 16px; height: 16px; background: var(--orange); transform: translateY(-50%) rotate(45deg) scale(.55); z-index: 2; }
+.kd-chain-s.last { background: var(--indigo); color: #fff; border-color: var(--indigo); }
+.kd-chain-s.last small { color: var(--orange); }
+.kd-chain-s.hot { border-bottom: 3px solid var(--orange); }
+.kd-maint { display: grid; grid-template-columns: 1fr 1.2fr; gap: 3.5rem; align-items: start; }
+.kd-photo { position: relative; margin-bottom: 1.5rem; }
+.kd-photo img { width: 100%; height: 16rem; object-fit: cover; border-radius: .5rem; box-shadow: 0 8px 32px rgba(27,44,80,.14); }
+.kd-photo span { position: absolute; left: .75rem; bottom: .75rem; background: rgba(15,26,46,.88); color: #fff; font-family: var(--kd-mono); font-size: .66rem; letter-spacing: .08em; padding: .3rem .6rem; }
+.kd-nos { font-size: 1.35rem; font-weight: 800; letter-spacing: -0.02em; line-height: 1.3; margin: 0 0 1.25rem; }
+.kd-nos span { display: block; }
+.kd-nos span:last-child { color: var(--orange); }
+.kd-checks li { display: flex; gap: .6rem; padding: .45rem 0; font-size: .95rem; color: var(--gray-700); line-height: 1.5; }
+.kd-checks svg { color: var(--orange); flex-shrink: 0; margin-top: .2rem; }
+.kd-checks li b { color: var(--indigo); }
+.kd-mt-head { display: flex; justify-content: space-between; align-items: flex-end; padding: 1rem 1.2rem; border-bottom: 1px solid var(--kd-line); }
+.kd-mt-head small { font-family: var(--kd-mono); font-size: .62rem; letter-spacing: .1em; text-transform: uppercase; color: var(--gray-400); display: block; }
+.kd-mt-head b { font-size: 1.05rem; }
+.kd-hours { text-align: right; font-family: var(--kd-mono); font-size: 1.7rem; font-weight: 700; letter-spacing: -0.03em; line-height: 1; }
+.kd-hours small { text-align: right; margin-bottom: .3rem; }
+.kd-fleet { display: grid; grid-template-columns: repeat(2, 1fr); border-bottom: 1px solid var(--kd-line); }
+.kd-fleet div { padding: .55rem 1.2rem; font-size: .75rem; display: flex; justify-content: space-between; gap: .5rem; align-items: center; border-bottom: 1px solid var(--gray-100); }
+.kd-fleet div:nth-child(odd) { border-right: 1px solid var(--gray-100); }
+.kd-fleet div.sel { background: var(--orange-bg, #fff4ec); font-weight: 700; }
+.kd-fleet b { font-weight: 700; }
+.kd-hist td:last-child { text-align: right; }
+.kd-view-ticket { font-size: .68rem; font-weight: 700; color: var(--orange); text-decoration: none; white-space: nowrap; }
+.kd-view-ticket:hover { text-decoration: underline; }
+
+/* one machine */
+
+/* ---------- CREW ---------- */
+.kd-how-row { display: grid; grid-template-columns: 1fr 1.2fr; gap: 3rem; align-items: center; margin: 2.5rem 0; }
+.kd-how-row + .kd-how-row { margin-top: 3.5rem; padding-top: 3.5rem; border-top: 1px solid var(--kd-line); }
+.kd-how-row:last-of-type { margin-bottom: 3rem; }
+.kd-how2-head { display: flex; align-items: center; gap: .65rem; margin-bottom: .65rem; }
+.kd-how2-icon { display: flex; align-items: center; justify-content: center; width: 2.25rem; height: 2.25rem; border-radius: .5rem; background: var(--orange); color: #fff; flex-shrink: 0; }
+.kd-how2-icon svg { stroke-width: 2.6; }
+.kd-how2-col h3 { font-size: 1.15rem; font-weight: 800; letter-spacing: -0.01em; color: var(--indigo); margin: 0; }
+.kd-how2-col > p { color: var(--gray-600); line-height: 1.65; font-size: .95rem; margin: 0 0 1.25rem; }
+.kd-how2-card { box-shadow: 0 16px 40px rgba(27,44,80,.12); }
+.kd-how2-stat { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+.kd-how2-stat small { display: block; font-size: .68rem; font-weight: 600; color: var(--gray-400); text-transform: uppercase; letter-spacing: .05em; margin-bottom: .3rem; }
+.kd-how2-stat b { font-size: 1.6rem; font-weight: 800; letter-spacing: -0.02em; color: var(--indigo); }
+.kd-how2-stat b span { font-size: .8rem; font-weight: 500; color: var(--gray-400); margin-left: .15rem; }
+.kd-lem-doc { position: relative; background: #fff; border: 1px solid #e2e2e2; box-shadow: 0 16px 40px rgba(27,44,80,.12); border-radius: .35rem; padding: 1rem .95rem .85rem; max-width: 340px; margin: 0 auto; }
+.kd-lem-doc .ailem-grid-header, .kd-lem-doc .ailem-grid-row { grid-template-columns: .85fr .6fr .7fr .7fr .6fr; }
+.kd-lem-doc .ailem-col-b, .kd-lem-doc .ailem-col-c { text-align: left; }
+.kd-doc-gallery { position: relative; }
+.kd-doc-track { position: relative; transition: height .4s ease; }
+.kd-doc-track .sol-hw-slide { display: flex; align-items: center; justify-content: center; transition: opacity 1s ease; }
+.kd-doc-gallery .sol-hw-nav { position: static; transform: none; }
+.kd-doc-gallery .sol-hw-dots { position: static; transform: none; }
+.kd-doc-controls { display: flex; align-items: center; justify-content: center; gap: 1rem; margin-top: 1.1rem; }
+.kd-doc-controls .sol-hw-dot { background: var(--gray-300); }
+.kd-doc-controls .sol-hw-dot.is-active { background: var(--orange); box-shadow: none; }
+.kd-wa-doc { position: relative; background: #e5ddd5; border: 1px solid #e2e2e2; box-shadow: 0 16px 40px rgba(27,44,80,.12); border-radius: .5rem; max-width: 340px; margin: 0 auto; overflow: hidden; }
+.kd-wa-header { display: flex; align-items: center; gap: .55rem; background: #075E54; color: #fff; padding: .65rem .85rem; }
+.kd-wa-header svg { flex-shrink: 0; }
+.kd-wa-header-info b { display: block; font-size: .82rem; font-weight: 700; }
+.kd-wa-header-info small { display: block; font-size: .66rem; color: rgba(255,255,255,.75); }
+.kd-wa-body { padding: .9rem .75rem 1rem; display: flex; flex-direction: column; gap: .55rem; }
+.kd-wa-bubble { background: #fff; border-radius: .4rem; padding: .4rem .6rem .5rem; max-width: 86%; box-shadow: 0 1px 1px rgba(0,0,0,.08); }
+.kd-wa-name { display: block; font-size: .68rem; font-weight: 700; margin-bottom: .1rem; }
+.kd-wa-name-dave { color: var(--orange); }
+.kd-wa-name-jim { color: var(--kd-green); }
+.kd-wa-name-tyler { color: var(--kd-amber); }
+.kd-wa-bubble p { margin: 0; font-size: .78rem; color: #1b1b1b; line-height: 1.4; }
+.kd-wa-bubble small { display: block; text-align: right; font-size: .62rem; color: var(--gray-400); margin-top: .2rem; }
+.kd-how2-cap { font-size: .8rem; color: var(--gray-500); margin: .75rem 0 0; }
+.kd-scan-channels { display: flex; flex-wrap: wrap; gap: .5rem; margin: 0 0 1.25rem; }
+.kd-scan-chip { display: inline-flex; align-items: center; gap: .4rem; padding: .4rem .75rem; border-radius: 2rem; background: var(--gray-100); font-size: .78rem; font-weight: 600; color: var(--indigo); }
+.kd-scan-chip svg { color: var(--orange); flex-shrink: 0; }
+.kd-scan-chip.whatsapp svg { color: #25D366; }
+.kd-scan-list { list-style: none; margin: 0 0 1.25rem; padding: 0; display: flex; flex-direction: column; gap: .7rem; }
+.kd-scan-list li { display: flex; gap: .65rem; align-items: flex-start; }
+.kd-scan-list li svg { color: var(--orange); flex-shrink: 0; margin-top: .2rem; }
+.kd-scan-list li b { display: block; color: var(--indigo); font-size: .9rem; }
+.kd-scan-list li span { display: block; color: var(--gray-500); font-size: .82rem; line-height: 1.4; margin-top: .1rem; }
+.kd-crew-quote { font-size: clamp(1.4rem, 2.6vw, 2rem); font-weight: 800; letter-spacing: -0.02em; line-height: 1.2; margin: 0 0 2.5rem; }
+.kd-crew-quote span { color: var(--orange); }
+
+/* ---------- WHO / SPLIT ---------- */
+.kd-who-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+.kd-who-c { position: relative; overflow: hidden; aspect-ratio: 4/5; background: var(--indigo); }
+.kd-who-c img { width: 100%; height: 100%; object-fit: cover; opacity: .85; transition: transform .5s ease, opacity .3s; }
+.kd-who-c:hover img { transform: scale(1.04); opacity: 1; }
+.kd-who-c span { position: absolute; left: 0; right: 0; bottom: 0; padding: 2.5rem 1rem .9rem; background: linear-gradient(transparent, rgba(15,26,46,.92)); color: #fff; font-weight: 800; font-size: 1.05rem; letter-spacing: -0.01em; }
+.kd-who-c span small { display: block; font-weight: 500; font-size: .74rem; color: rgba(255,255,255,.65); margin-top: .1rem; }
+.kd-who-not { margin-top: 1.5rem; font-size: .9rem; color: var(--gray-500); max-width: 40rem; }
+.kd-two { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid var(--kd-line); background: #fff; }
+.kd-two-c { padding: 2.25rem 2.25rem 2rem; }
+.kd-two-c.owner { background: var(--indigo); color: #fff; }
+.kd-two-c small { font-family: var(--kd-mono); font-size: .68rem; letter-spacing: .14em; font-weight: 700; color: var(--orange); }
+.kd-two-c h3 { font-size: clamp(1.5rem, 2.4vw, 2rem); font-weight: 800; letter-spacing: -0.02em; line-height: 1.12; margin: .5rem 0 1.25rem; }
+.kd-two-c li { padding: .5rem 0; border-top: 1px solid var(--kd-line); font-weight: 600; font-size: .95rem; }
+.kd-two-c.owner li { border-color: rgba(255,255,255,.15); }
+.kd-two-foot { text-align: center; margin-top: 2rem; }
+.kd-two-foot b { display: block; font-size: clamp(1.4rem, 2.6vw, 2rem); letter-spacing: -0.02em; font-weight: 800; }
+.kd-two-foot span { color: var(--gray-500); font-size: .95rem; }
+
+/* ---------- PRICING extras ---------- */
+.kd-price-data { max-width: 46rem; margin: -1.5rem auto 2.5rem; text-align: center; }
+.kd-price-data p { font-size: .95rem; color: var(--gray-600); line-height: 1.7; }
+
+/* ---------- CTA ---------- */
+.kd-cta { position: relative; overflow: hidden; }
+.kd-cta::before { content: ""; position: absolute; inset: 0; background: url('/images/gallery/20250515_131354.jpg') center / cover; opacity: .08; }
+.kd-cta .container { position: relative; }
+.kd-cta-grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: 4rem; align-items: center; }
+.kd-cta-lede { color: #fff; font-weight: 600; font-size: 1.2rem; line-height: 1.5; }
+.kd-cta-box { border: 1px solid rgba(255,255,255,.22); background: rgba(15,26,46,.7); border-radius: 1rem; padding: 2rem; }
+.kd-cta-box small { font-family: var(--kd-mono); font-size: .7rem; letter-spacing: .14em; color: var(--orange); font-weight: 700; display: block; margin-bottom: 1rem; }
+.kd-cta-steps { counter-reset: cs; display: grid; gap: 0; margin: 0 0 1.6rem; }
+.kd-cta-steps li { counter-increment: cs; display: grid; grid-template-columns: 2.5rem 1fr; align-items: center; gap: 1rem; padding: 1.1rem 0; border-top: 1px solid rgba(255,255,255,.16); font-size: 1.05rem; font-weight: 600; line-height: 1.45; color: #fff; }
+.kd-cta-steps li:first-child { border-top: none; padding-top: 0; }
+.kd-cta-steps li::before { content: counter(cs); width: 2.5rem; height: 2.5rem; border-radius: 50%; background: var(--orange); color: var(--indigo-darker); font-weight: 800; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0; }
+.kd-cta-box .btn { width: 100%; justify-content: center; }
+.kd-cta-box .btn + .btn { margin-top: .6rem; }
+.kd-cta-fine { font-size: .82rem; color: rgba(255,255,255,.55); text-align: center; margin: .9rem 0 0; }
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 980px) {
+  .kd-sec { padding: 4.5rem 0; }
+  .kd-hero { padding: 6rem 0 3.5rem; min-height: auto; background: linear-gradient(rgba(15,26,46,.92), rgba(15,26,46,.86)), url('/images/exca_stock.jpg') center / cover, var(--indigo-darker); }
+  .kd-hero-grid, .kd-split, .kd-maint, .kd-jobview, .kd-cta-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .kd-flow2 { flex-direction: column; align-items: stretch; }
+  .kd-flow-side { width: 100%; }
+  .kd-flow-arrow { align-self: center; margin: .5rem 0; }
+  .kd-flow-arrow svg { transform: rotate(90deg); }
+  .kd-flow-notif { position: static; width: 100%; max-width: 20rem; margin: .6rem auto 0; }
+  .kd-story { grid-template-columns: 1fr 1fr; }
+  .kd-story-c:nth-child(2) { border-right: 0; }
+  .kd-story-c:nth-child(-n+2) { border-bottom: 1px solid var(--kd-line); }
+  .kd-story-out { grid-template-columns: 1fr; gap: .75rem; }
+  .kd-story-flags { grid-template-columns: 1fr; }
+  .kd-chain { grid-template-columns: 1fr 1fr; gap: .5rem; }
+  .kd-chain-s { margin-right: 0; }
+  .kd-chain-s:not(:last-child)::after { display: none; }
+  .kd-who-grid { grid-template-columns: 1fr 1fr; }
+  .kd-two, .kd-how-row { grid-template-columns: 1fr; }
+  .kd-ops-foot { grid-template-columns: 1fr 1fr; }
+  .kd-ops-foot div:nth-child(2) { border-right: 0; }
+  .kd-ops-foot div:nth-child(-n+2) { border-bottom: 1px solid var(--kd-line); }
+  .kd-ops { overflow-x: auto; }
+  .kd-tbl { min-width: 30rem; }
+}
+@media (max-width: 560px) {
+  .kd-leaks { grid-template-columns: 1fr; }
+  .kd-stats { grid-template-columns: 1fr; }
+  .kd-stat { border-right: 0; border-bottom: 1px solid var(--kd-line); }
+  .kd-mbar { grid-template-columns: 5rem 1fr 2.6rem; }
+  .kd-flag-grid { grid-template-columns: 1fr; }
+  .kd-story { grid-template-columns: 1fr; }
+  .kd-story-c { border-right: 0; border-bottom: 1px solid var(--kd-line); }
+  .kd-chain { grid-template-columns: 1fr; }
+  .kd-fleet { grid-template-columns: 1fr; }
+  .kd-fleet div:nth-child(odd) { border-right: 0; }
+  .kd-who-grid { grid-template-columns: 1fr 1fr; gap: .6rem; }
+  .kd-hero-proof { font-size: .85rem; }
+  .kd-hero .btn { width: 100%; justify-content: center; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .kd-live, .kd-watch i, .kd-flow-notif, .kd-flow-arrow, .kd-orbit-spin, .kd-orbit-card { animation: none; }
+  .js .kd-reveal { opacity: 1; transform: none; transition: none; }
+  .kd-plan, .kd-fill, .kd-over, .kd-money-cost, .kd-money-over, .kd-mbar-t i, .kd-flag, .kd-verdict { transition: none; }
+}
+
+/* one typeface everywhere: Inter, with tabular figures for numbers */
+button, input, select, textarea { font-family: inherit; }
+.kd-scope, .kd-dash, .kd-ops, .kd-story, .kd-chain, .kd-cta-box { font-variant-numeric: tabular-nums; }
+.aiq-tb-cell { font-family: inherit !important; }
+.kd-mono, .kd-eyebrow, .kd-cols, .kd-flags-label, .kd-sec-title { font-weight: 600; }
+
+/* hero panel = the job Overview tab */
+.kd-scope.sol-mockup { border: 0; }
+.kd-scope .sol-mockup-bar { padding: 1rem 1.1rem .6rem; }
+.kd-scope .sol-mockup-bar span { font-size: 1.05rem; }
+.kd-scope .sol-mockup-bar .sol-mockup-badge-active { font-size: .65rem; font-weight: 700; padding: .2rem .65rem; margin-left: .25rem; color: #15803d; letter-spacing: 0; }
+.kd-scope .sol-mockup-bar .kd-watch { margin-left: auto; font-size: .62rem; font-weight: 600; color: #15803d; letter-spacing: .08em; }
+.kd-scope .sol-mockup-nav { gap: 1.1rem; padding: .4rem 1.1rem .5rem; }
+.kd-scope .sol-mockup-nav span { font-size: .62rem; cursor: default; }
+.kd-scope .kd-scope-body { padding: .8rem 1.1rem 1rem; }
+.kd-scope .sol-overview-stats { margin-bottom: .6rem; }
+.kd-scope .sol-stat-box { padding: .45rem .75rem; }
+.kd-scope .sol-stat-val { font-size: 1.15rem; }
+.kd-scope .kd-stat-over { color: var(--orange); }
+.kd-scope .sol-ov-section { padding: .55rem .85rem .35rem; margin-bottom: .55rem; }
+.kd-scope .sol-ov-section-head { padding-bottom: .35rem; margin-bottom: .25rem; }
+.kd-scope .sol-ov-row { padding: .25rem 0 .35rem; }
+.kd-scope .sol-ov-row-val { color: var(--indigo); font-weight: 700; }
+.kd-scope .kd-track { margin-bottom: .35rem; }
+.kd-scope .kd-flags { margin-top: .5rem; padding-top: .7rem; }
+.kd-scope .kd-verdict { margin-top: .7rem; }
+.sol-ov-over { color: var(--orange); font-weight: 700; }
+.kd-static .kd-plan, .kd-static .kd-fill { width: 80%; transition: none; }
+.kd-static .kd-over { width: var(--ov); transition: none; }
+.kd-static-flags .kd-flag { opacity: 1; transform: none; margin-bottom: .35rem; font-size: .68rem; }
+.sol-overview-right .kd-flags-label { margin-top: .9rem; margin-bottom: .4rem; }
+.sol-mockup-bar .sol-mockup-badge-active { font-size: .65rem; font-weight: 700; letter-spacing: 0; color: #15803d; }
+.kd-scope .sol-ov-row-val { color: var(--gray-500); font-weight: 500; }
+.kd-scope .sol-ov-row-val > span[data-count] { color: var(--orange); font-weight: 800; }
+.kd-scope .kd-flags { margin-top: .25rem; }
+
+/* owner: floating notifications */
+.kd-notes { display: flex; flex-direction: column; gap: 1rem; padding: 1rem 0; }
+.kd-nc { position: relative; display: grid; grid-template-columns: auto 1fr; gap: .8rem; align-items: start; width: 100%; max-width: 25rem; margin-left: var(--ml, 0); background: #fff; border: 1px solid var(--kd-line); border-left: 4px solid var(--orange); padding: .9rem 1.05rem; box-shadow: 0 12px 32px rgba(27,44,80,.13); animation: kdFloat 6s ease-in-out infinite; animation-delay: var(--fd, 0s); }
+.kd-nc.bill { border-left-color: #22c55e; }
+.kd-nc.msg { border-left-color: var(--kd-blue); }
+.kd-nc-ic { width: 2.1rem; height: 2.1rem; display: flex; align-items: center; justify-content: center; background: var(--kd-orange-bg); color: var(--orange); flex-shrink: 0; }
+.kd-nc.bill .kd-nc-ic { background: var(--kd-green-bg); color: var(--kd-green); }
+.kd-nc.msg .kd-nc-ic { background: var(--kd-blue-bg); color: var(--kd-blue); }
+.kd-nc-top { display: flex; justify-content: space-between; gap: .75rem; align-items: center; margin-bottom: .25rem; }
+.kd-nc-tag { font-size: .62rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: #b4501f; }
+.kd-nc.bill .kd-nc-tag { color: var(--kd-green); }
+.kd-nc.msg .kd-nc-tag { color: var(--kd-blue); }
+.kd-nc-time { font-size: .68rem; color: var(--gray-400); }
+.kd-nc b { display: block; font-size: .95rem; letter-spacing: -0.01em; line-height: 1.3; }
+.kd-nc p { margin: .2rem 0 0; font-size: .8rem; line-height: 1.5; color: var(--gray-600); }
+@keyframes kdFloat { 0%, 100% { translate: 0 0; } 50% { translate: 0 -7px; } }
+@media (max-width: 980px) { .kd-nc { --ml: 0 !important; max-width: none; } }
+@media (prefers-reduced-motion: reduce) { .kd-nc { animation: none; } }
+
+/* GM: job view sits in the split */
+.kd-gm { grid-template-columns: 1fr 1.4fr; align-items: start; }
+.kd-gm .sol-mockup { border-color: var(--kd-line); box-shadow: 0 16px 48px rgba(27,44,80,.14); }
+@media (max-width: 980px) { .kd-gm { grid-template-columns: 1fr; } }
+
+/* maintenance: auto-schedule */
+.kd-auto { counter-reset: a; display: grid; gap: 0; margin: 0; }
+.kd-auto li { counter-increment: a; display: grid; grid-template-columns: 2rem 1fr; gap: .9rem; padding: 1rem 0; border-top: 1px solid var(--kd-line); }
+.kd-auto li::before { content: counter(a); width: 2rem; height: 2rem; background: var(--indigo); color: #fff; font-weight: 700; display: flex; align-items: center; justify-content: center; font-size: .9rem; }
+.kd-auto li b { display: block; font-size: 1.05rem; letter-spacing: -0.01em; color: var(--indigo); }
+.kd-auto li span { display: block; margin-top: .2rem; font-size: .95rem; line-height: 1.55; color: var(--gray-700); }
+.kd-auto li em { font-style: normal; font-weight: 700; color: var(--orange); }
+.kd-svc .kd-mini { width: 100%; height: 8px; margin: 0; background: #e5e7eb; }
+.kd-svc .kd-mini i.g { background: #22c55e; }
+.kd-svc .kd-mini i.a { background: #eab308; }
+.kd-svc .kd-mini i.r { background: #ef4444; }
+.kd-svc td { padding: .8rem 1.1rem; }
+.kd-svc td:nth-child(3) { width: 34%; }
+/* readability: dark text on light surfaces */
+.kd-tbl th { color: var(--gray-700); background: #eef0f3; }
+.kd-tbl .sub { color: var(--gray-600); }
+.kd-mt-head small, .kd-dash-head small { color: var(--gray-600); }
+.kd-hist th, .kd-svc th { color: var(--gray-700); }
+.kd-svc-top-fix { }
+.kd-svc-hrs { font-weight: 700; font-size: 1.05rem; letter-spacing: -0.01em; color: #fff; }
+.kd-svc-hrs span { font-weight: 500; font-size: .78rem; color: rgba(255,255,255,.55); }
+
+/* equipment status card — matches the real app's device card */
+.kd-eq { background: var(--indigo-darker); color: #fff; padding: 1.1rem 1.1rem 0; }
+.kd-eq-top { display: flex; gap: .9rem; align-items: flex-start; }
+.kd-eq-thumb { width: 4.5rem; height: 3.4rem; border-radius: .4rem; overflow: hidden; flex-shrink: 0; }
+.kd-eq-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.kd-eq-id { flex: 1; min-width: 0; }
+.kd-eq-id b { display: block; font-size: 1.15rem; letter-spacing: -0.01em; }
+.kd-eq-id span { font-size: .82rem; color: rgba(255,255,255,.55); }
+.kd-eq-status { text-align: right; display: flex; flex-direction: column; align-items: flex-end; gap: .35rem; flex-shrink: 0; }
+.kd-badge { display: inline-flex; align-items: center; gap: .35rem; font-size: .68rem; font-weight: 700; padding: .25rem .65rem; border-radius: 2rem; white-space: nowrap; }
+.kd-badge.good { background: rgba(34,197,94,.12); color: #4ade80; border: 1px solid rgba(74,222,128,.4); }
+.kd-badge.online { background: #16a34a; color: #fff; }
+.kd-badge.online i { width: 6px; height: 6px; border-radius: 50%; background: #fff; display: inline-block; }
+.kd-eq-seen { font-size: .7rem; color: rgba(255,255,255,.4); }
+.kd-eq-stats { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 1.1rem; border-top: 1px solid rgba(255,255,255,.12); }
+.kd-eq-stats > div { padding: .9rem 1rem .95rem 0; }
+.kd-eq-stats > div + div { padding-left: 1rem; border-left: 1px solid rgba(255,255,255,.12); }
+.kd-eq-stats small { display: flex; align-items: center; gap: .3rem; font-size: .68rem; font-weight: 600; color: rgba(255,255,255,.45); margin-bottom: .35rem; }
+.kd-eq-stats b { font-size: 1.4rem; font-weight: 800; letter-spacing: -0.02em; }
+.kd-eq-stats b span { font-size: .78rem; font-weight: 500; color: rgba(255,255,255,.5); margin-left: .1rem; }
+.kd-eq-stats .txt b { font-size: 1rem; font-weight: 700; display: block; line-height: 1.3; }
+@media (max-width: 560px) {
+  .kd-eq-stats { grid-template-columns: 1fr; }
+  .kd-eq-stats > div + div { padding-left: 0; border-left: 0; border-top: 1px solid rgba(255,255,255,.12); }
+}
+
+.kd-white.pricing-section { padding: 6rem 0; }
+</style>
 
   <!-- FOOTER -->
   <footer class="footer">
@@ -1471,9 +1841,9 @@
         </div>
         <div class="footer-col">
           <h4>Product</h4>
+          <a href="/#solution">Job Margin</a>
+          <a href="/maintenance/">Maintenance</a>
           <a href="/#hardware">Hardware</a>
-          <a href="/#pricing">GPS Tracking</a>
-          <a href="/#solution">Reporting</a>
         </div>
       </div>
       <div class="footer-bottom">
@@ -1485,57 +1855,6 @@
       </div>
     </div>
   </footer>
-  <script>
-    (function () {
-      var card = document.querySelector('.ks-card2');
-      if (!card) return;
-      var badges = card.querySelectorAll('.kpill.green');
-      if (!badges.length) return;
-      var staggerMs = 150;
-      var mq = window.matchMedia('(prefers-reduced-motion: reduce)');
-
-      function reveal() {
-        if (card.classList.contains('sol2-vp-revealed')) return;
-        if (!mq.matches) {
-          badges.forEach(function (el, i) {
-            el.style.animationDelay = i * staggerMs + 'ms';
-            el.classList.add('visible');
-          });
-        }
-        card.classList.add('sol2-vp-revealed');
-      }
-
-      if (!mq.matches) {
-        badges.forEach(function (el) { el.classList.add('anim-badge'); });
-      }
-
-      if (mq.matches) {
-        reveal();
-        return;
-      }
-
-      if (!('IntersectionObserver' in window)) {
-        reveal();
-        return;
-      }
-
-      /* Observe the card, not the whole section — a tall section keeps
-         intersectionRatio tiny until most of it is on screen, so threshold
-         may never be met while scrolling. Products page observes .mockup the same way. */
-      var obs = new IntersectionObserver(
-        function (entries) {
-          entries.forEach(function (entry) {
-            if (entry.isIntersecting) {
-              reveal();
-              obs.unobserve(entry.target);
-            }
-          });
-        },
-        { threshold: 0.25 }
-      );
-      obs.observe(card);
-    })();
-  </script>
   <script>
     (function () {
       var solMockup = document.querySelector('.sol-mockup');
@@ -1574,6 +1893,137 @@
       document.querySelectorAll('.sol-ticket-detail').forEach(function(d) { d.style.display = 'none'; });
     }
   </script>
+<script>
+(function () {
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var hasIO = 'IntersectionObserver' in window;
+
+  /* scroll reveal */
+  var rev = document.querySelectorAll('.kd-reveal');
+  if (!hasIO || reduce) {
+    rev.forEach(function (el) { el.classList.add('in'); });
+  } else {
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.2 });
+    rev.forEach(function (el) { io.observe(el); });
+  }
+
+  /* how-it-works: count up the mockup numbers once the card is revealed */
+  var howCounts = document.querySelectorAll('#how [data-count]');
+  function runHowCount(el) {
+    var target = parseFloat(el.getAttribute('data-count')), dec = parseInt(el.getAttribute('data-dec'), 10) || 0;
+    var start = null, dur = 1100;
+    function tick(t) {
+      if (start === null) start = t;
+      var p = Math.min((t - start) / dur, 1), eased = 1 - Math.pow(1 - p, 3);
+      el.textContent = (target * eased).toFixed(dec);
+      if (p < 1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  }
+  if (howCounts.length) {
+    if (!hasIO || reduce) {
+      howCounts.forEach(function (el) { el.textContent = el.getAttribute('data-count'); });
+    } else {
+      var countIO = new IntersectionObserver(function (es) {
+        es.forEach(function (e) { if (e.isIntersecting) { runHowCount(e.target); countIO.unobserve(e.target); } });
+      }, { threshold: 0.4 });
+      howCounts.forEach(function (el) { countIO.observe(el); });
+    }
+  }
+
+  /* hardware carousel */
+  document.querySelectorAll('[data-hw-carousel]').forEach(function (car) {
+    var slides = car.querySelectorAll('.sol-hw-slide');
+    var dots = car.querySelectorAll('.sol-hw-dot');
+    var prevBtn = car.querySelector('.sol-hw-nav.prev');
+    var nextBtn = car.querySelector('.sol-hw-nav.next');
+    var idx = 0, timer;
+    var track = car.querySelector('.kd-doc-track');
+
+    function syncHeight() {
+      if (!track) return;
+      var max = 0;
+      slides.forEach(function (s) {
+        var inner = s.firstElementChild || s;
+        max = Math.max(max, inner.offsetHeight);
+      });
+      track.style.height = max + 'px';
+    }
+    function show(i) {
+      idx = (i + slides.length) % slides.length;
+      slides.forEach(function (s, n) { s.classList.toggle('is-active', n === idx); });
+      dots.forEach(function (d, n) { d.classList.toggle('is-active', n === idx); });
+    }
+    function restart() {
+      clearInterval(timer);
+      if (!reduce) timer = setInterval(function () { show(idx + 1); }, 7000);
+    }
+    if (track) {
+      syncHeight();
+      window.addEventListener('resize', syncHeight);
+    }
+    if (prevBtn) prevBtn.addEventListener('click', function () { show(idx - 1); restart(); });
+    if (nextBtn) nextBtn.addEventListener('click', function () { show(idx + 1); restart(); });
+    dots.forEach(function (d, n) { d.addEventListener('click', function () { show(n); restart(); }); });
+
+    restart();
+  });
+
+  /* hero: QUOTE -> ACTUAL -> DRIFT */
+  var scope = document.getElementById('kdScope');
+  if (!scope) return;
+  var timers = [];
+  var counters = scope.querySelectorAll('[data-count]');
+
+  function clearTimers() { timers.forEach(clearTimeout); timers = []; }
+  function setStage(n) {
+    scope.classList.toggle('is-quote', n >= 1);
+    scope.classList.toggle('is-actual', n >= 2);
+    scope.classList.toggle('is-drift', n >= 3);
+    // step chips only highlight the current stage
+    scope.querySelectorAll('.kd-step').forEach(function (b, i) { b.setAttribute('aria-selected', i + 1 === n ? 'true' : 'false'); });
+  }
+  function countUp() {
+    counters.forEach(function (el) {
+      var target = parseFloat(el.getAttribute('data-count')), dec = parseInt(el.getAttribute('data-dec'), 10) || 0;
+      var start = null, dur = 1500;
+      function tick(t) {
+        if (start === null) start = t;
+        var p = Math.min((t - start) / dur, 1), eased = 1 - Math.pow(1 - p, 3);
+        el.textContent = (target * eased).toFixed(dec);
+        if (p < 1) requestAnimationFrame(tick);
+      }
+      requestAnimationFrame(tick);
+    });
+  }
+  function showFinal() {
+    clearTimers(); setStage(3);
+    counters.forEach(function (el) { el.textContent = el.getAttribute('data-count'); });
+  }
+  function play() {
+    clearTimers(); setStage(0);
+    counters.forEach(function (el) { el.textContent = '0'; });
+    timers.push(setTimeout(function () { setStage(1); }, 350));
+    timers.push(setTimeout(function () { setStage(2); countUp(); }, 1700));
+    timers.push(setTimeout(function () { setStage(3); }, 3800));
+  }
+
+  scope.querySelectorAll('.kd-step').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var s = b.getAttribute('data-s');
+      if (s === 'quote') { clearTimers(); setStage(1); }
+      else if (s === 'actual') { clearTimers(); setStage(2); counters.forEach(function (el) { el.textContent = el.getAttribute('data-count'); }); }
+      else { showFinal(); }
+    });
+  });
+
+  if (reduce || !hasIO) { showFinal(); return; }
+  // Hero is on screen at load, so start right away.
+  setTimeout(play, 500);
+})();
+</script>
 </body>
 
 </html>
